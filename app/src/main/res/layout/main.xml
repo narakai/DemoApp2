@@ -22,6 +22,7 @@
             tools:layout_height="64dp"/>
 
         <android.support.design.widget.CoordinatorLayout
+            android:layout_above="@+id/playerFragment"
             android:id="@+id/coordinator_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
