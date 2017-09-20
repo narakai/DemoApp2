@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spnAutoDeleteItems">
+        <item>@string/feed_auto_download_global</item>
+        <item>@string/feed_auto_download_always</item>
+        <item>@string/feed_auto_download_never</item>
+    </string-array>
+
+    <string-array name="smart_mark_as_played_values">
+        <item>0</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+    </string-array>
+
+
+    <integer-array name="seek_delta_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </integer-array>
+
+    <string-array name="update_intervall_values">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+        <item>12</item>
+        <item>24</item>
+        <item>72</item>
+    </string-array>
+
+    <string-array name="episode_cache_size_entries">
+        <item>5</item>
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+        <item>@string/pref_episode_cache_unlimited</item>
+    </string-array>
+
+    <string-array name="episode_cache_size_values">
+        <item>5</item>
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="episode_cleanup_entries">
+        <item>@string/episode_cleanup_queue_removal</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>@string/episode_cleanup_never</item>
+    </string-array>
+
+    <string-array name="episode_cleanup_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>-2</item>
+    </string-array>
+
+    <string-array name="genre_options">
+        <item>Arts</item>
+        <item>Comedy</item>
+        <item>Education</item>
+        <item>Kids &amp; Family</item>
+        <item>Health</item>
+        <item>TV &amp; Film</item>
+        <item>Music</item>
+        <item>News &amp; Politics</item>
+        <item>Religion &amp; Spirituality</item>
+        <item>Science &amp; Medicine</item>
+        <item>Sports &amp; Recreation</item>
+        <item>Technology</item>
+        <item>Business</item>
+        <item>Games &amp; Hobbies</item>
+        <item>Society &amp; Culture</item>
+        <item>Government &amp; Organizations</item>
+    </string-array>
+
+    <string-array name="genre_values">
+        <item>1301</item>
+        <item>1303</item>
+        <item>1304</item>
+        <item>1305</item>
+        <item>1307</item>
+        <item>1309</item>
+        <item>1310</item>
+        <item>1311</item>
+        <item>1314</item>
+        <item>1315</item>
+        <item>1316</item>
+        <item>1318</item>
+        <item>1321</item>
+        <item>1323</item>
+        <item>1324</item>
+        <item>1325</item>
+    </string-array>
+
+    <string-array name="country_options">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctica</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia And Herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>British Virgin Islands</item>
+        <item>Brunei Darussalam</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Cape Verde</item>
+        <item>Cayman Islands</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Christmas Island</item>
+        <item>Cocos (keeling) Islands</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Republic of the Congo</item>
+        <item>Democratic Republic of the Congo</item>
+        <item>Cook Islands</item>
+        <item>Costa Rica</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>Timor-leste</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Falkland Islands (malvinas)</item>
+        <item>Faroe Islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>French Guyana</item>
+        <item>French Polynesia</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Grenada</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Isle Of Man</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Côte D\'ivoire</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Lao People\'s Democratic Republic</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macao</item>
+        <item>Macedonia</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Martinique</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montserrat</item>
+        <item>Montenegro</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>New Caledonia</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Niue</item>
+        <item>North Korea</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Réunion</item>
+        <item>Romania</item>
+        <item>Russian Federation</item>
+        <item>Rwanda</item>
+        <item>Saint Barthélemy</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Vincent The Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Sao Tome And Principe</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Sint Maarten</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Korea</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Saint Helena</item>
+        <item>Saint Pierre And Miquelon</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syrian Arab Republic</item>
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>Togo</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinidad Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Turks and Caicos Islands</item>
+        <item>Tuvalu</item>
+        <item>United Arab Emirates</item>
+        <item>Uganda</item>
+        <item>United Kingdom</item>
+        <item>Ukraine</item>
+        <item>Uruguay</item>
+        <item>United States</item>
+        <item>US Virgin Islands</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Holy See (vatican City State)</item>
+        <item>Venezuela</item>
+        <item>Viet Nam</item>
+        <item>Wallis And Futuna</item>
+        <item>Yemen</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+
+    </string-array>
+
+    <string-array name="country_values">
+        <item>af</item>
+        <item>al</item>
+        <item>dz</item>
+        <item>ad</item>
+        <item>ao</item>
+        <item>ai</item>
+        <item>aq</item>
+        <item>ag</item>
+        <item>ar</item>
+        <item>am</item>
+        <item>aw</item>
+        <item>au</item>
+        <item>at</item>
+        <item>az</item>
+        <item>bs</item>
+        <item>bh</item>
+        <item>bd</item>
+        <item>bb</item>
+        <item>by</item>
+        <item>be</item>
+        <item>bz</item>
+        <item>bj</item>
+        <item>bm</item>
+        <item>bt</item>
+        <item>bo</item>
+        <item>ba</item>
+        <item>bw</item>
+        <item>br</item>
+        <item>vg</item>
+        <item>bn</item>
+        <item>bg</item>
+        <item>bf</item>
+        <item>bi</item>
+        <item>kh</item>
+        <item>cm</item>
+        <item>ca</item>
+        <item>cv</item>
+        <item>ky</item>
+        <item>cf</item>
+        <item>td</item>
+        <item>cl</item>
+        <item>cn</item>
+        <item>cx</item>
+        <item>cc</item>
+        <item>co</item>
+        <item>km</item>
+        <item>cg</item>
+        <item>cd</item>
+        <item>ck</item>
+        <item>cr</item>
+        <item>hr</item>
+        <item>cu</item>
+        <item>cy</item>
+        <item>cz</item>
+        <item>dk</item>
+        <item>dj</item>
+        <item>dm</item>
+        <item>do</item>
+        <item>tl</item>
+        <item>ec</item>
+        <item>eg</item>
+        <item>sv</item>
+        <item>gq</item>
+        <item>er</item>
+        <item>ee</item>
+        <item>et</item>
+        <item>fk</item>
+        <item>fo</item>
+        <item>fj</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>gf</item>
+        <item>pf</item>
+        <item>ga</item>
+        <item>gm</item>
+        <item>ge</item>
+        <item>de</item>
+        <item>gh</item>
+        <item>gi</item>
+        <item>gr</item>
+        <item>gl</item>
+        <item>gd</item>
+        <item>gt</item>
+        <item>gn</item>
+        <item>gw</item>
+        <item>gy</item>
+        <item>ht</item>
+        <item>hn</item>
+        <item>hk</item>
+        <item>hu</item>
+        <item>in</item>
+        <item>id</item>
+        <item>ir</item>
+        <item>iq</item>
+        <item>ie</item>
+        <item>im</item>
+        <item>il</item>
+        <item>it</item>
+        <item>ci</item>
+        <item>jm</item>
+        <item>jp</item>
+        <item>jo</item>
+        <item>kz</item>
+        <item>ke</item>
+        <item>ki</item>
+        <item>kw</item>
+        <item>kg</item>
+        <item>la</item>
+        <item>lv</item>
+        <item>lb</item>
+        <item>ls</item>
+        <item>lr</item>
+        <item>ly</item>
+        <item>li</item>
+        <item>lt</item>
+        <item>lu</item>
+        <item>mo</item>
+        <item>mk</item>
+        <item>mg</item>
+        <item>mw</item>
+        <item>my</item>
+        <item>mv</item>
+        <item>ml</item>
+        <item>mt</item>
+        <item>mh</item>
+        <item>mq</item>
+        <item>mr</item>
+        <item>mu</item>
+        <item>yt</item>
+        <item>mx</item>
+        <item>fm</item>
+        <item>md</item>
+        <item>mc</item>
+        <item>mn</item>
+        <item>ms</item>
+        <item>me</item>
+        <item>ma</item>
+        <item>mz</item>
+        <item>na</item>
+        <item>na</item>
+        <item>nr</item>
+        <item>np</item>
+        <item>nl</item>
+        <item>nc</item>
+        <item>nz</item>
+        <item>ni</item>
+        <item>ne</item>
+        <item>ng</item>
+        <item>nu</item>
+        <item>kp</item>
+        <item>no</item>
+        <item>om</item>
+        <item>pk</item>
+        <item>pw</item>
+        <item>pa</item>
+        <item>pg</item>
+        <item>py</item>
+        <item>pe</item>
+        <item>ph</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>pr</item>
+        <item>qa</item>
+        <item>re</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>rw</item>
+        <item>bl</item>
+        <item>kn</item>
+        <item>lc</item>
+        <item>vc</item>
+        <item>ws</item>
+        <item>sm</item>
+        <item>st</item>
+        <item>sa</item>
+        <item>sn</item>
+        <item>rs</item>
+        <item>sc</item>
+        <item>sl</item>
+        <item>sg</item>
+        <item>sx</item>
+        <item>sk</item>
+        <item>si</item>
+        <item>sb</item>
+        <item>so</item>
+        <item>za</item>
+        <item>kr</item>
+        <item>es</item>
+        <item>lk</item>
+        <item>sh</item>
+        <item>pm</item>
+        <item>sd</item>
+        <item>sr</item>
+        <item>sz</item>
+        <item>se</item>
+        <item>ch</item>
+        <item>sy</item>
+        <item>tw</item>
+        <item>tj</item>
+        <item>tz</item>
+        <item>th</item>
+        <item>tg</item>
+        <item>tk</item>
+        <item>to</item>
+        <item>tt</item>
+        <item>tn</item>
+        <item>tr</item>
+        <item>tm</item>
+        <item>tc</item>
+        <item>tv</item>
+        <item>ae</item>
+        <item>ug</item>
+        <item>gb</item>
+        <item>ua</item>
+        <item>uy</item>
+        <item>us</item>
+        <item>vi</item>
+        <item>uz</item>
+        <item>vu</item>
+        <item>va</item>
+        <item>ve</item>
+        <item>vn</item>
+        <item>wf</item>
+        <item>ye</item>
+        <item>zm</item>
+        <item>zw</item>
+
+    </string-array>
+
+    <string-array name="playback_speed_values">
+        <item>0.50</item>
+        <item>0.60</item>
+        <item>0.70</item>
+        <item>0.75</item>
+        <item>0.80</item>
+        <item>0.85</item>
+        <item>0.90</item>
+        <item>0.95</item>
+        <item>1.00</item>
+        <item>1.05</item>
+        <item>1.10</item>
+        <item>1.15</item>
+        <item>1.20</item>
+        <item>1.25</item>
+        <item>1.30</item>
+        <item>1.35</item>
+        <item>1.40</item>
+        <item>1.45</item>
+        <item>1.50</item>
+        <item>1.55</item>
+        <item>1.60</item>
+        <item>1.65</item>
+        <item>1.70</item>
+        <item>1.75</item>
+        <item>1.80</item>
+        <item>1.85</item>
+        <item>1.90</item>
+        <item>1.95</item>
+        <item>2.00</item>
+        <item>2.10</item>
+        <item>2.20</item>
+        <item>2.30</item>
+        <item>2.40</item>
+        <item>2.50</item>
+        <item>2.60</item>
+        <item>2.70</item>
+        <item>2.80</item>
+        <item>2.90</item>
+        <item>3.00</item>
+        <item>3.10</item>
+        <item>3.20</item>
+        <item>3.30</item>
+        <item>3.40</item>
+        <item>3.50</item>
+        <item>3.60</item>
+        <item>3.70</item>
+        <item>3.80</item>
+        <item>3.90</item>
+        <item>4.00</item>
+    </string-array>
+
+    <string-array name="autodl_select_networks_default_entries">
+        <item>N/A</item>
+    </string-array>
+    <string-array name="autodl_select_networks_default_values">
+        <item>0</item>
+    </string-array>
+
+    <string-array name="theme_options">
+        <item>@string/pref_theme_title_light</item>
+        <item>@string/pref_theme_title_dark</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="nav_drawer_titles">
+        <item>@string/queue_discover</item>
+        <item>@string/queue_label</item>
+        <item>@string/episodes_label</item>
+        <item>@string/subscriptions_label</item>
+        <item>@string/downloads_label</item>
+        <item>@string/playback_history_label</item>
+        <item>@string/add_feed_label</item>
+        <item>@string/subscriptions_list_label</item>
+    </string-array>
+
+    <string-array name="nav_drawer_feed_order_options">
+        <item>@string/drawer_feed_order_unplayed_episodes</item>
+        <item>@string/drawer_feed_order_alphabetical</item>
+        <item>@string/drawer_feed_order_last_update</item>
+        <item>@string/drawer_feed_order_most_played</item>
+    </string-array>
+    <string-array name="nav_drawer_feed_order_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="nav_drawer_feed_counter_options">
+        <item>@string/drawer_feed_counter_new_unplayed</item>
+        <item>@string/drawer_feed_counter_new</item>
+        <item>@string/drawer_feed_counter_unplayed</item>
+        <item>@string/drawer_feed_counter_downloaded</item>
+        <item>@string/drawer_feed_counter_none</item>
+    </string-array>
+    <string-array name="nav_drawer_feed_counter_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="episode_filter_options">
+        <item>@string/hide_unplayed_episodes_label</item>
+        <item>@string/hide_paused_episodes_label</item>
+        <item>@string/hide_played_episodes_label</item>
+        <item>@string/hide_queued_episodes_label</item>
+        <item>@string/hide_not_queued_episodes_label</item>
+        <item>@string/hide_downloaded_episodes_label</item>
+        <item>@string/hide_not_downloaded_episodes_label</item>
+        <item>@string/hide_has_media_label</item>
+    </string-array>
+
+    <string-array name="episode_filter_values">
+        <item>unplayed</item>
+        <item>paused</item>
+        <item>played</item>
+        <item>queued</item>
+        <item>not_queued</item>
+        <item>downloaded</item>
+        <item>not_downloaded</item>
+        <item>has_media</item>
+    </string-array>
+
+    <string-array name="image_cache_size_options">
+        <item>20 MiB</item>
+        <item>50 MiB</item>
+        <item>100 MiB</item>
+        <item>250 MiB</item>
+        <item>500 MiB</item>
+    </string-array>
+
+    <string-array name="image_cache_size_values">
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+        <item>250</item>
+        <item>500</item>
+    </string-array>
+
+    <string-array name="compact_notification_buttons_options">
+        <item>@string/rewind_label</item>
+        <item>@string/fast_forward_label</item>
+        <item>@string/skip_episode_label</item>
+    </string-array>
+</resources>
