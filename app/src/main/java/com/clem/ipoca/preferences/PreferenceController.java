@@ -54,9 +54,7 @@ import com.clem.ipoca.core.preferences.UserPreferences;
 import com.clem.ipoca.core.service.GpodnetSyncService;
 import com.clem.ipoca.core.util.Converter;
 import com.clem.ipoca.core.util.StorageUtils;
-import com.clem.ipoca.core.util.flattr.FlattrUtils;
 import com.clem.ipoca.dialog.AuthenticationDialog;
-import com.clem.ipoca.dialog.AutoFlattrPreferenceDialog;
 import com.clem.ipoca.dialog.GpodnetSetHostnameDialog;
 import com.clem.ipoca.dialog.ProxyDialog;
 import com.clem.ipoca.dialog.VariableSpeedDialog;
@@ -86,10 +84,10 @@ public class PreferenceController implements SharedPreferences.OnSharedPreferenc
 
     private static final String TAG = "PreferenceController";
 
-    private static final String PREF_FLATTR_SETTINGS = "prefFlattrSettings";
-    private static final String PREF_FLATTR_AUTH = "pref_flattr_authenticate";
-    private static final String PREF_FLATTR_REVOKE = "prefRevokeAccess";
-    private static final String PREF_AUTO_FLATTR_PREFS = "prefAutoFlattrPrefs";
+//    private static final String PREF_FLATTR_SETTINGS = "prefFlattrSettings";
+//    private static final String PREF_FLATTR_AUTH = "pref_flattr_authenticate";
+//    private static final String PREF_FLATTR_REVOKE = "prefRevokeAccess";
+//    private static final String PREF_AUTO_FLATTR_PREFS = "prefAutoFlattrPrefs";
     private static final String PREF_OPML_EXPORT = "prefOpmlExport";
     private static final String PREF_HTML_EXPORT = "prefHtmlExport";
     private static final String STATISTICS = "statistics";
@@ -108,7 +106,7 @@ public class PreferenceController implements SharedPreferences.OnSharedPreferenc
     private static final String PREF_GPODNET_NOTIFICATIONS = "pref_gpodnet_notifications";
     private static final String PREF_EXPANDED_NOTIFICATION = "prefExpandNotify";
     private static final String PREF_PROXY = "prefProxy";
-    private static final String PREF_KNOWN_ISSUES = "prefKnownIssues";
+//    private static final String PREF_KNOWN_ISSUES = "prefKnownIssues";
     private static final String PREF_FAQ = "prefFaq";
     private static final String PREF_SEND_CRASH_REPORT = "prefSendCrashReport";
     private static final String[] EXTERNAL_STORAGE_PERMISSIONS = {
@@ -170,13 +168,13 @@ public class PreferenceController implements SharedPreferences.OnSharedPreferenc
                     }
             );
         }
-        ui.findPreference(PreferenceController.PREF_FLATTR_REVOKE).setOnPreferenceClickListener(
-                preference -> {
-                    FlattrUtils.revokeAccessToken(activity);
-                    checkItemVisibility();
-                    return true;
-                }
-        );
+//        ui.findPreference(PreferenceController.PREF_FLATTR_REVOKE).setOnPreferenceClickListener(
+//                preference -> {
+//                    FlattrUtils.revokeAccessToken(activity);
+//                    checkItemVisibility();
+//                    return true;
+//                }
+//        );
         ui.findPreference(PreferenceController.PREF_ABOUT).setOnPreferenceClickListener(
                 preference -> {
                     activity.startActivity(new Intent(activity, AboutActivity.class));
@@ -401,23 +399,23 @@ public class PreferenceController implements SharedPreferences.OnSharedPreferenc
                     return true;
                 });
 
-        ui.findPreference(PreferenceController.PREF_AUTO_FLATTR_PREFS)
-                .setOnPreferenceClickListener(preference -> {
-                    AutoFlattrPreferenceDialog.newAutoFlattrPreferenceDialog(activity,
-                            new AutoFlattrPreferenceDialog.AutoFlattrPreferenceDialogInterface() {
-                                @Override
-                                public void onCancelled() {
-
-                                }
-
-                                @Override
-                                public void onConfirmed(boolean autoFlattrEnabled, float autoFlattrValue) {
-                                    UserPreferences.setAutoFlattrSettings(autoFlattrEnabled, autoFlattrValue);
-                                    checkItemVisibility();
-                                }
-                            });
-                    return true;
-                });
+//        ui.findPreference(PreferenceController.PREF_AUTO_FLATTR_PREFS)
+//                .setOnPreferenceClickListener(preference -> {
+//                    AutoFlattrPreferenceDialog.newAutoFlattrPreferenceDialog(activity,
+//                            new AutoFlattrPreferenceDialog.AutoFlattrPreferenceDialogInterface() {
+//                                @Override
+//                                public void onCancelled() {
+//
+//                                }
+//
+//                                @Override
+//                                public void onConfirmed(boolean autoFlattrEnabled, float autoFlattrValue) {
+//                                    UserPreferences.setAutoFlattrSettings(autoFlattrEnabled, autoFlattrValue);
+//                                    checkItemVisibility();
+//                                }
+//                            });
+//                    return true;
+//                });
         ui.findPreference(UserPreferences.PREF_IMAGE_CACHE_SIZE).setOnPreferenceChangeListener(
                 (preference, o) -> {
                     if (o instanceof String) {
@@ -439,12 +437,12 @@ public class PreferenceController implements SharedPreferences.OnSharedPreferenc
             dialog.createDialog().show();
             return true;
         });
-        ui.findPreference(PREF_KNOWN_ISSUES).setOnPreferenceClickListener(preference -> {
-            openInBrowser("https://github.com/AntennaPod/AntennaPod/labels/bug");
-            return true;
-        });
+//        ui.findPreference(PREF_KNOWN_ISSUES).setOnPreferenceClickListener(preference -> {
+//            openInBrowser("https://github.com/AntennaPod/AntennaPod/labels/bug");
+//            return true;
+//        });
         ui.findPreference(PREF_FAQ).setOnPreferenceClickListener(preference -> {
-            openInBrowser("http://antennapod.org/faq.html");
+            openInBrowser("http://www.narakai-studio.com");
             return true;
         });
         ui.findPreference(PREF_SEND_CRASH_REPORT).setOnPreferenceClickListener(preference -> {
@@ -459,7 +457,7 @@ public class PreferenceController implements SharedPreferences.OnSharedPreferenc
             ui.getActivity().startActivity(Intent.createChooser(emailIntent, intentTitle));
             return true;
         });
-        PreferenceControllerFlavorHelper.setupFlavoredUI(ui);
+//        PreferenceControllerFlavorHelper.setupFlavoredUI(ui);
         buildEpisodeCleanupPreference();
         buildSmartMarkAsPlayedPreference();
         buildAutodownloadSelectedNetworsPreference();
@@ -711,11 +709,11 @@ public class PreferenceController implements SharedPreferences.OnSharedPreferenc
 
     @SuppressWarnings("deprecation")
     private void checkItemVisibility() {
-        boolean hasFlattrToken = FlattrUtils.hasToken();
-        ui.findPreference(PreferenceController.PREF_FLATTR_SETTINGS).setEnabled(FlattrUtils.hasAPICredentials());
-        ui.findPreference(PreferenceController.PREF_FLATTR_AUTH).setEnabled(!hasFlattrToken);
-        ui.findPreference(PreferenceController.PREF_FLATTR_REVOKE).setEnabled(hasFlattrToken);
-        ui.findPreference(PreferenceController.PREF_AUTO_FLATTR_PREFS).setEnabled(hasFlattrToken);
+//        boolean hasFlattrToken = FlattrUtils.hasToken();
+//        ui.findPreference(PreferenceController.PREF_FLATTR_SETTINGS).setEnabled(FlattrUtils.hasAPICredentials());
+//        ui.findPreference(PreferenceController.PREF_FLATTR_AUTH).setEnabled(!hasFlattrToken);
+//        ui.findPreference(PreferenceController.PREF_FLATTR_REVOKE).setEnabled(hasFlattrToken);
+//        ui.findPreference(PreferenceController.PREF_AUTO_FLATTR_PREFS).setEnabled(hasFlattrToken);
 
         boolean autoDownload = UserPreferences.isEnableAutodownload();
         ui.findPreference(UserPreferences.PREF_EPISODE_CACHE_SIZE).setEnabled(autoDownload);

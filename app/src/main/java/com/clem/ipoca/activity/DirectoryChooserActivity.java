@@ -41,7 +41,7 @@ public class DirectoryChooserActivity extends AppCompatActivity {
 
     private static final String TAG = "DirectoryChooserActivit";
 
-    private static final String CREATE_DIRECTORY_NAME = "AntennaPod";
+    private static final String CREATE_DIRECTORY_NAME = "iPoca";
 
     public static final String RESULT_SELECTED_DIR = "selected_dir";
     public static final int RESULT_CODE_DIR_SELECTED = 1;

@@ -251,25 +251,25 @@
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/services_label">
-        <PreferenceScreen
-            android:key="prefFlattrSettings"
-            android:title="@string/flattr_label">
-            <PreferenceScreen
-                android:key="pref_flattr_authenticate"
-                android:summary="@string/pref_flattr_auth_sum"
-                android:title="@string/pref_flattr_auth_title">
-                <intent android:action=".activities.FlattrAuthActivity"/>
-            </PreferenceScreen>
+        <!--<PreferenceScreen-->
+            <!--android:key="prefFlattrSettings"-->
+            <!--android:title="@string/flattr_label">-->
+            <!--<PreferenceScreen-->
+                <!--android:key="pref_flattr_authenticate"-->
+                <!--android:summary="@string/pref_flattr_auth_sum"-->
+                <!--android:title="@string/pref_flattr_auth_title">-->
+                <!--<intent android:action=".activities.FlattrAuthActivity"/>-->
+            <!--</PreferenceScreen>-->
 
-            <Preference
-                android:key="prefAutoFlattrPrefs"
-                android:summary="@string/pref_auto_flattr_sum"
-                android:title="@string/pref_auto_flattr_title" />
-            <Preference
-                android:key="prefRevokeAccess"
-                android:summary="@string/pref_revokeAccess_sum"
-                android:title="@string/pref_revokeAccess_title"/>
-        </PreferenceScreen>
+            <!--<Preference-->
+                <!--android:key="prefAutoFlattrPrefs"-->
+                <!--android:summary="@string/pref_auto_flattr_sum"-->
+                <!--android:title="@string/pref_auto_flattr_title" />-->
+            <!--<Preference-->
+                <!--android:key="prefRevokeAccess"-->
+                <!--android:summary="@string/pref_revokeAccess_sum"-->
+                <!--android:title="@string/pref_revokeAccess_title"/>-->
+        <!--</PreferenceScreen>-->
         <PreferenceScreen
             android:key="prefGpodderSettings"
             android:title="@string/gpodnet_main_label">
@@ -332,9 +332,9 @@
         <Preference
             android:key="prefFaq"
             android:title="@string/pref_faq"/>
-        <Preference
-            android:key="prefKnownIssues"
-            android:title="@string/pref_known_issues"/>
+        <!--<Preference-->
+            <!--android:key="prefKnownIssues"-->
+            <!--android:title="@string/pref_known_issues"/>-->
         <Preference
             android:key="prefSendCrashReport"
             android:title="@string/crash_report_title"
@@ -344,13 +344,13 @@
             android:title="@string/about_pref"/>
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="@string/experimental_pref">
-        <com.clem.ipoca.preferences.SwitchCompatPreference
-            android:defaultValue="false"
-            android:enabled="true"
-            android:key="prefCast"
-            android:summary="@string/pref_cast_message"
-            android:title="@string/pref_cast_title"/>
-    </PreferenceCategory>
+    <!--<PreferenceCategory android:title="@string/experimental_pref">-->
+        <!--<com.clem.ipoca.preferences.SwitchCompatPreference-->
+            <!--android:defaultValue="false"-->
+            <!--android:enabled="true"-->
+            <!--android:key="prefCast"-->
+            <!--android:summary="@string/pref_cast_message"-->
+            <!--android:title="@string/pref_cast_title"/>-->
+    <!--</PreferenceCategory>-->
     
 </PreferenceScreen>

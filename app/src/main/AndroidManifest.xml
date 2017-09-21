@@ -355,7 +355,7 @@
 
         <receiver android:name=".receiver.SPAReceiver">
             <intent-filter>
-                <action android:name="de.danoeh.antennapdsp.intent.SP_APPS_QUERY_FEEDS_RESPONSE"/>
+                <action android:name="com.clem.ipoca.intent.SP_APPS_QUERY_FEEDS_RESPONSE"/>
             </intent-filter>
         </receiver>
         <receiver android:name=".core.receiver.AlarmUpdateReceiver">

@@ -21,8 +21,8 @@ import java.util.Arrays;
 public class SPAReceiver extends BroadcastReceiver{
     private static final String TAG = "SPAReceiver";
 
-    public static final String ACTION_SP_APPS_QUERY_FEEDS = "de.danoeh.antennapdsp.intent.SP_APPS_QUERY_FEEDS";
-    public static final String ACTION_SP_APPS_QUERY_FEEDS_REPSONSE = "de.danoeh.antennapdsp.intent.SP_APPS_QUERY_FEEDS_RESPONSE";
+    public static final String ACTION_SP_APPS_QUERY_FEEDS = "com.clem.ipoca.intent.SP_APPS_QUERY_FEEDS";
+    public static final String ACTION_SP_APPS_QUERY_FEEDS_REPSONSE = "com.clem.ipoca.intent.SP_APPS_QUERY_FEEDS_RESPONSE";
     public static final String ACTION_SP_APPS_QUERY_FEEDS_REPSONSE_FEEDS_EXTRA = "feeds";
 
     @Override
