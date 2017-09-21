@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">Flux</string>
   <string name="statistics_label">Statistiques</string>
@@ -218,7 +218,7 @@
   <string name="no_media_playing_label">Aucune lecture</string>
   <string name="player_buffering_msg">Mise en mémoire</string>
   <string name="playbackservice_notification_title">Lecture de podcast en cours</string>
-  <string name="unknown_media_key">AntennaPod - Touche média inconnue : %1$d</string>
+  <string name="unknown_media_key">iPoca - Touche média inconnue : %1$d</string>
   <!--Queue operations-->
   <string name="lock_queue">Bloquer la liste</string>
   <string name="unlock_queue">Débloquer la liste</string>
@@ -239,18 +239,18 @@
   <string name="clear_queue_confirmation_msg">Veuillez confirmer que vous voulez bien supprimer TOUS les épisodes de la file d\'attente</string>
   <!--Flattr-->
   <string name="flattr_auth_label">Connecter à Flattr</string>
-  <string name="flattr_auth_explanation">Appuyez sur le bouton ci-dessous pour vous authentifier. Voter navigateur va s\'ouvrir et vous serez envoyés vers l\'écran de connexion Flattr afin de donner à AntennaPod la permission de flattr. Une fois fait, vous reviendrez automatiquement à cet écran.</string>
+  <string name="flattr_auth_explanation">Appuyez sur le bouton ci-dessous pour vous authentifier. Voter navigateur va s\'ouvrir et vous serez envoyés vers l\'écran de connexion Flattr afin de donner à iPoca la permission de flattr. Une fois fait, vous reviendrez automatiquement à cet écran.</string>
   <string name="authenticate_label">S\'authentifier</string>
   <string name="return_home_label">Retourner à l\'écran d\'accueil</string>
   <string name="flattr_auth_success">L\'authentification a réussi. Vous pouvez maintenant flattr depuis cette application.</string>
   <string name="no_flattr_token_title">Aucun jeton Flattr trouvé.</string>
-  <string name="no_flattr_token_notification_msg">Votre compte flattr ne semble pas être connecté à AntennaPod. Cliquer ici pour vous connecter.</string>
-  <string name="no_flattr_token_msg">Votre compte Flattr se semble pas être connecté à AntennaPod. Vous pouvez soit connecter votre compte Flattr à AntennaPod pour pouvoir flattr depuis l\'application, ou vous pouvez aller sur le site de ce que vous voulez flattr.</string>
+  <string name="no_flattr_token_notification_msg">Votre compte flattr ne semble pas être connecté à iPoca. Cliquer ici pour vous connecter.</string>
+  <string name="no_flattr_token_msg">Votre compte Flattr se semble pas être connecté à iPoca. Vous pouvez soit connecter votre compte Flattr à iPoca pour pouvoir flattr depuis l\'application, ou vous pouvez aller sur le site de ce que vous voulez flattr.</string>
   <string name="authenticate_now_label">S\'authentifier</string>
   <string name="action_forbidden_title">Action interdite</string>
-  <string name="action_forbidden_msg">AntennaPod n\'a pas la permission pour cette action. Il est possible que l\'accès à votre compte depuis AntennaPod ait été révoqué. Vous pouvez vous authentifier à nouveau, ou bien visiter le site à Flattrer directement.</string>
+  <string name="action_forbidden_msg">iPoca n\'a pas la permission pour cette action. Il est possible que l\'accès à votre compte depuis iPoca ait été révoqué. Vous pouvez vous authentifier à nouveau, ou bien visiter le site à Flattrer directement.</string>
   <string name="access_revoked_title">Accès révoqué</string>
-  <string name="access_revoked_info">Vous avez révoqué le jeton d\'accès d\'AntennaPod à votre compte. Pour terminer cette opération, vous devez retirer AntennaPod de la liste des applications autorisées sur le site web de Flattr.</string>
+  <string name="access_revoked_info">Vous avez révoqué le jeton d\'accès d\'iPoca à votre compte. Pour terminer cette opération, vous devez retirer iPoca de la liste des applications autorisées sur le site web de Flattr.</string>
   <!--Flattr-->
   <string name="flattr_click_success">Une chose de Flattré !</string>
   <string name="flattr_click_success_count">%d choses de Flattré !</string>
@@ -259,14 +259,14 @@
   <string name="flattr_click_failure">Non Flattré : %s.</string>
   <string name="flattr_click_enqueued">Cette chose sera Flattré plus tard</string>
   <string name="flattring_thing">En train de Flattrer %s</string>
-  <string name="flattring_label">AntennaPod est en train de Flattrer</string>
-  <string name="flattrd_label">AntennaPod a Flattré</string>
-  <string name="flattrd_failed_label">Le Flattr d\'AntennaPod a échoué</string>
+  <string name="flattring_label">iPoca est en train de Flattrer</string>
+  <string name="flattrd_label">iPoca a Flattré</string>
+  <string name="flattrd_failed_label">Le Flattr d\'iPoca a échoué</string>
   <string name="flattr_retrieving_status">Obtention de la liste des choses Flattrées</string>
   <!--Variable Speed-->
   <string name="download_plugin_label">Télécharger une extension</string>
   <string name="no_playback_plugin_title">Extension non installée</string>
-  <string name="no_playback_plugin_or_sonic_msg">Pour pouvoir changer la vitesse de lecture il est recommandé d\'activer le lecteur interne Sonic [Android 4.1+].\n\nVous pouvez également télécharger l\'extension <i>Prestissimo</i> depuis le Play Store.\nLes problème rencontrés avec Prestissimo ne sont pas de la responsabilité d\'AntennaPod et sont à communiquer au créateur de l\'extension.</string>
+  <string name="no_playback_plugin_or_sonic_msg">Pour pouvoir changer la vitesse de lecture il est recommandé d\'activer le lecteur interne Sonic [Android 4.1+].\n\nVous pouvez également télécharger l\'extension <i>Prestissimo</i> depuis le Play Store.\nLes problème rencontrés avec Prestissimo ne sont pas de la responsabilité d\'iPoca et sont à communiquer au créateur de l\'extension.</string>
   <string name="set_playback_speed_label">Vitesses de lecture</string>
   <string name="enable_sonic">Activer Sonic</string>
   <!--Empty list labels-->
@@ -321,7 +321,7 @@
   <string name="pref_flattr_auth_title">Connexion à Flattr</string>
   <string name="pref_flattr_auth_sum">Connectez-vous à votre compte Flattr pour pouvoir flattr directement depuis l\'application.</string>
   <string name="pref_flattr_this_app_title">Flattr cette application</string>
-  <string name="pref_flattr_this_app_sum">Encouragez le développement d\'AntennaPod grâce à Flattr. Merci !</string>
+  <string name="pref_flattr_this_app_sum">Encouragez le développement d\'iPoca grâce à Flattr. Merci !</string>
   <string name="pref_revokeAccess_title">Révoquer l\'accès</string>
   <string name="pref_revokeAccess_sum">Révoquer la permission d\'accès à votre compte Flattr depuis cette application.</string>
   <string name="pref_auto_flattr_title">Flattr automatique</string>
@@ -336,7 +336,7 @@
   <string name="pref_nav_drawer_feed_order_sum">Change l\'ordre de vos abonnements</string>
   <string name="pref_nav_drawer_feed_counter_title">Définir le compteur d\'abonnements</string>
   <string name="pref_nav_drawer_feed_counter_sum">Changer l\'information affichée par le compteur d\'abonnements</string>
-  <string name="pref_set_theme_sum">Modifier l\'apparence d\'AntennaPod.</string>
+  <string name="pref_set_theme_sum">Modifier l\'apparence d\'iPoca.</string>
   <string name="pref_automatic_download_title">Téléchargement automatique</string>
   <string name="pref_automatic_download_sum">Configurer le téléchargement automatique des épisodes.</string>
   <string name="pref_autodl_wifi_filter_title">Activer le filtre Wi-Fi</string>
@@ -407,7 +407,7 @@
   <string name="pref_no_browser_found">Aucun navigateur trouvé.</string>
   <string name="pref_cast_title">Support Chromecast</string>
   <string name="pref_cast_message_play_flavor">Activer la lecture à distance sur les appareils Cast (comme Chromecast, Audio Speaker ou Android TV)</string>
-  <string name="pref_cast_message_free_flavor">Chromecast nécessite des bibiliothèques tierces qui sont désactivées dans cette version d\'AntennaPod</string>
+  <string name="pref_cast_message_free_flavor">Chromecast nécessite des bibiliothèques tierces qui sont désactivées dans cette version d\'iPoca</string>
   <string name="pref_enqueue_downloaded_title">File d\'attente après téléchargement</string>
   <string name="pref_enqueue_downloaded_summary">Mettre en file d\'attente après téléchargement</string>
   <!--Auto-Flattr dialog-->
@@ -430,7 +430,7 @@
   <string name="opml_import_option">Option %1$d</string>
   <string name="opml_import_explanation_1">Choisir un chemin de fichier spécifique dans le système de fichiers local</string>
   <string name="opml_import_explanation_2">Utiliser une application tierce comme Dropbox, Google Drive ou votre gestionnaire de fichier favori pour ouvrir un fichier OPML</string>
-  <string name="opml_import_explanation_3">De nombreuses applications comme Google Mail, Dropbox ou Google Drive et la plupart des gestionnaires de fichiers peuvent <i>ouvrir</i> les fichiers OPML <i>avec</i> AntennaPod.</string>
+  <string name="opml_import_explanation_3">De nombreuses applications comme Google Mail, Dropbox ou Google Drive et la plupart des gestionnaires de fichiers peuvent <i>ouvrir</i> les fichiers OPML <i>avec</i> iPoca.</string>
   <string name="start_import_label">Démarrer l\'importation</string>
   <string name="opml_import_label">Importation OPML</string>
   <string name="opml_directory_error">ERREUR !</string>
@@ -499,7 +499,7 @@
   <string name="gpodnetauth_device_caption_errorEmpty">Le nom ne peut pas être vide</string>
   <string name="gpodnetauth_device_butChoose">Choisir</string>
   <string name="gpodnetauth_finish_title">Connexion réussie !</string>
-  <string name="gpodnetauth_finish_descr">Félicitations ! Votre compte gpodder.net est maintenant lié à votre appareil. AntennaPod va désormais automatiquement synchroniser vos podcasts sur votre appareil avec votre compte gpodder.</string>
+  <string name="gpodnetauth_finish_descr">Félicitations ! Votre compte gpodder.net est maintenant lié à votre appareil. iPoca va désormais automatiquement synchroniser vos podcasts sur votre appareil avec votre compte gpodder.</string>
   <string name="gpodnetauth_finish_butsyncnow">Commencer la synchronisation</string>
   <string name="gpodnetauth_finish_butgomainscreen">Aller à l\'écran d\'accueil</string>
   <string name="gpodnetsync_auth_error_title">Erreur d\'identification à gpodder.net</string>
@@ -512,7 +512,7 @@
   <string name="selected_folder_label">Répertoire choisi :</string>
   <string name="create_folder_label">Créer répertoire</string>
   <string name="choose_data_directory">Choisir le répertoire</string>
-  <string name="choose_data_directory_message">Choisissez le répertoire où enregistrer les données. AntennaPod créera automatiquement les sous-répertoires nécessaires.</string>
+  <string name="choose_data_directory_message">Choisissez le répertoire où enregistrer les données. iPoca créera automatiquement les sous-répertoires nécessaires.</string>
   <string name="choose_data_directory_permission_rationale">L\'accès au stockage externe est requis pour changer le répertoire des données</string>
   <string name="create_folder_msg">Créer un répertoire nommé \"%1$s\" ?</string>
   <string name="create_folder_success">Répertoire créé</string>
@@ -529,7 +529,7 @@
   <string name="pref_pausePlaybackForFocusLoss_title">Mettre en pause lors d\'interruptions</string>
   <string name="pref_resumeAfterCall_sum">Reprendre la lecture après un appel téléphonique</string>
   <string name="pref_resumeAfterCall_title">Reprendre après appel</string>
-  <string name="pref_restart_required">AntennaPod doit être redémarré afin que ce changement prenne effet</string>
+  <string name="pref_restart_required">iPoca doit être redémarré afin que ce changement prenne effet</string>
   <!--Online feed view-->
   <string name="subscribe_label">S\'abonner</string>
   <string name="subscribed_label">Abonné</string>
@@ -556,7 +556,7 @@
   <string name="keep_updated">Maintenir à jour</string>
   <!--Progress information-->
   <string name="progress_upgrading_database">Mise à jour de la base de données</string>
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <string name="sp_apps_importing_feeds_msg">Importation des abonnements à partir d\'applications à usage unique...</string>
   <string name="search_itunes_label">Chercher sur iTunes</string>
   <string name="filter">Filtrer</string>
@@ -588,8 +588,8 @@
   <string name="sort_duration_short_long">Durée (Courte \u2192 Longue)</string>
   <string name="sort_duration_long_short">Durée (Longue \u2192 Courte)</string>
   <!--Rating dialog-->
-  <string name="rating_title">Vous aimez AntennaPod ?</string>
-  <string name="rating_message">Nous vous serions reconnaissant de prendre un peu de temps pour noter AntennaPod.</string>
+  <string name="rating_title">Vous aimez iPoca ?</string>
+  <string name="rating_message">Nous vous serions reconnaissant de prendre un peu de temps pour noter iPoca.</string>
   <string name="rating_never_label">Laissez moi tranquille</string>
   <string name="rating_later_label">Rappelez le moi plus tard</string>
   <string name="rating_now_label">Okay, c\'est parti !</string>

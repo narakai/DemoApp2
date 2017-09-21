@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">Каналы</string>
   <string name="statistics_label">Статистика</string>
@@ -218,7 +218,7 @@
   <string name="no_media_playing_label">Ничего не воспроизводится</string>
   <string name="player_buffering_msg">Буферизация</string>
   <string name="playbackservice_notification_title">Воспроизведение подкаста</string>
-  <string name="unknown_media_key">AntennaPod - неизвестный ключ носителя: %1$d</string>
+  <string name="unknown_media_key">iPoca - неизвестный ключ носителя: %1$d</string>
   <!--Queue operations-->
   <string name="lock_queue">Заблокировать очередь</string>
   <string name="unlock_queue">Разблокировать очередь</string>
@@ -239,18 +239,18 @@
   <string name="clear_queue_confirmation_msg">Подтвердите, что хотите очистить очередь от ВСЕХ эпизодов.</string>
   <!--Flattr-->
   <string name="flattr_auth_label">Авторизоваться в Flattr</string>
-  <string name="flattr_auth_explanation">Нажмите кнопку, чтобы начать процесс авторизации. Вы будете перенаправлены на сайт Flattr, где нужно будет разрешить AntennaPod использовать ваш аккаунт. После этого вы автоматически будете перенаправлены обратно.</string>
+  <string name="flattr_auth_explanation">Нажмите кнопку, чтобы начать процесс авторизации. Вы будете перенаправлены на сайт Flattr, где нужно будет разрешить iPoca использовать ваш аккаунт. После этого вы автоматически будете перенаправлены обратно.</string>
   <string name="authenticate_label">Авторизовать</string>
   <string name="return_home_label">Вернуться к началу</string>
   <string name="flattr_auth_success">Успешная авторизация. Теперь можно использовать Flattr прямо из приложения.</string>
   <string name="no_flattr_token_title">Токен Flattr не найден</string>
-  <string name="no_flattr_token_notification_msg">Ваша учетная запись Flattr не подключена к AntennaPod. Нажмите здесь, чтобы войти.</string>
-  <string name="no_flattr_token_msg">Кажется, ваш аккаунт Flattr не подключен к AntennaPod. Можно подключить аккаунт к AntennaPod или посетить сайт канала, чтобы пожертвовать через Flattr прямо на сайте.</string>
+  <string name="no_flattr_token_notification_msg">Ваша учетная запись Flattr не подключена к iPoca. Нажмите здесь, чтобы войти.</string>
+  <string name="no_flattr_token_msg">Кажется, ваш аккаунт Flattr не подключен к iPoca. Можно подключить аккаунт к iPoca или посетить сайт канала, чтобы пожертвовать через Flattr прямо на сайте.</string>
   <string name="authenticate_now_label">Авторизоваться</string>
   <string name="action_forbidden_title">Действие запрещено</string>
-  <string name="action_forbidden_msg">AntennaPod не имеет прав для выполнения этого действия. Возможно, доступ к вашему аккаунту был отозван. Можно авторизоваться заново или посетить сайт, которому вы пожертвовали через Flattr.</string>
+  <string name="action_forbidden_msg">iPoca не имеет прав для выполнения этого действия. Возможно, доступ к вашему аккаунту был отозван. Можно авторизоваться заново или посетить сайт, которому вы пожертвовали через Flattr.</string>
   <string name="access_revoked_title">Доступ отозван</string>
-  <string name="access_revoked_info">Вы успешно отключили AntennaPod от аккаунта в Flattr. Чтобы завершить этот процесс  нужно удалить AntennaPod из списка приложений подключенных к аккаунту на сайте Flattr.</string>
+  <string name="access_revoked_info">Вы успешно отключили iPoca от аккаунта в Flattr. Чтобы завершить этот процесс  нужно удалить iPoca из списка приложений подключенных к аккаунту на сайте Flattr.</string>
   <!--Flattr-->
   <string name="flattr_click_success">Один поддержан через Flattr!</string>
   <string name="flattr_click_success_count">Поддержано через Flattr:  %d.</string>
@@ -259,14 +259,14 @@
   <string name="flattr_click_failure">Не поддержано через Flattr:  %s.</string>
   <string name="flattr_click_enqueued">Будет поддержано через Flattr потом</string>
   <string name="flattring_thing">%s поддерживается через Flattr</string>
-  <string name="flattring_label">AntennaPod поддерживается через Flattr</string>
-  <string name="flattrd_label">Вы поддержали AntennaPod через Flattr</string>
+  <string name="flattring_label">iPoca поддерживается через Flattr</string>
+  <string name="flattrd_label">Вы поддержали iPoca через Flattr</string>
   <string name="flattrd_failed_label">Ошибка</string>
   <string name="flattr_retrieving_status">Получение списка поддержаного через Flattr</string>
   <!--Variable Speed-->
   <string name="download_plugin_label">Загрузить плагин</string>
   <string name="no_playback_plugin_title">Плагин не установлен</string>
-  <string name="no_playback_plugin_or_sonic_msg">Чтобы воспользоваться изменением скорости воспроизведения, рекомендуется включить встроенный медиапроигрыватель Sonic [Android 4.1+].\n\nИли же можно загрузить сторонний плагин <i>Prestissimo</i> из Play Store.\nОбо всех проблемах, относящихся к Prestissimo стоит сообщать владельцу плагина, AntennaPod к этому не причастен.</string>
+  <string name="no_playback_plugin_or_sonic_msg">Чтобы воспользоваться изменением скорости воспроизведения, рекомендуется включить встроенный медиапроигрыватель Sonic [Android 4.1+].\n\nИли же можно загрузить сторонний плагин <i>Prestissimo</i> из Play Store.\nОбо всех проблемах, относящихся к Prestissimo стоит сообщать владельцу плагина, iPoca к этому не причастен.</string>
   <string name="set_playback_speed_label">Скорость воспроизведения</string>
   <string name="enable_sonic">Включить Sonic</string>
   <!--Empty list labels-->
@@ -319,7 +319,7 @@
   <string name="pref_flattr_auth_title">Авторизация Flattr</string>
   <string name="pref_flattr_auth_sum">Авторизуйтесь во Flattr чтобы поддерживать каналы прямо из приложения</string>
   <string name="pref_flattr_this_app_title">Поддержать это приложение в Flattr</string>
-  <string name="pref_flattr_this_app_sum">Поддержите разработку AntennaPod через Flattr. Спасибо!</string>
+  <string name="pref_flattr_this_app_sum">Поддержите разработку iPoca через Flattr. Спасибо!</string>
   <string name="pref_revokeAccess_title">Отозвать доступ</string>
   <string name="pref_revokeAccess_sum">Отменить доступ этого приложения к вашему аккаунту Flattr.</string>
   <string name="pref_auto_flattr_title">Автоматически поддерживать через Flattr</string>
@@ -334,7 +334,7 @@
   <string name="pref_nav_drawer_feed_order_sum">Выбрать порядок отображения подписок</string>
   <string name="pref_nav_drawer_feed_counter_title">Выбрать счётчик подписок</string>
   <string name="pref_nav_drawer_feed_counter_sum">Выбрать какую информацию показывать в счётчике подписок</string>
-  <string name="pref_set_theme_sum">Изменить тему оформления AntennaPod</string>
+  <string name="pref_set_theme_sum">Изменить тему оформления iPoca</string>
   <string name="pref_automatic_download_title">Автоматическая загрузка</string>
   <string name="pref_automatic_download_sum">Настроить автоматическую загрузку выпусков.</string>
   <string name="pref_autodl_wifi_filter_title">Включить фильтр Wi-Fi</string>
@@ -400,7 +400,7 @@
   <string name="pref_no_browser_found">Веб-браузер не обнаружен.</string>
   <string name="pref_cast_title">Поддержка Chromecast</string>
   <string name="pref_cast_message_play_flavor">Включить поддержку удалённого воспроизведения на устройствах с Google Cast (таких как Chromecast, динамики или ТВ на ОС Android)</string>
-  <string name="pref_cast_message_free_flavor">Для работы Chromecast требуются собственнические библиотеки третьей стороны, которые не включены в данную версию AntennaPod</string>
+  <string name="pref_cast_message_free_flavor">Для работы Chromecast требуются собственнические библиотеки третьей стороны, которые не включены в данную версию iPoca</string>
   <!--Auto-Flattr dialog-->
   <string name="auto_flattr_enable">Включить автоматическую поддержку через Flattr</string>
   <string name="auto_flattr_after_percent">Поддерживать через Flattr эпизоды, прослушанные на %d процентов</string>
@@ -421,7 +421,7 @@
   <string name="opml_import_option">Настройка %1$d</string>
   <string name="opml_import_explanation_1">Укажите путь к файлу на устройстве</string>
   <string name="opml_import_explanation_2">Откройте OPML-файл с помощью внешних приложений: Dropbox, Google Drive или любого файлового менеджера.</string>
-  <string name="opml_import_explanation_3">Множество приложений умеют <i>открывать</i> OPML-файлы <i>в</i> AntennaPod, например: Google Mail, Dropbox, Google Drive и большинство файловых менеджеров.</string>
+  <string name="opml_import_explanation_3">Множество приложений умеют <i>открывать</i> OPML-файлы <i>в</i> iPoca, например: Google Mail, Dropbox, Google Drive и большинство файловых менеджеров.</string>
   <string name="start_import_label">Начать импорт</string>
   <string name="opml_import_label">Импорт OPML</string>
   <string name="opml_directory_error">Ошибка</string>
@@ -496,7 +496,7 @@
   <string name="gpodnetauth_device_caption_errorEmpty">Обязательно заполнить</string>
   <string name="gpodnetauth_device_butChoose">Выберите</string>
   <string name="gpodnetauth_finish_title">Авторизация успешна!</string>
-  <string name="gpodnetauth_finish_descr">Поздравляем! Ваш аккаунт на gpodder.net теперь связан с вашим устройством. AntennaPod теперь сможет автоматически синхронизировать ваши подписки с аккаунтом gpodder.net</string>
+  <string name="gpodnetauth_finish_descr">Поздравляем! Ваш аккаунт на gpodder.net теперь связан с вашим устройством. iPoca теперь сможет автоматически синхронизировать ваши подписки с аккаунтом gpodder.net</string>
   <string name="gpodnetauth_finish_butsyncnow">Начать синхронизацию</string>
   <string name="gpodnetauth_finish_butgomainscreen">Перейти на главный экран</string>
   <string name="gpodnetsync_auth_error_title">Ошибка авторизации на gpodder.net</string>
@@ -509,7 +509,7 @@
   <string name="selected_folder_label">Выбранная папка:</string>
   <string name="create_folder_label">Создать папку</string>
   <string name="choose_data_directory">Выбрать папку для хранения данных</string>
-  <string name="choose_data_directory_message">Укажите корневую папку для хранения данных. AntennaPod создаст необходимые подкаталоги.</string>
+  <string name="choose_data_directory_message">Укажите корневую папку для хранения данных. iPoca создаст необходимые подкаталоги.</string>
   <string name="choose_data_directory_permission_rationale">Для смены папки хранения данных необходим доступ к внешнему хранилищу</string>
   <string name="create_folder_msg">Создать папку \"%1$s\"?</string>
   <string name="create_folder_success">Новая папка создана</string>
@@ -526,7 +526,7 @@
   <string name="pref_pausePlaybackForFocusLoss_title">Пауза при прерывании</string>
   <string name="pref_resumeAfterCall_sum">Продолжение воспроизведения после завершения звонка</string>
   <string name="pref_resumeAfterCall_title">Включать после звонка</string>
-  <string name="pref_restart_required">AntennaPod нужно перезапустить для применения настроек.</string>
+  <string name="pref_restart_required">iPoca нужно перезапустить для применения настроек.</string>
   <!--Online feed view-->
   <string name="subscribe_label">Подписаться</string>
   <string name="subscribed_label">Подписка оформлена</string>
@@ -553,7 +553,7 @@
   <string name="keep_updated">Постоянно обновлять</string>
   <!--Progress information-->
   <string name="progress_upgrading_database">Обновление базы данных</string>
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <string name="sp_apps_importing_feeds_msg">Импорт подписок из одноцелевых приложений…</string>
   <string name="search_itunes_label">Поиск в iTunes</string>
   <string name="filter">Фильтровать</string>
@@ -585,8 +585,8 @@
   <string name="sort_duration_short_long">Продолжительности (Короткие \u2192 Длинные)</string>
   <string name="sort_duration_long_short">Продолжительности (Длинные \u2192 Короткие)</string>
   <!--Rating dialog-->
-  <string name="rating_title">Нравится AntennaPod?</string>
-  <string name="rating_message">Мы будем благодарны, если вы оцените AntennaPod.</string>
+  <string name="rating_title">Нравится iPoca?</string>
+  <string name="rating_message">Мы будем благодарны, если вы оцените iPoca.</string>
   <string name="rating_never_label">Отстань от меня</string>
   <string name="rating_later_label">Напомни позже</string>
   <string name="rating_now_label">Конечно, давай!</string>

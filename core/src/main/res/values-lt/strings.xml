@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">Sklaidos kanalai</string>
   <string name="statistics_label">Statistika</string>
@@ -232,7 +232,7 @@
   <string name="refreshing_label">Atnaujinama</string>
   <string name="user_interface_label">Vartotojo sąsaja</string>
   <string name="pref_set_theme_title">Pasirinkti temą</string>
-  <string name="pref_set_theme_sum">Keisti AntennaPod išvaizdą.</string>
+  <string name="pref_set_theme_sum">Keisti iPoca išvaizdą.</string>
   <string name="pref_automatic_download_title">Automatinis atsiuntimas</string>
   <string name="pref_parallel_downloads_title">Lygiagretūs atsiuntimai</string>
   <string name="pref_episode_cache_title">Epizodų podėlis</string>
@@ -300,7 +300,7 @@
   <string name="selected_folder_label">Pasirinktas aplankas:</string>
   <string name="create_folder_label">Sukurti aplanką</string>
   <string name="choose_data_directory">Pasirinkite duomenų aplanką</string>
-  <string name="choose_data_directory_message">Prašome pasirinkti pamatinį duomenų aplanką. „AntennaPod“ sukurs reikiamus poaplankius.</string>
+  <string name="choose_data_directory_message">Prašome pasirinkti pamatinį duomenų aplanką. „iPoca“ sukurs reikiamus poaplankius.</string>
   <string name="choose_data_directory_permission_rationale">Norinti pakeisti duomenų aplanką reikalinga prieiga prie nešiojamos duomenų saugyklos</string>
   <string name="create_folder_msg">Sukurti naują aplanką pavadinimu \"%1$s\"?</string>
   <string name="create_folder_success">Sukurtas naujas aplankas</string>
@@ -323,7 +323,7 @@
   <string name="episode_filters_label">Epizodų filtras</string>
   <string name="keep_updated">Pastoviai atnaujinti</string>
   <!--Progress information-->
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <!--Episodes apply actions-->
   <string name="all_label">Visus</string>
   <string name="none_label">Jokių</string>

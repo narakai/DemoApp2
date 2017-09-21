@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">Kanallar</string>
   <string name="new_label">Yeni</string>
@@ -101,12 +101,12 @@
   <string name="return_home_label">Baş ekrana dön</string>
   <string name="flattr_auth_success">Giriş uğurludur! İndi tətbiqlədən Flattrla istifadə edə bilərsiniz.</string>
   <string name="no_flattr_token_title">Heç bir Flattr tokeni tapılmadı</string>
-  <string name="no_flattr_token_msg">Olsun ki sizin Flattr hesabınız AntennaPod\'a qoşulmadı. Yenə Flattra girin ya da podkastın səhifəsinə keçin.</string>
+  <string name="no_flattr_token_msg">Olsun ki sizin Flattr hesabınız iPoca\'a qoşulmadı. Yenə Flattra girin ya da podkastın səhifəsinə keçin.</string>
   <string name="authenticate_now_label">Gir</string>
   <string name="action_forbidden_title">Əməliyyat qadağan olundu</string>
-  <string name="action_forbidden_msg">Bu əməliyyat üçün AntennaPod\'un icazəsi yoxdur. AntennaPod\'un keçid tokenin ləğv olunması bunun səbəbi ola bilər. Yenə Flattra girin ya da podkastın səhifəsinə keçin.</string>
+  <string name="action_forbidden_msg">Bu əməliyyat üçün iPoca\'un icazəsi yoxdur. iPoca\'un keçid tokenin ləğv olunması bunun səbəbi ola bilər. Yenə Flattra girin ya da podkastın səhifəsinə keçin.</string>
   <string name="access_revoked_title">Keçid ləğv olundu</string>
-  <string name="access_revoked_info">AntennaPod\'un keçid tokeni uğurlu ləğv olundu.</string>
+  <string name="access_revoked_info">iPoca\'un keçid tokeni uğurlu ləğv olundu.</string>
   <!--Flattr-->
   <!--Variable Speed-->
   <string name="download_plugin_label">Plagin yüklə</string>
@@ -133,12 +133,12 @@
   <string name="pref_flattr_auth_title">Flattra gir</string>
   <string name="pref_flattr_auth_sum">Flattr\'la istifadə etmək üçün, öz Flattr hesabınıza girin</string>
   <string name="pref_flattr_this_app_title">Bu proqramı flattrla</string>
-  <string name="pref_flattr_this_app_sum">Flattr vasitəsiilə AntennaPodun inkişafını dəstək edin. Sağolun!</string>
+  <string name="pref_flattr_this_app_sum">Flattr vasitəsiilə iPocaun inkişafını dəstək edin. Sağolun!</string>
   <string name="pref_revokeAccess_title">Keçidi ləğv ət</string>
   <string name="pref_revokeAccess_sum">Flattr hesabına keçidi ləğv et</string>
   <string name="user_interface_label">İnterfeys</string>
   <string name="pref_set_theme_title">Görüşü seç</string>
-  <string name="pref_set_theme_sum">AntennaPod\'un görüşünü dəyişdir</string>
+  <string name="pref_set_theme_sum">iPoca\'un görüşünü dəyişdir</string>
   <string name="pref_automatic_download_title">Avtomatik yükləmə</string>
   <string name="pref_automatic_download_sum">Epizodların avtomatik yüklənişinin konfiqurasiyanı dəyiş</string>
   <string name="pref_autodl_wifi_filter_title">Wi-Fi filtr</string>
@@ -191,7 +191,7 @@
   <!--Content descriptions for image buttons-->
   <!--Feed information screen-->
   <!--Progress information-->
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <!--Episodes apply actions-->
   <!--Sort-->
   <!--Rating dialog-->

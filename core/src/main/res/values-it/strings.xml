@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">Feed</string>
   <string name="add_feed_label">Aggiungi un podcast</string>
@@ -143,7 +143,7 @@
   <string name="flattr_auth_label">Accesso a Flattr</string>
   <string name="authenticate_label">Autentica</string>
   <string name="return_home_label">Ritorna alla pagina iniziale</string>
-  <string name="no_flattr_token_notification_msg">Il tuo account flattr non sembra connesso ad AntennaPod. Clicca qui per accedere.</string>
+  <string name="no_flattr_token_notification_msg">Il tuo account flattr non sembra connesso ad iPoca. Clicca qui per accedere.</string>
   <string name="authenticate_now_label">Autentica</string>
   <string name="action_forbidden_title">Azione proibita</string>
   <string name="access_revoked_title">Accesso revocato</string>
@@ -172,7 +172,7 @@
   <string name="pref_flattr_auth_title">Accesso a Flattr</string>
   <string name="pref_revokeAccess_title">Revoca l\'accesso</string>
   <string name="user_interface_label">Interfaccia utente</string>
-  <string name="pref_set_theme_sum">Cambia l\'aspetto di AntennaPod</string>
+  <string name="pref_set_theme_sum">Cambia l\'aspetto di iPoca</string>
   <string name="pref_autodl_wifi_filter_title">Abilita il filtro Wi-Fi</string>
   <string name="pref_automatic_download_on_battery_sum">Scarica automaticamente quando la batteria non è in caricamento</string>
   <string name="pref_theme_title_light">Chiaro</string>
@@ -259,7 +259,7 @@
   <!--Feed information screen-->
   <string name="authentication_label">Autenticazione</string>
   <!--Progress information-->
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <string name="search_itunes_label">Cerca su iTunes</string>
   <!--Episodes apply actions-->
   <string name="all_label">Tutto</string>

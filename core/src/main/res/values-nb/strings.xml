@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">Strømmer</string>
   <string name="add_feed_label">Legg til podcast</string>
@@ -179,7 +179,7 @@
   <string name="no_media_playing_label">Ingen media spillende for øyeblikket.</string>
   <string name="player_buffering_msg">Bufrer</string>
   <string name="playbackservice_notification_title">Spiller podcast</string>
-  <string name="unknown_media_key">AntennaPod - Ukjent medienøkkel: %1$d</string>
+  <string name="unknown_media_key">iPoca - Ukjent medienøkkel: %1$d</string>
   <!--Queue operations-->
   <string name="lock_queue">Lås køen</string>
   <string name="unlock_queue">Lås opp køen</string>
@@ -196,18 +196,18 @@
   <string name="clear_queue_confirmation_msg">Vennligst bekreft at du ønsker å slette ALLE elementer i køen</string>
   <!--Flattr-->
   <string name="flattr_auth_label">Flattr innlogging</string>
-  <string name="flattr_auth_explanation">Trykk knappen nedenfor for å starte autentiseringsprosessen. Du vil videresendes til flattr sin innloggsinsskjerm i din nettleser og spurt om å gi AntennaPod tillatelse til å flattr\'e ting. Etter at du har gitt tillatelse blir du returnert hit automatisk.</string>
+  <string name="flattr_auth_explanation">Trykk knappen nedenfor for å starte autentiseringsprosessen. Du vil videresendes til flattr sin innloggsinsskjerm i din nettleser og spurt om å gi iPoca tillatelse til å flattr\'e ting. Etter at du har gitt tillatelse blir du returnert hit automatisk.</string>
   <string name="authenticate_label">Autentiser</string>
   <string name="return_home_label">Returner hjem</string>
   <string name="flattr_auth_success">Autentisering fullført! Nå kan du flattr tingene i denne appen.</string>
   <string name="no_flattr_token_title">Flattr-token ikke funnet</string>
-  <string name="no_flattr_token_notification_msg">Det virker som at Flattr-kontoen din ikke er sammenkoblet med AntennaPod. Trykk her for å autentisere.</string>
-  <string name="no_flattr_token_msg">Det virker ikke som din flattr konto er koblet til AntennaPod. Du kan enten koble kontoen din til AntennaPod for å flattr\'e ting i appen eller du kan besøke nettsiden til tingen for å flattr\'e det der.</string>
+  <string name="no_flattr_token_notification_msg">Det virker som at Flattr-kontoen din ikke er sammenkoblet med iPoca. Trykk her for å autentisere.</string>
+  <string name="no_flattr_token_msg">Det virker ikke som din flattr konto er koblet til iPoca. Du kan enten koble kontoen din til iPoca for å flattr\'e ting i appen eller du kan besøke nettsiden til tingen for å flattr\'e det der.</string>
   <string name="authenticate_now_label">Autentiser</string>
   <string name="action_forbidden_title">Handling forbudt</string>
-  <string name="action_forbidden_msg">AntennaPod har ikke tilgang til denne handlingen. Grunnen kan være at tilgangstokenet til kontoen din er blitt inndratt. Du kan enten re-autentisere eller besøke tjenestens nettsted.</string>
+  <string name="action_forbidden_msg">iPoca har ikke tilgang til denne handlingen. Grunnen kan være at tilgangstokenet til kontoen din er blitt inndratt. Du kan enten re-autentisere eller besøke tjenestens nettsted.</string>
   <string name="access_revoked_title">Tilgang opphevet</string>
-  <string name="access_revoked_info">Du har fjernet AntennaPods tilgang til kontoen din. For å fullføre prossessen må du fjerne denne appen fra listen over tillatte apper på flattr-nettsiden.</string>
+  <string name="access_revoked_info">Du har fjernet iPocas tilgang til kontoen din. For å fullføre prossessen må du fjerne denne appen fra listen over tillatte apper på flattr-nettsiden.</string>
   <!--Flattr-->
   <string name="flattr_click_success">Flattr\'erte en ting!</string>
   <string name="flattr_click_success_count">Flattret %d ting!</string>
@@ -216,9 +216,9 @@
   <string name="flattr_click_failure">Ikke flattret: %s.</string>
   <string name="flattr_click_enqueued">Tingen vil bli flattret senere</string>
   <string name="flattring_thing">Flattrer %s</string>
-  <string name="flattring_label">AntennaPod flattrer</string>
-  <string name="flattrd_label">AntennaPod har flattret</string>
-  <string name="flattrd_failed_label">AntennaPods flattring feilet</string>
+  <string name="flattring_label">iPoca flattrer</string>
+  <string name="flattrd_label">iPoca har flattret</string>
+  <string name="flattrd_failed_label">iPocas flattring feilet</string>
   <string name="flattr_retrieving_status">Henter flattrede ting</string>
   <!--Variable Speed-->
   <string name="download_plugin_label">Last ned programtillegg</string>
@@ -266,7 +266,7 @@
   <string name="pref_flattr_auth_title">Flattr logg in</string>
   <string name="pref_flattr_auth_sum">Logg på din flattr konto for å flattr ting direkte fra appen.</string>
   <string name="pref_flattr_this_app_title">Flattr denne appen</string>
-  <string name="pref_flattr_this_app_sum">Støtt utviklingen av AntennaPod ved å flattr\'e det. Tusen takk!</string>
+  <string name="pref_flattr_this_app_sum">Støtt utviklingen av iPoca ved å flattr\'e det. Tusen takk!</string>
   <string name="pref_revokeAccess_title">Opphev tilgang</string>
   <string name="pref_revokeAccess_sum">Opphev tilgangstillatelsen til din flattr konto for denne appen.</string>
   <string name="pref_auto_flattr_title">Automatisk Flattr</string>
@@ -281,7 +281,7 @@
   <string name="pref_nav_drawer_feed_order_sum">Endre rekkefølgen på abbonementene dine</string>
   <string name="pref_nav_drawer_feed_counter_title">Velg abbonementsteller</string>
   <string name="pref_nav_drawer_feed_counter_sum">Endre informasjonen vist av abonnementstelleren</string>
-  <string name="pref_set_theme_sum">Endre utseendet til AntennaPod</string>
+  <string name="pref_set_theme_sum">Endre utseendet til iPoca</string>
   <string name="pref_automatic_download_title">Automatisk nedlasting</string>
   <string name="pref_automatic_download_sum">Konfigurer automatisk nedlasting av episoder.</string>
   <string name="pref_autodl_wifi_filter_title">Skru på Wi-Fi-filter</string>
@@ -339,7 +339,7 @@
   <string name="opml_import_option">Valg %1$d</string>
   <string name="opml_import_explanation_1">Velg en spesifikk filbane fra det lokale filsystemet.</string>
   <string name="opml_import_explanation_2">Bruk en ektern applikasjon som Dropbox, Google Drive eller favoritt-filbehandleren din for å åpne en OPML-fil.</string>
-  <string name="opml_import_explanation_3">Mange applikasjoner som Gmail, Dropbox, Google Drive og de fleste filbehandlere kan <i>åpne</i> OPML-filer <i>med</i> AntennaPod.</string>
+  <string name="opml_import_explanation_3">Mange applikasjoner som Gmail, Dropbox, Google Drive og de fleste filbehandlere kan <i>åpne</i> OPML-filer <i>med</i> iPoca.</string>
   <string name="start_import_label">Start importering</string>
   <string name="opml_import_label">OPML-import</string>
   <string name="opml_directory_error">ERROR!</string>
@@ -399,7 +399,7 @@
   <string name="gpodnetauth_device_errorAlreadyUsed">EnhetsID er allerede i bruk</string>
   <string name="gpodnetauth_device_butChoose">Velg</string>
   <string name="gpodnetauth_finish_title">Innlogging lyktes!</string>
-  <string name="gpodnetauth_finish_descr">Gratulerer! Din gpodder.net konto er nå linket opp med din enhet. AntennaPod vil nå automatisk synkronisere abonnementer på din enhet med din gpodder.net konto.</string>
+  <string name="gpodnetauth_finish_descr">Gratulerer! Din gpodder.net konto er nå linket opp med din enhet. iPoca vil nå automatisk synkronisere abonnementer på din enhet med din gpodder.net konto.</string>
   <string name="gpodnetauth_finish_butsyncnow">Start synkronisering nå.</string>
   <string name="gpodnetauth_finish_butgomainscreen">Gå til hovedskjermen</string>
   <string name="gpodnetsync_auth_error_title">gpodder.net-autentiseringsfeil</string>
@@ -410,7 +410,7 @@
   <string name="selected_folder_label">Valgt mappe</string>
   <string name="create_folder_label">Lag mappe</string>
   <string name="choose_data_directory">Velg datamappe</string>
-  <string name="choose_data_directory_message">Vennligst velg basisen for datamappen din. AntennaPod vil lage de nødvendige submappene dine.</string>
+  <string name="choose_data_directory_message">Vennligst velg basisen for datamappen din. iPoca vil lage de nødvendige submappene dine.</string>
   <string name="create_folder_msg">Lag en ny mappe med navn \"%1$s\"?</string>
   <string name="create_folder_success">Lagde en ny mappe</string>
   <string name="create_folder_error_no_write_access">Kan ikke skrive til denne mappen</string>
@@ -426,7 +426,7 @@
   <string name="pref_pausePlaybackForFocusLoss_title">Pause for avbrytelser</string>
   <string name="pref_resumeAfterCall_sum">Gjenoppta avspilling etter at telefonsamtaler avsluttes</string>
   <string name="pref_resumeAfterCall_title">Gjenoppta etter samtale</string>
-  <string name="pref_restart_required">AntennaPod må startes om for at denne endringen skal lagres.</string>
+  <string name="pref_restart_required">iPoca må startes om for at denne endringen skal lagres.</string>
   <!--Online feed view-->
   <string name="subscribe_label">Abonner</string>
   <string name="subscribed_label">Abonnert</string>
@@ -445,7 +445,7 @@
   <string name="authentication_descr">Endre brukernavnet og passordet for denne podcasten og dens episoder.</string>
   <!--Progress information-->
   <string name="progress_upgrading_database">Oppgraderer databasen</string>
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <string name="sp_apps_importing_feeds_msg">Importerer abbonementer fra enkeltstående applikasjoner ...</string>
   <string name="search_itunes_label">Søk på iTunes</string>
   <!--Episodes apply actions-->
@@ -471,8 +471,8 @@
   <string name="sort_duration_short_long">Lengde (Kort \u2192 Lang)</string>
   <string name="sort_duration_long_short">Lengde (Lang \u2192 Kort)</string>
   <!--Rating dialog-->
-  <string name="rating_title">Liker du AntennaPod?</string>
-  <string name="rating_message">Vi ville satt pris på om du tok deg tid til å vurdere AntennaPod.</string>
+  <string name="rating_title">Liker du iPoca?</string>
+  <string name="rating_message">Vi ville satt pris på om du tok deg tid til å vurdere iPoca.</string>
   <string name="rating_never_label">La meg være i fred</string>
   <string name="rating_later_label">Minn meg på dette senere</string>
   <string name="rating_now_label">Naturligvis, kom igjen!</string>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name" translate="false">iPoca</string>
+  <string name="phone_code" translatable="false">+%s</string>
+  <string name="country_name_and_code" translatable="false">%1$s (%2$s)</string>
+  <string name="search_hint">搜索&#8230;</string>
+  <string name="no_result_found">無結果</string>
+  <string name="select_country">選擇國家</string>
+  <string name="country_code_and_phone_code">(%1$s) +%2$s</string>
+  <string name="country_full_name_and_phone_code">%1$s +%2$s</string>
+  <string name="error_unregister_carrier_number">EditText for carrier number is not registered. Register it using registerPhoneNumberTextView() before getFullNumber() or setFullNumber().</string>
+  <string name="confirm_exit_app">再按壹次退出iPoca</string>
+  <string name="arts">藝術</string>
+  <string name="comedy">喜劇片</string>
+  <string name="education">教育</string>
+  <string name="kids">兒童與家庭</string>
+  <string name="health">健康</string>
+  <string name="tv">電視與電影</string>
+  <string name="music">音樂</string>
+  <string name="news">新聞與政治</string>
+  <string name="region">心靈修煉</string>
+  <string name="science">科學與醫學</string>
+  <string name="sports">運動與休閑</string>
+  <string name="tech">科技</string>
+  <string name="business">商業</string>
+  <string name="game">遊戲與愛好</string>
+  <string name="culture">社會與文化</string>
+  <string name="gov">政府與組織</string>
+  <string name="search_options">搜索選項</string>
+  <string name="pref_set_locale">設置默認播客地區</string>
+  <string name="pref_set_locale_desc">設置播客的默認地區</string>
+  <string name="pref_set_genre">設置默認播客類別</string>
+  <string name="pref_set_genre_desc">設置默認關註的播客類別</string>
+  <string name="us">us</string>
+  <string name="genre_label">設置默認播客類別</string>
+  <string name="color_label">自定義主題色</string>
+  <string name="ok">好的</string>
+  <string name="cancel">取消</string>
+  <string name="custom">自定義</string>
+  <string name="presets">預設</string>
+</resources>

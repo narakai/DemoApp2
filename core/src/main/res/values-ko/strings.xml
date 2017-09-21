@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">피드</string>
   <string name="statistics_label">통계</string>
@@ -533,7 +533,7 @@
   <string name="keep_updated">최신 업데이트 유지</string>
   <!--Progress information-->
   <string name="progress_upgrading_database">데이터베이스 업그레이드 중</string>
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <string name="sp_apps_importing_feeds_msg">단일 용도 앱에서 구독 정보를 가져옵니다...</string>
   <string name="search_itunes_label">iTunes 검색</string>
   <string name="filter">필터</string>

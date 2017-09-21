@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">ఫీడులు</string>
   <string name="statistics_label">గణాంకాలు</string>
@@ -87,7 +87,7 @@
   <!--Content descriptions for image buttons-->
   <!--Feed information screen-->
   <!--Progress information-->
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <!--Episodes apply actions-->
   <string name="all_label">అన్నీ</string>
   <string name="none_label">ఏమీలేదు</string>

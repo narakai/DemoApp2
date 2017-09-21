@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">Canals</string>
   <string name="add_feed_label">Afegeix podcast</string>
@@ -202,7 +202,7 @@
   <string name="no_media_playing_label">No s\'està reproduint res</string>
   <string name="player_buffering_msg">S\'està carregant</string>
   <string name="playbackservice_notification_title">Podcast en reproducció</string>
-  <string name="unknown_media_key">AntennaPod - Control desconegut: %1$d</string>
+  <string name="unknown_media_key">iPoca - Control desconegut: %1$d</string>
   <!--Queue operations-->
   <string name="lock_queue">Bloqueja la cua</string>
   <string name="unlock_queue">Desbloqueja la cua</string>
@@ -223,18 +223,18 @@
   <string name="clear_queue_confirmation_msg">Si us plau confirma que vols suprimir tots els episodis de la cua</string>
   <!--Flattr-->
   <string name="flattr_auth_label">Inici de sessió a Flattr</string>
-  <string name="flattr_auth_explanation">Premeu el botó per iniciar el procés d\'autenticació. Quan s\'obri la pantalla d\'inici de sessió de Flattr al vostre navegador, introduïu les vostres credencials i concediu a AntennaPod els permisos de compartir mitjançant Flattr. En finalitzar el procés, tornareu automàticament a aquesta pantalla.</string>
+  <string name="flattr_auth_explanation">Premeu el botó per iniciar el procés d\'autenticació. Quan s\'obri la pantalla d\'inici de sessió de Flattr al vostre navegador, introduïu les vostres credencials i concediu a iPoca els permisos de compartir mitjançant Flattr. En finalitzar el procés, tornareu automàticament a aquesta pantalla.</string>
   <string name="authenticate_label">Autenticació</string>
   <string name="return_home_label">Torna a l\'inici</string>
   <string name="flattr_auth_success">L\'autenticació ha acabat correctament. Ja podeu compartir amb Flattr des de l\'aplicació.</string>
   <string name="no_flattr_token_title">No s\'ha trobat cap testimoni Flattr</string>
-  <string name="no_flattr_token_notification_msg">Sembla que el compte flattr no està vinculat amb AntennaPod. Toqueu aquí per autenticar-vos.</string>
-  <string name="no_flattr_token_msg">Sembla que el vostre compte de Flattr no està vinculat amb AntennaPod. Podeu connectar el vostre compte Flattr amb AntennaPod per a compartir continguts des de l\'aplicació, o bé accediu a la plana web de Flattr i compartiu els continguts des d\'allà.</string>
+  <string name="no_flattr_token_notification_msg">Sembla que el compte flattr no està vinculat amb iPoca. Toqueu aquí per autenticar-vos.</string>
+  <string name="no_flattr_token_msg">Sembla que el vostre compte de Flattr no està vinculat amb iPoca. Podeu connectar el vostre compte Flattr amb iPoca per a compartir continguts des de l\'aplicació, o bé accediu a la plana web de Flattr i compartiu els continguts des d\'allà.</string>
   <string name="authenticate_now_label">Autentica</string>
   <string name="action_forbidden_title">L\'acció no és permesa</string>
-  <string name="action_forbidden_msg">AntennaPod no té permisos per executar aquesta acció. És possible que el testimoni d\'accés de Flattr per a AntennaPod hagi estat revocat. Podeu tornar-vos a autenticar amb el servei de Flattr, o podeu visitar el web del contingut directament.</string>
+  <string name="action_forbidden_msg">iPoca no té permisos per executar aquesta acció. És possible que el testimoni d\'accés de Flattr per a iPoca hagi estat revocat. Podeu tornar-vos a autenticar amb el servei de Flattr, o podeu visitar el web del contingut directament.</string>
   <string name="access_revoked_title">L\'accés ha estat revocat</string>
-  <string name="access_revoked_info">El testimoni d\'accés a Flattr de l\'AntennaPod s\'ha revocat correctament. Per completar el procés, heu de suprimir aquesta aplicació de la llista d\'aplicacions aprovades que trobareu a l\'apartat de configuració del compte de la plana web de Flattr.</string>
+  <string name="access_revoked_info">El testimoni d\'accés a Flattr de l\'iPoca s\'ha revocat correctament. Per completar el procés, heu de suprimir aquesta aplicació de la llista d\'aplicacions aprovades que trobareu a l\'apartat de configuració del compte de la plana web de Flattr.</string>
   <!--Flattr-->
   <string name="flattr_click_success">S\'ha compartit una cosa per Flattr!</string>
   <string name="flattr_click_success_count">S\'han compartit %d coses per Flattr!</string>
@@ -243,14 +243,14 @@
   <string name="flattr_click_failure">No s\'ha compartit per Flattr: %s.</string>
   <string name="flattr_click_enqueued">Es compartirà per Flattr després</string>
   <string name="flattring_thing">%s s\'està compartint per Flattr</string>
-  <string name="flattring_label">AntennaPod està compartint per Flattr</string>
-  <string name="flattrd_label">AntennaPod ha compartit per Flattr</string>
-  <string name="flattrd_failed_label">AntennaPod no ha pogut compartir per Flattr</string>
+  <string name="flattring_label">iPoca està compartint per Flattr</string>
+  <string name="flattrd_label">iPoca ha compartit per Flattr</string>
+  <string name="flattrd_failed_label">iPoca no ha pogut compartir per Flattr</string>
   <string name="flattr_retrieving_status">S\'estan recuperant les coses compartides per Flattr</string>
   <!--Variable Speed-->
   <string name="download_plugin_label">Baixa el connector</string>
   <string name="no_playback_plugin_title">Connector no instal·lat</string>
-  <string name="no_playback_plugin_or_sonic_msg">Per a què funcioni la velocitat de reproducció variable, recomanem activar el Sonic Media Player integrat [Android 4.1+].\n\nPer una altra banda, pots baixar el plugin de tercers <i>Prestissimo</i> de la Play Store.\nQualsevol problema amb Prestissimo no és responsabilitat d\'AntennaPod i no haurà de ser reportat al seu propietari.</string>
+  <string name="no_playback_plugin_or_sonic_msg">Per a què funcioni la velocitat de reproducció variable, recomanem activar el Sonic Media Player integrat [Android 4.1+].\n\nPer una altra banda, pots baixar el plugin de tercers <i>Prestissimo</i> de la Play Store.\nQualsevol problema amb Prestissimo no és responsabilitat d\'iPoca i no haurà de ser reportat al seu propietari.</string>
   <string name="set_playback_speed_label">Velocitats de reproducció</string>
   <string name="enable_sonic">Activa Sonic</string>
   <!--Empty list labels-->
@@ -298,7 +298,7 @@
   <string name="pref_flattr_auth_title">Inici de sessió Flattr</string>
   <string name="pref_flattr_auth_sum">Inicieu sessió al vostre compte Flattr per compartir continguts directament des de l\'aplicació.</string>
   <string name="pref_flattr_this_app_title">Compartiu aquesta aplicació amb Flattr</string>
-  <string name="pref_flattr_this_app_sum">Doneu suport al desenvolupament d\'AntennaPod compartint l\'aplicació a través de Flattr. Gràcies!</string>
+  <string name="pref_flattr_this_app_sum">Doneu suport al desenvolupament d\'iPoca compartint l\'aplicació a través de Flattr. Gràcies!</string>
   <string name="pref_revokeAccess_title">Revoca l\'accés</string>
   <string name="pref_revokeAccess_sum">Revoqueu el permís d\'accés d\'aquesta aplicació al vostre compte Flattr.</string>
   <string name="pref_auto_flattr_title">Flattr automàtic</string>
@@ -313,7 +313,7 @@
   <string name="pref_nav_drawer_feed_order_sum">Canviar l\'ordre de les subscripcions</string>
   <string name="pref_nav_drawer_feed_counter_title">Establir contador de subscripció</string>
   <string name="pref_nav_drawer_feed_counter_sum">Canviar la informació mostrada pel comptador de subscripció</string>
-  <string name="pref_set_theme_sum">Canvieu l\'aparença d\'AntennaPod.</string>
+  <string name="pref_set_theme_sum">Canvieu l\'aparença d\'iPoca.</string>
   <string name="pref_automatic_download_title">Baixada automàtica</string>
   <string name="pref_automatic_download_sum">Configureu la baixada automàtica d\'episodis.</string>
   <string name="pref_autodl_wifi_filter_title">Activa el filtre de la xarxa sense fils</string>
@@ -373,7 +373,7 @@
   <string name="opml_import_option">Opció %1$d</string>
   <string name="opml_import_explanation_1">Trieu una ruta de fitxer específic del sistema de fitxers local.</string>
   <string name="opml_import_explanation_2">Utilitzeu una aplicació externa com Dropbox, Google Drive o el seu gestor de fitxers preferit per obrir un fitxer OPML.</string>
-  <string name="opml_import_explanation_3">Algunes aplicacions com Google Mail, Dropbox, Google Drive i la majoria dels administradors d\'arxius pot <i>obrir</i> arxius OPML <i>amb</i> AntennaPod.</string>
+  <string name="opml_import_explanation_3">Algunes aplicacions com Google Mail, Dropbox, Google Drive i la majoria dels administradors d\'arxius pot <i>obrir</i> arxius OPML <i>amb</i> iPoca.</string>
   <string name="start_import_label">Inicia la importació</string>
   <string name="opml_import_label">Importació OPML</string>
   <string name="opml_directory_error">Error!</string>
@@ -435,7 +435,7 @@
   <string name="gpodnetauth_device_errorAlreadyUsed">L\'ID de dispositiu ja existeix</string>
   <string name="gpodnetauth_device_butChoose">Selecciona</string>
   <string name="gpodnetauth_finish_title">Heu iniciat la sessió!</string>
-  <string name="gpodnetauth_finish_descr">Felicitats! El vostre compte de gpodder.net s\'ha enllaçat amb el dispositiu. D\'ara endavant, AntennaPod sincronitzarà automàticament les subscripcions del dispositiu al vostre compte.</string>
+  <string name="gpodnetauth_finish_descr">Felicitats! El vostre compte de gpodder.net s\'ha enllaçat amb el dispositiu. D\'ara endavant, iPoca sincronitzarà automàticament les subscripcions del dispositiu al vostre compte.</string>
   <string name="gpodnetauth_finish_butsyncnow">Sincronitza ara</string>
   <string name="gpodnetauth_finish_butgomainscreen">Vés a la pantalla principal</string>
   <string name="gpodnetsync_auth_error_title">Error d\'autenticació a gpodder.net</string>
@@ -446,7 +446,7 @@
   <string name="selected_folder_label">Carpeta seleccionada:</string>
   <string name="create_folder_label">Crea una carpeta</string>
   <string name="choose_data_directory">Selecció de la carpeta de dades</string>
-  <string name="choose_data_directory_message">Selecciona l\'arrel del teu directori d\'informació. AntennaPod crearà els subdirectoris pertinents</string>
+  <string name="choose_data_directory_message">Selecciona l\'arrel del teu directori d\'informació. iPoca crearà els subdirectoris pertinents</string>
   <string name="choose_data_directory_permission_rationale">Es requereix accés a l\'emmagatzematge extern per canviar el directori d\'informació</string>
   <string name="create_folder_msg">Voleu crear una nova carpeta amb el nom \"%1$s\"?</string>
   <string name="create_folder_success">S\'ha creat la nova carpeta</string>
@@ -463,7 +463,7 @@
   <string name="pref_pausePlaybackForFocusLoss_title">Pausa en interrompre</string>
   <string name="pref_resumeAfterCall_sum">Reprendre la reproducció després d\'una trucada telefònica</string>
   <string name="pref_resumeAfterCall_title">Reprendre després d\'una trucada</string>
-  <string name="pref_restart_required">AntennaPod s\'ha de reiniciar perquè aquest canvi tingui efecte.</string>
+  <string name="pref_restart_required">iPoca s\'ha de reiniciar perquè aquest canvi tingui efecte.</string>
   <!--Online feed view-->
   <string name="subscribe_label">Subscriu</string>
   <string name="subscribed_label">Subscrit</string>
@@ -490,7 +490,7 @@
   <string name="keep_updated">Mantenir actualitzat</string>
   <!--Progress information-->
   <string name="progress_upgrading_database">Actualització de la base de dades</string>
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <string name="sp_apps_importing_feeds_msg">S\'estan important les subscripcions des de les apps de propòsit únic...</string>
   <string name="search_itunes_label">Cerca a iTunes</string>
   <string name="filter">Filtrar</string>
@@ -519,8 +519,8 @@
   <string name="sort_duration_short_long">Duració (Curt \u2192 Llarg)</string>
   <string name="sort_duration_long_short">Duration (Llarg \u2192 Curt)</string>
   <!--Rating dialog-->
-  <string name="rating_title">T\'agrada AntennaPod?</string>
-  <string name="rating_message">Apreciaríem que et prenguessis un temps per valorar AntennaPod</string>
+  <string name="rating_title">T\'agrada iPoca?</string>
+  <string name="rating_message">Apreciaríem que et prenguessis un temps per valorar iPoca</string>
   <string name="rating_never_label">Deixa\'m tranquil</string>
   <string name="rating_later_label">Pregunta\'m més tard</string>
   <string name="rating_now_label">I tant, fem-ho!</string>

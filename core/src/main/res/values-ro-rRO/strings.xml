@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">Feeduri</string>
   <string name="new_label">Nou</string>
@@ -100,17 +100,17 @@
   <string name="removed_from_queue">Element înlăturat</string>
   <!--Flattr-->
   <string name="flattr_auth_label">Flattr sign-in</string>
-  <string name="flattr_auth_explanation">Apăsați butonul de mai jos pentru a începe procesul de autentificare. Veți fi îndreptat spre pagina de logare flattr în browser și veți fi rugat să acordați permisiuni AntennaPod sa flattr. După ce veți acorda permisiunile veți fi readuși la acest ecran automat.</string>
+  <string name="flattr_auth_explanation">Apăsați butonul de mai jos pentru a începe procesul de autentificare. Veți fi îndreptat spre pagina de logare flattr în browser și veți fi rugat să acordați permisiuni iPoca sa flattr. După ce veți acorda permisiunile veți fi readuși la acest ecran automat.</string>
   <string name="authenticate_label">Autentificare</string>
   <string name="return_home_label">Întoarcere acasă</string>
   <string name="flattr_auth_success">Autentificare cu succes! Acum puteți flattr din aplicație.</string>
   <string name="no_flattr_token_title">Nu s-a găsit token Flattr</string>
-  <string name="no_flattr_token_msg">Contul flattr nu pare șa fie conectat la AntennaPod. Puteți fie conecta contul cu AntennaPod pentru a flattr lucruri din aplicație sau puteți vizita site-ul pentru a flattr acolo.</string>
+  <string name="no_flattr_token_msg">Contul flattr nu pare șa fie conectat la iPoca. Puteți fie conecta contul cu iPoca pentru a flattr lucruri din aplicație sau puteți vizita site-ul pentru a flattr acolo.</string>
   <string name="authenticate_now_label">Autentificați-vă</string>
   <string name="action_forbidden_title">Acțiune interzisă</string>
-  <string name="action_forbidden_msg">AntennaPod nu are permisiuni pentru această acțiune. Motivul poate fi că tokenul de acces al AntennaPod pentru contul vostru a fost revocat. Vă puteți fie re-autentifica fie vizita direct site-ul.</string>
+  <string name="action_forbidden_msg">iPoca nu are permisiuni pentru această acțiune. Motivul poate fi că tokenul de acces al iPoca pentru contul vostru a fost revocat. Vă puteți fie re-autentifica fie vizita direct site-ul.</string>
   <string name="access_revoked_title">Acces revocat</string>
-  <string name="access_revoked_info">Ați revocat cu succes accesul AntennaPod la contul vostru. Pentru a completa acest proces trebuie să ștergeți aplicația din lista de aplicații aprobate din setările contului de pe site-ul flattr.</string>
+  <string name="access_revoked_info">Ați revocat cu succes accesul iPoca la contul vostru. Pentru a completa acest proces trebuie să ștergeți aplicația din lista de aplicații aprobate din setările contului de pe site-ul flattr.</string>
   <!--Flattr-->
   <!--Variable Speed-->
   <string name="download_plugin_label">Descarcă plugin</string>
@@ -139,12 +139,12 @@
   <string name="pref_flattr_auth_title">Sign-in Flattr</string>
   <string name="pref_flattr_auth_sum">Logați la contul flattr pentru a flattr lucruri direct din aplicație.</string>
   <string name="pref_flattr_this_app_title">Flattr această aplicație</string>
-  <string name="pref_flattr_this_app_sum">Ajutați dezvoltarea AntennaPod prin flattr. Mulțumesc!</string>
+  <string name="pref_flattr_this_app_sum">Ajutați dezvoltarea iPoca prin flattr. Mulțumesc!</string>
   <string name="pref_revokeAccess_title">Revocare acces</string>
   <string name="pref_revokeAccess_sum">Revocă accesul permisiunilor pentru contul de flattr.</string>
   <string name="user_interface_label">Interfața grafică</string>
   <string name="pref_set_theme_title">Alege temă</string>
-  <string name="pref_set_theme_sum">Schimbă aspectul AntennaPod.</string>
+  <string name="pref_set_theme_sum">Schimbă aspectul iPoca.</string>
   <string name="pref_automatic_download_title">Descărcare automată</string>
   <string name="pref_automatic_download_sum">Configurează descărcarea automată a episoadelor.</string>
   <string name="pref_autodl_wifi_filter_title">Pornește filtru Wi-Fi</string>
@@ -218,7 +218,7 @@
   <!--Content descriptions for image buttons-->
   <!--Feed information screen-->
   <!--Progress information-->
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <!--Episodes apply actions-->
   <!--Sort-->
   <!--Rating dialog-->

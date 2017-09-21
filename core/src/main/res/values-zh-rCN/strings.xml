@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">订阅</string>
   <string name="statistics_label">统计</string>
@@ -25,7 +25,7 @@
   <string name="episode_cache_full_message">已达到曲目缓存限制，可以在设置中提高缓存大小。</string>
   <!--Statistics fragment-->
   <string name="total_time_listened_to_podcasts">总播放时长：</string>
-  <string name="statistics_details_dialog">%1$d out of %2$d episodes started.\n\nPlayed %3$s out of %4$s.</string>
+  <string name="statistics_details_dialog">共%2$d首，播放了%1$d首\n\n播放了%3$s小时，一共%4$s小时.</string>
   <!--Main activity-->
   <string name="drawer_open">打开菜单</string>
   <string name="drawer_close">关闭菜单</string>
@@ -73,7 +73,7 @@
   <string name="retry_label">重试</string>
   <string name="auto_download_label">包含到自动下载</string>
   <string name="auto_download_apply_to_items_title"> 应用到之前的曲目中</string>
-  <string name="auto_delete_label">自动删除剧集</string>
+  <string name="auto_delete_label">自动删除</string>
   <string name="parallel_downloads_suffix">\u0020 并行下载</string>
   <string name="feed_auto_download_global">全局默认</string>
   <string name="feed_auto_download_always"> 总是</string>
@@ -103,8 +103,8 @@
   <string name="share_link_label">分享网站链接</string>
   <string name="share_link_with_position_label">分享网站链接与位置</string>
   <string name="share_feed_url_label">分享订阅地址</string>
-  <string name="share_item_url_label">分享剧集文件URL</string>
-  <string name="share_item_url_with_position_label">分享剧集文件URL及其状态</string>
+  <string name="share_item_url_label">分享文件URL</string>
+  <string name="share_item_url_with_position_label">分享文件URL及其状态</string>
   <string name="feed_remover_msg">删除订阅</string>
   <string name="load_complete_feed">刷新全部订阅</string>
   <string name="hide_episodes_title">隐藏曲目</string>
@@ -198,7 +198,7 @@
   <string name="no_media_playing_label">没有可播放的媒体</string>
   <string name="player_buffering_msg">缓冲中</string>
   <string name="playbackservice_notification_title">播客播放中</string>
-  <string name="unknown_media_key">AntennaPod - 未知媒体密钥: %1$d</string>
+  <string name="unknown_media_key">iPoca - 未知媒体密钥: %1$d</string>
   <!--Queue operations-->
   <string name="lock_queue">锁定播放列表</string>
   <string name="unlock_queue">解锁播放列表</string>
@@ -212,25 +212,25 @@
   <string name="sort">排序</string>
   <string name="date">按日期</string>
   <string name="duration">按时长</string>
-  <string name="episode_title">剧集标题</string>
+  <string name="episode_title">曲目标题</string>
   <string name="feed_title">订阅标题</string>
   <string name="ascending">升序</string>
   <string name="descending">降序</string>
   <string name="clear_queue_confirmation_msg">请确认您要清除队列中的全部曲目</string>
   <!--Flattr-->
   <string name="flattr_auth_label">Flattr 登录</string>
-  <string name="flattr_auth_explanation">按下面的按钮开始身份验证过程. 将在浏览器中打开 Flattr 登录界面并要求给予 AntennaPod 访问 Flattr 的权限. 权限许可后, 将自动回到这个界面.</string>
+  <string name="flattr_auth_explanation">按下面的按钮开始身份验证过程. 将在浏览器中打开 Flattr 登录界面并要求给予 iPoca 访问 Flattr 的权限. 权限许可后, 将自动回到这个界面.</string>
   <string name="authenticate_label">验证</string>
   <string name="return_home_label">返回主页</string>
   <string name="flattr_auth_success">验证成功!  现在可以使用应用内 Flattr 相关功能了.</string>
   <string name="no_flattr_token_title">没有找到 Flattr 验证令牌信息</string>
-  <string name="no_flattr_token_notification_msg">您的 flattr 账户似乎并没有连接到 AntennaPod，点这里验证。</string>
-  <string name="no_flattr_token_msg">您的 flattr 账户似乎并没有连接到 AntennaPod. 您可以关联您的账户到AntennaPod以便在应用内flattr条目，或者您可以自己访问条目的网站完成flattr</string>
+  <string name="no_flattr_token_notification_msg">您的 flattr 账户似乎并没有连接到 iPoca，点这里验证。</string>
+  <string name="no_flattr_token_msg">您的 flattr 账户似乎并没有连接到 iPoca. 您可以关联您的账户到iPoca以便在应用内flattr条目，或者您可以自己访问条目的网站完成flattr</string>
   <string name="authenticate_now_label">验证</string>
   <string name="action_forbidden_title">被禁止</string>
-  <string name="action_forbidden_msg">AntennaPod 没有权限执行本动作. 原因可能是: AntennaPod 对您账户的访问令牌被撤销. 你可以重新\"验证\"或访问该网站来授权.</string>
+  <string name="action_forbidden_msg">iPoca 没有权限执行本动作. 原因可能是: iPoca 对您账户的访问令牌被撤销. 你可以重新\"验证\"或访问该网站来授权.</string>
   <string name="access_revoked_title">撤销访问</string>
-  <string name="access_revoked_info">您已经成功撤销 AntennaPod 对账户令牌的访问. 为了完成这个过程, 您必须到 Flattr 网站 \"账户设置-&gt;已批准应用\" 列表内删除本应用.</string>
+  <string name="access_revoked_info">您已经成功撤销 iPoca 对账户令牌的访问. 为了完成这个过程, 您必须到 Flattr 网站 \"账户设置-&gt;已批准应用\" 列表内删除本应用.</string>
   <!--Flattr-->
   <string name="flattr_click_success">成功Flattr一个条目</string>
   <string name="flattr_click_success_count">成功Flattr%d个条目</string>
@@ -239,9 +239,9 @@
   <string name="flattr_click_failure">%sFlattr失败.</string>
   <string name="flattr_click_enqueued">稍后将Flattr该条目</string>
   <string name="flattring_thing">正在Flattr%s</string>
-  <string name="flattring_label">AntennaPod正在Flattr</string>
-  <string name="flattrd_label">AntennaPod已经Flattr</string>
-  <string name="flattrd_failed_label">AntennaPod Flattr失败</string>
+  <string name="flattring_label">iPoca正在Flattr</string>
+  <string name="flattrd_label">iPoca已经Flattr</string>
+  <string name="flattrd_failed_label">iPoca Flattr失败</string>
   <string name="flattr_retrieving_status">查询Flattr结果状态</string>
   <!--Variable Speed-->
   <string name="download_plugin_label">插件下载</string>
@@ -291,7 +291,7 @@
   <string name="pref_flattr_auth_title">Flattr 登录</string>
   <string name="pref_flattr_auth_sum">登录 Flattr 账户, 以便直接使用本应用中的相关功能.</string>
   <string name="pref_flattr_this_app_title">Flattr 本应用</string>
-  <string name="pref_flattr_this_app_sum">支持 AntennaPod 发展, 请 Flattring 他. 谢谢!!
+  <string name="pref_flattr_this_app_sum">支持 iPoca 发展, 请 Flattring 他. 谢谢!!
 </string>
   <string name="pref_revokeAccess_title">撤销访问</string>
   <string name="pref_revokeAccess_sum">撤销访问本应用对您 Flattr 账户的访问权限.</string>
@@ -307,7 +307,7 @@
   <string name="pref_nav_drawer_feed_order_sum">改变你的订阅的排序方式</string>
   <string name="pref_nav_drawer_feed_counter_title">设定订阅数</string>
   <string name="pref_nav_drawer_feed_counter_sum">改变订阅数所代表的信息</string>
-  <string name="pref_set_theme_sum">改变 AntennaPod 外观</string>
+  <string name="pref_set_theme_sum">改变 iPoca 外观</string>
   <string name="pref_automatic_download_title">自动下载</string>
   <string name="pref_automatic_download_sum">配置自动下载的曲目</string>
   <string name="pref_autodl_wifi_filter_title">打开 Wi-Fi 过滤器</string>
@@ -374,7 +374,7 @@
   <string name="opml_import_option">设置 %1$d</string>
   <string name="opml_import_explanation_1">从本地文件系统选择一个特定文件地址。</string>
   <string name="opml_import_explanation_2">使用外部应用程序，例如 Dropbox，Google Drive 或您喜爱的文件管理器打开 OPML 文件。</string>
-  <string name="opml_import_explanation_3"><i>与</i> AntennaPod 一样，许多应用例如Google Mail，Dropbox，Google Drive和大多数文件管理器均可 <i>打开</i> OPML文件。</string>
+  <string name="opml_import_explanation_3"><i>与</i> iPoca 一样，许多应用例如Google Mail，Dropbox，Google Drive和大多数文件管理器均可 <i>打开</i> OPML文件。</string>
   <string name="start_import_label">开始导入</string>
   <string name="opml_import_label">OPML 导入</string>
   <string name="opml_directory_error">错误!</string>
@@ -435,7 +435,7 @@
   <string name="gpodnetauth_device_errorAlreadyUsed">设备编号已被使用</string>
   <string name="gpodnetauth_device_butChoose">选择</string>
   <string name="gpodnetauth_finish_title">登录成功!</string>
-  <string name="gpodnetauth_finish_descr">恭喜! 你的 gpodder.net 帐户与设备已连结完成.  现在开始 AntennaPod 将自动同步你 gpodder.net 帐户内的订阅信息到设备上.</string>
+  <string name="gpodnetauth_finish_descr">恭喜! 你的 gpodder.net 帐户与设备已连结完成.  现在开始 iPoca 将自动同步你 gpodder.net 帐户内的订阅信息到设备上.</string>
   <string name="gpodnetauth_finish_butsyncnow">开始同步</string>
   <string name="gpodnetauth_finish_butgomainscreen">返回主屏</string>
   <string name="gpodnetsync_auth_error_title">gpodder.net 验证错误</string>
@@ -462,7 +462,7 @@
   <string name="pref_pausePlaybackForFocusLoss_title">中断暂停</string>
   <string name="pref_resumeAfterCall_sum">通话结束后恢复播放</string>
   <string name="pref_resumeAfterCall_title">通话后恢复</string>
-  <string name="pref_restart_required">需要重启 AntennaPod 使改变生效。</string>
+  <string name="pref_restart_required">需要重启 iPoca 使改变生效。</string>
   <!--Online feed view-->
   <string name="subscribe_label">订阅</string>
   <string name="subscribed_label">已订阅</string>
@@ -487,7 +487,7 @@
   <string name="keep_updated">保持最新</string>
   <!--Progress information-->
   <string name="progress_upgrading_database">升级数据库</string>
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <string name="sp_apps_importing_feeds_msg">正在从选定的应用中导入订阅...</string>
   <string name="search_itunes_label">搜索 iTunes</string>
   <string name="filter">过滤器</string>
@@ -516,8 +516,8 @@
   <string name="sort_duration_short_long">时长 (短 \u2192 长)</string>
   <string name="sort_duration_long_short">时长 (长 \u2192 短)</string>
   <!--Rating dialog-->
-  <string name="rating_title">喜欢 AntennaPod?</string>
-  <string name="rating_message">如您能在百忙之外抽时间评价一下AntennaPod，我们感激不尽.</string>
+  <string name="rating_title">喜欢 iPoca?</string>
+  <string name="rating_message">如您能在百忙之外抽时间评价一下iPoca，我们感激不尽.</string>
   <string name="rating_never_label">请勿打扰</string>
   <string name="rating_later_label">稍后提醒</string>
   <string name="rating_now_label">好的, 就这样！</string>
@@ -545,4 +545,129 @@
   <!--<string name="cast_failed_to_connect">Could not connect to the device</string>-->
   <string name="cast_failed_setting_volume">音量设置失败</string>
   <string name="cast_failed_media_error_skipping">媒体播放出错.跳转中...</string>
+
+  //test
+
+  <!-- Activitiy and fragment titles -->
+  <string name="channel_label">频道</string>
+
+  <!-- Statistics fragment -->
+  <string name="statistics_mode">统计模式</string>
+  <string name="statistics_mode_normal">计算实际播放的持续时间，播放两次计数两次(标记为已播放的不计入)</string>
+  <string name="statistics_mode_count_all">计算所有已播放podcast的总数</string>
+  <string name="statistics_speed_not_counted">注意：播放速度不在影响范围内。</string>
+
+  <!-- Main activity -->
+  <string name="drawer_feed_order_most_played">按播放剧集的数量排序</string>
+  <string name="drawer_feed_counter_downloaded">下载的剧集数量</string>
+
+  <!-- Other -->
+  <string name="reset">重置</string>
+  <string name="chapter_duration">章节时长: %1$s</string>
+  <string name="auto_download_apply_to_items_message">新的<i>自动下载</i>设置将自动应用于新剧集。\n您是否将其应用于以前发布的剧集？</string>
+
+  <!-- 'Add Feed' Activity labels -->
+  <string name="podcastdirectories_descr">对于新的播客，您可以搜索iTunes或fyyd，或按名称，类别或受欢迎程度浏览gpodder.net.</string>
+
+  <!-- Actions on feeds -->
+  <string name="mark_all_seen_msg">标示所有剧集为已阅</string>
+  <string name="mark_all_seen_confirmation_msg">请确认您想将所有剧集标记为已阅</string>
+  <string name="rename_feed_label">重命名播客</string>
+  <string name="share_file_label">分享</string>
+  <string name="feed_delete_confirmation_msg">请确认你要删除播客 \"%1$s\" 和其下所有内容</string>
+  <string name="hide_has_media_label">有多媒体文件</string>
+
+  <!-- actions on feeditems -->
+  <string name="delete_label">删除</string>
+
+  <!-- Download messages and labels -->
+  <string name="position_default_label" translate="false">00:00:00</string>
+
+
+  <!--  Variable Speed -->
+  <string name="no_playback_plugin_or_sonic_msg">要使变速播放工作，我们建议启用内置的Sonic媒体播放器[Android 4.1+]\n\n您可以从Play商店下载第三方插件<i> Prestissimo </i>。\n</string>
+
+
+  <!-- Preferences -->
+  <string name="queue_discover">频道</string>
+  <string name="pref_episode_cleanup_summary">如果Auto Download需要内存空间，将会清理不在队列中和未收藏的曲目</string>
+  <string name="pref_hardwareForwardButtonSkips_title">快进按钮设置</string>
+  <string name="pref_hardwareForwardButtonSkips_sum">跳到下一集不快进</string>
+  <string name="pref_hardwarePreviousButtonRestarts_title">上一首按钮设置</string>
+  <string name="pref_hardwarePreviousButtonRestarts_sum">重新开始播放当前的曲目不退回上个曲目</string>
+  <string name="pref_smart_mark_as_played_title">已播智能标记</string>
+  <string name="pref_skip_keeps_episodes_sum">跳过时保持曲目</string>
+  <string name="pref_skip_keeps_episodes_title">保留跳过的曲目</string>
+  <string name="pref_autoUpdateIntervallOrTime_sum">Specify an interval or a specific time of day to refresh the feeds automatically</string>
+  <string name="pref_gpodnet_sync_changes_title">Sync changes now</string>
+  <string name="pref_gpodnet_sync_changes_sum">Sync subscription and episode state changes with gpodder.net.</string>
+  <string name="pref_gpodnet_full_sync_title">Full sync now</string>
+  <string name="pref_gpodnet_full_sync_sum">Sync all subscriptions and episode states with gpodder.net.</string>
+  <string name="pref_gpodnet_sync_sum_last_sync_line">Last sync attempt: %1$s (%2$s)</string>
+  <string name="pref_gpodnet_full_sync_started">Full sync started</string>
+  <string name="pref_gpodnet_login_status"><![CDATA[Logged in as <i>%1$s</i> with device <i>%2$s</i>]]></string>
+  <string name="pref_gpodnet_notifications_title">Show sync error notifications</string>
+  <string name="pref_gpodnet_notifications_sum">This setting does not apply to authentication errors.</string>
+  <string name="pref_fast_forward">Fast Forward Skip Time</string>
+  <string name="pref_fast_forward_sum">Customize the number of seconds to jump forward when the fast forward button is clicked</string>
+  <string name="pref_rewind">Rewind Skip Time</string>
+  <string name="pref_rewind_sum">Customize the number of seconds to jump backwards when the rewind button is clicked</string>
+  <string name="pref_compact_notification_buttons_sum">Change the playback buttons on the lockscreen. The play/pause button is always included.</string>
+  <string name="pref_lockscreen_background_sum">Set the lockscreen background to the current episode\'s image. As a side effect, this will also show the image in third party apps.</string>
+  <string name="experimental_pref">Experimental</string>
+  <string name="pref_sonic_title">Sonic Media Player</string>
+  <string name="pref_sonic_message">Use built-in sonic media player as a replacement for Android\'s native mediaplayer and Prestissimo</string>
+  <string name="pref_cast_message_play_flavor">Enable support for remote media playback on Cast devices (such as Chromecast, Audio Speakers or Android TV)</string>
+  <string name="pref_cast_message_free_flavor">Chromecast requires third party proprietary libraries that are disabled in this version of AntennaPod</string>
+  <string name="pref_enqueue_downloaded_title">Enqueue Dowloaded</string>
+  <string name="pref_enqueue_downloaded_summary">Add downloaded episodes to the queue</string>
+
+
+  <!-- Search -->
+  <string name="search_hint">Search for episodes</string>
+  <string name="found_in_shownotes_label">Found in show notes</string>
+  <string name="found_in_authors_label">Found in authors</string>
+  <string name="found_in_feeds_label">Found in feeds</string>
+  <string name="no_results_for_query">No results were found for \"%1$s\"</string>
+
+  <string name="html_export_label">HTML export</string>
+
+
+  <string name="auto_enable_label">Auto-enable</string>
+  <string name="sleep_timer_enabled_label">Sleep timer enabled</string>
+  <string name="sleep_timer_disabled_label">Sleep timer disabled</string>
+
+  <!-- gpodder.net -->
+  <string name="gpodnetsync_pref_report_successful">Successful</string>
+  <string name="gpodnetsync_pref_report_failed">Failed</string>
+
+  <!-- Directory chooser -->
+  <string name="choose_data_directory_message">Please choose the base of your data folder. AntennaPod will create the appropriate sub-directories.</string>
+
+
+  <!-- Feed information screen -->
+  <string name="episode_filters_description">List of terms used to decide if an episode should be included or excluded when auto downloading</string>
+  <string name="episode_filters_hint">Single words \n\"Multiple Words\"</string>
+
+  <string name="search_fyyd_label">Search fyyd</string>
+
+  <string name="has_media">Has media</string>
+  <string name="selected_has_media_label">Selected episodes with media</string>
+
+  <string name="stereo_to_mono">Downmix: Stereo to mono</string>
+
+  <!-- Casting -->
+  <string name="cast_media_route_menu_title">Play on&#8230;</string>
+  <string name="cast_disconnect_label">Disconnect the cast session</string>
+  <string name="cast_not_castable">Media selected is not compatible with cast device</string>
+  <string name="cast_failed_to_play">Failed to start the playback of media</string>
+  <string name="cast_failed_to_stop">Failed to stop the playback of media</string>
+  <string name="cast_failed_to_pause">Failed to pause the playback of media</string>
+  <!--<string name="cast_failed_to_connect">Could not connect to the device</string>-->
+  <string name="cast_failed_no_connection">No connection to the cast device is present</string>
+  <string name="cast_failed_no_connection_trans">Connection to the cast device has been lost. Application is trying to re-establish the connection, if possible. Please wait for a few seconds and try again.</string>
+  <string name="cast_failed_perform_action">Failed to perform the action</string>
+  <string name="cast_failed_status_request">Failed to sync up with the cast device</string>
+  <string name="cast_failed_seek">Failed to seek to the new position on the cast device</string>
+  <string name="cast_failed_receiver_player_error">Receiver player has encountered a severe error</string>
 </resources>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">Kanály</string>
   <string name="statistics_label">Statistiky</string>
@@ -214,7 +214,7 @@
   <string name="no_media_playing_label">Žádné probíhající přehrávání</string>
   <string name="player_buffering_msg">Načítání</string>
   <string name="playbackservice_notification_title">Přehrávaný podcast</string>
-  <string name="unknown_media_key">AntennaPod - Neznámý klíč médií: %1$d</string>
+  <string name="unknown_media_key">iPoca - Neznámý klíč médií: %1$d</string>
   <!--Queue operations-->
   <string name="lock_queue">Zamknout frontu</string>
   <string name="unlock_queue">Odemknout frontu</string>
@@ -235,18 +235,18 @@
   <string name="clear_queue_confirmation_msg">Potvrďte prosím, že chcete vyčistit tuto frontu a VŠECHNY v ní obsažené epizody</string>
   <!--Flattr-->
   <string name="flattr_auth_label">Flattr přihlášení</string>
-  <string name="flattr_auth_explanation">Stiskněte následující tlačítko pro spuštění autentizačního procesu. Budete přesměrováni na přihlašovací obrazovku flattru a vyzváni k potvrzení udělení práv pro použití flattru aplikací AntennaPod. Po udělení práv se automaticky vrátíte na tuto obrazovku.</string>
+  <string name="flattr_auth_explanation">Stiskněte následující tlačítko pro spuštění autentizačního procesu. Budete přesměrováni na přihlašovací obrazovku flattru a vyzváni k potvrzení udělení práv pro použití flattru aplikací iPoca. Po udělení práv se automaticky vrátíte na tuto obrazovku.</string>
   <string name="authenticate_label">Přihlásit</string>
   <string name="return_home_label">Návrat domů</string>
   <string name="flattr_auth_success">Úspěšně přihlášen. Nyní můžete využít flattru přímo v aplikaci. </string>
   <string name="no_flattr_token_title">Nenalezen Flattr token</string>
-  <string name="no_flattr_token_notification_msg">Váš flattr účet není propojen s AntennaPod. Pro ověření tapněte sem.</string>
-  <string name="no_flattr_token_msg">Váš flattr učet není napojen do AntenaPodu. Můžete buďto napojit váš flattr účet do AntennaPodu a využít flattru přímo v aplikaci a nebo použít flattr přímo na webových stránkách zdroje v prohlížeči.  </string>
+  <string name="no_flattr_token_notification_msg">Váš flattr účet není propojen s iPoca. Pro ověření tapněte sem.</string>
+  <string name="no_flattr_token_msg">Váš flattr učet není napojen do AntenaPodu. Můžete buďto napojit váš flattr účet do iPocau a využít flattru přímo v aplikaci a nebo použít flattr přímo na webových stránkách zdroje v prohlížeči.  </string>
   <string name="authenticate_now_label">Přihlásit</string>
   <string name="action_forbidden_title">Akce zakázána</string>
-  <string name="action_forbidden_msg">AntennaPod nemá oprávnění pro tuto akci. Důvodem může být revokování přístupového tokenu AntennaPodu k vašemu účtu. Přístup můžete obnovit nebo využít prohlížeče k návštěvě stránky zdroje.</string>
+  <string name="action_forbidden_msg">iPoca nemá oprávnění pro tuto akci. Důvodem může být revokování přístupového tokenu iPocau k vašemu účtu. Přístup můžete obnovit nebo využít prohlížeče k návštěvě stránky zdroje.</string>
   <string name="access_revoked_title">Přístup ukončen</string>
-  <string name="access_revoked_info">Úspěšně revokován přístup AntennPodu k vašemu účtu. Pro dokončení tohoto procesu je  ještě zapotřebí na stránkách flattru odebrat z vašeho účtu AntennaPod ze seznamu povolených aplikací.</string>
+  <string name="access_revoked_info">Úspěšně revokován přístup AntennPodu k vašemu účtu. Pro dokončení tohoto procesu je  ještě zapotřebí na stránkách flattru odebrat z vašeho účtu iPoca ze seznamu povolených aplikací.</string>
   <!--Flattr-->
   <string name="flattr_click_success">Flattrován jeden příspěvek!</string>
   <string name="flattr_click_success_count">Flattrováno %d příspěvků!</string>
@@ -255,14 +255,14 @@
   <string name="flattr_click_failure">Neflattrováno: %s.</string>
   <string name="flattr_click_enqueued">Příspěvek bude flattrován později</string>
   <string name="flattring_thing">Flattruji %s</string>
-  <string name="flattring_label">AntennaPod flattruje</string>
-  <string name="flattrd_label">AntennaPod flattroval</string>
-  <string name="flattrd_failed_label">AntennaPod flattr selhal</string>
+  <string name="flattring_label">iPoca flattruje</string>
+  <string name="flattrd_label">iPoca flattroval</string>
+  <string name="flattrd_failed_label">iPoca flattr selhal</string>
   <string name="flattr_retrieving_status">Získávání flattrovaných příspěvků</string>
   <!--Variable Speed-->
   <string name="download_plugin_label">Stáhnout modul</string>
   <string name="no_playback_plugin_title">Modul není nainstalován</string>
-  <string name="no_playback_plugin_or_sonic_msg">Pro fungující proměnné rychlosti přehrávání doporučujeme povolit zabudovaný Sonic mediaplayer [Android 4.1+].\n\nAlternativně je možné z Obchodu Play stáhnout zásuvný modul třetí strany <i>Prestissimo</i>.\nAntennaPod nenese zodpovědnost za jakékoliv problémy s modulem Prestissimo a ty by měly být hlášeny jeho vývojářům.</string>
+  <string name="no_playback_plugin_or_sonic_msg">Pro fungující proměnné rychlosti přehrávání doporučujeme povolit zabudovaný Sonic mediaplayer [Android 4.1+].\n\nAlternativně je možné z Obchodu Play stáhnout zásuvný modul třetí strany <i>Prestissimo</i>.\niPoca nenese zodpovědnost za jakékoliv problémy s modulem Prestissimo a ty by měly být hlášeny jeho vývojářům.</string>
   <string name="set_playback_speed_label">Rychlosti přehrávání</string>
   <string name="enable_sonic">Povolit Sonic</string>
   <!--Empty list labels-->
@@ -315,7 +315,7 @@
   <string name="pref_flattr_auth_title">Flattr přihlášení</string>
   <string name="pref_flattr_auth_sum">Přihlásit se k flattr účtu a umožnit flattrování přímo z aplikace.</string>
   <string name="pref_flattr_this_app_title">Flattrovat tuto aplikaci</string>
-  <string name="pref_flattr_this_app_sum">Podpořit vývoj AntennaPodu na flatteru. Děkujeme!</string>
+  <string name="pref_flattr_this_app_sum">Podpořit vývoj iPocau na flatteru. Děkujeme!</string>
   <string name="pref_revokeAccess_title">Odebrat přístup</string>
   <string name="pref_revokeAccess_sum">Odebere aplikaci přístupová práva k vašemu flattr účtu.</string>
   <string name="pref_auto_flattr_title">Automatický Flattr</string>
@@ -330,7 +330,7 @@
   <string name="pref_nav_drawer_feed_order_sum">Upravit pořadí vašich sbírek</string>
   <string name="pref_nav_drawer_feed_counter_title">Nastavit počítadlo sbírek</string>
   <string name="pref_nav_drawer_feed_counter_sum">Upravit informaci zobrazovanou počítadlem sbírek</string>
-  <string name="pref_set_theme_sum">Změnit vzhled AntennaPod.</string>
+  <string name="pref_set_theme_sum">Změnit vzhled iPoca.</string>
   <string name="pref_automatic_download_title">Automatické stahování</string>
   <string name="pref_automatic_download_sum">Nastavení automatického stahování epizod.</string>
   <string name="pref_autodl_wifi_filter_title">Zapnout Wi-Fi filtr</string>
@@ -396,7 +396,7 @@
   <string name="pref_no_browser_found">Webový prohlížeč nenalezen.</string>
   <string name="pref_cast_title">Chromecast podpora</string>
   <string name="pref_cast_message_play_flavor">Povolit podporu vzdáleného přehrávání médií na Cast přístrojích (jako třeba Chromecast, Audio Speakers nebo Android TV)</string>
-  <string name="pref_cast_message_free_flavor">Chromecast vyžaduje proprietární knihovny třetích stran, které jsou vypnuty v této verzi AntennaPod</string>
+  <string name="pref_cast_message_free_flavor">Chromecast vyžaduje proprietární knihovny třetích stran, které jsou vypnuty v této verzi iPoca</string>
   <!--Auto-Flattr dialog-->
   <string name="auto_flattr_enable">Povolit automatické flattrování</string>
   <string name="auto_flattr_after_percent">Flattrovat díl jakmile bude odehráno %d procent</string>
@@ -415,7 +415,7 @@
   <string name="opml_import_option">Možnost %1$d</string>
   <string name="opml_import_explanation_1">Vybrat umístění v místním souborovém systému.</string>
   <string name="opml_import_explanation_2">Použít externí aplikaci jako třeba Dropbox, Google Drive nebo oblíbeného správce souborů k otevření OPML souboru.</string>
-  <string name="opml_import_explanation_3">Mnoho aplikací jako třeba Google Mail, Dropbox, Google Drive a většina správců souborů umí <i>otevřít</i> OPML soubory <i>v aplikaci</i> AntennaPod.</string>
+  <string name="opml_import_explanation_3">Mnoho aplikací jako třeba Google Mail, Dropbox, Google Drive a většina správců souborů umí <i>otevřít</i> OPML soubory <i>v aplikaci</i> iPoca.</string>
   <string name="start_import_label">Importovat</string>
   <string name="opml_import_label">OPML import</string>
   <string name="opml_directory_error">CHYBA!</string>
@@ -487,7 +487,7 @@
   <string name="gpodnetauth_device_caption_errorEmpty">Titulek nesmí být prázdný</string>
   <string name="gpodnetauth_device_butChoose">Vybrat</string>
   <string name="gpodnetauth_finish_title">Úspěšně přihlášeno!</string>
-  <string name="gpodnetauth_finish_descr">Gratulujeme! Váš gpodder.net účet je nyní úspěšně propojen s vaším zařízením. AntennaPod bude automaticky synchronizovat odebírané podcasty s nastaveným účtem na gpodder.net.</string>
+  <string name="gpodnetauth_finish_descr">Gratulujeme! Váš gpodder.net účet je nyní úspěšně propojen s vaším zařízením. iPoca bude automaticky synchronizovat odebírané podcasty s nastaveným účtem na gpodder.net.</string>
   <string name="gpodnetauth_finish_butsyncnow">Synchronizovat nyní</string>
   <string name="gpodnetauth_finish_butgomainscreen">Přejít na hlavní obrazovku</string>
   <string name="gpodnetsync_auth_error_title">gpodder.net autentizace selhala</string>
@@ -500,7 +500,7 @@
   <string name="selected_folder_label">Vybraný adresář:</string>
   <string name="create_folder_label">Vytvořit adresář</string>
   <string name="choose_data_directory">Vybrat umístění dat</string>
-  <string name="choose_data_directory_message">Vyberte prosím váš výchozí datový adresář. AntennaPod vytvoří všechny potřebné podadresáře.</string>
+  <string name="choose_data_directory_message">Vyberte prosím váš výchozí datový adresář. iPoca vytvoří všechny potřebné podadresáře.</string>
   <string name="choose_data_directory_permission_rationale">Ke změně datového adresáře je vyžadován přístup k externímu úložišti</string>
   <string name="create_folder_msg">Vytvořit adresář \"%1$s\"?</string>
   <string name="create_folder_success">Nový adresář vytvořen</string>
@@ -517,7 +517,7 @@
   <string name="pref_pausePlaybackForFocusLoss_title">Automatické pozastavení přehrávání</string>
   <string name="pref_resumeAfterCall_sum">Pokračovat v přehrávání po ukončení telefonního hovoru</string>
   <string name="pref_resumeAfterCall_title">Pokračovat po telefonátu</string>
-  <string name="pref_restart_required">Pro aktivování změn nastavení bylo třeba restartovat aplikaci AntennaPod.</string>
+  <string name="pref_restart_required">Pro aktivování změn nastavení bylo třeba restartovat aplikaci iPoca.</string>
   <!--Online feed view-->
   <string name="subscribe_label">Odebírat</string>
   <string name="subscribed_label">Odebíráno</string>
@@ -544,7 +544,7 @@
   <string name="keep_updated">Udržovat aktuální</string>
   <!--Progress information-->
   <string name="progress_upgrading_database">Probíhá aktualizace databáze</string>
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <string name="sp_apps_importing_feeds_msg">Importuji odběry z jednoúčelových aplikací...</string>
   <string name="search_itunes_label">Prohledat iTunes</string>
   <string name="filter">Filtr</string>
@@ -576,8 +576,8 @@
   <string name="sort_duration_short_long">Délka (Krátké \u2192 Dlouhé)</string>
   <string name="sort_duration_long_short">Délka (Dlouhé \u2192 Krátké)</string>
   <!--Rating dialog-->
-  <string name="rating_title">Líbí se vám AntennaPod?</string>
-  <string name="rating_message">Oceníme, pokud věnujete chvíli času ohodnocení AntennaPod.</string>
+  <string name="rating_title">Líbí se vám iPoca?</string>
+  <string name="rating_message">Oceníme, pokud věnujete chvíli času ohodnocení iPoca.</string>
   <string name="rating_never_label">Neobtěžuj mě</string>
   <string name="rating_later_label">Upozornit později</string>
   <string name="rating_now_label">Jasně, s radostí!</string>

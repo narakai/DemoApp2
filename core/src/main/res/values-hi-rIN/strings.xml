@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">फिड्स</string>
   <string name="new_label">नया</string>
@@ -114,17 +114,17 @@
   <string name="move_to_bottom_label">नीचे जाएं</string>
   <!--Flattr-->
   <string name="flattr_auth_label">Flattr पंजीकरण करें</string>
-  <string name="flattr_auth_explanation">प्रमाणीकरण प्रक्रिया शुरू करने के लिए नीचे दिए गए बटन को दबाएं. आपके ब्राउज़र में flattr लॉगिन स्क्रीन को भेजा जाएगा और flattr बातें करने के लिए अनुमति AntennaPod को देने के लिए कहा जाएगा. आपकि अनुमति देने के बाद, आप स्वतः ही इस स्क्रीन में वापस आ जाएगें.</string>
+  <string name="flattr_auth_explanation">प्रमाणीकरण प्रक्रिया शुरू करने के लिए नीचे दिए गए बटन को दबाएं. आपके ब्राउज़र में flattr लॉगिन स्क्रीन को भेजा जाएगा और flattr बातें करने के लिए अनुमति iPoca को देने के लिए कहा जाएगा. आपकि अनुमति देने के बाद, आप स्वतः ही इस स्क्रीन में वापस आ जाएगें.</string>
   <string name="authenticate_label">प्रामाणीकरण</string>
   <string name="return_home_label">होम पर लौटें</string>
   <string name="flattr_auth_success">प्रमाणीकरण सफल रहा था! अब आप अनुप्रयोग के भीतर चीजों को flattr कर सकते हैं.</string>
   <string name="no_flattr_token_title">कोई Flattr टोकन नहीं पाया गया</string>
-  <string name="no_flattr_token_msg">आपकी flattr खाते का AntennaPod से जुड़ा होना प्रतीत नहीं होता. आप या तो AntennaPod को अपने खाते से कनेक्ट कर सकते हैं अनुप्रयोग के भीतर चीजों             को flattr करने के लिए या आप इसे वहाँ flattr करने के लिए वेबसाइट पर जा सकते  हैं.</string>
+  <string name="no_flattr_token_msg">आपकी flattr खाते का iPoca से जुड़ा होना प्रतीत नहीं होता. आप या तो iPoca को अपने खाते से कनेक्ट कर सकते हैं अनुप्रयोग के भीतर चीजों             को flattr करने के लिए या आप इसे वहाँ flattr करने के लिए वेबसाइट पर जा सकते  हैं.</string>
   <string name="authenticate_now_label">प्रामाणीकरण</string>
   <string name="action_forbidden_title">कार्रवाई मना</string>
-  <string name="action_forbidden_msg">AntennaPod को इस कार्रवाई के लिए अनुमति नहीं है.इस के लिए कारण हो सकता है की आपके खाते में AntennaPod की पहुँच टोकन को निरस्त किया गया है.आप या तो फिर से प्रमाणित कर सकते हैं या बजाय किसी बात के वेबसाइट पर जा सकते हैं.</string>
+  <string name="action_forbidden_msg">iPoca को इस कार्रवाई के लिए अनुमति नहीं है.इस के लिए कारण हो सकता है की आपके खाते में iPoca की पहुँच टोकन को निरस्त किया गया है.आप या तो फिर से प्रमाणित कर सकते हैं या बजाय किसी बात के वेबसाइट पर जा सकते हैं.</string>
   <string name="access_revoked_title">प्रवेश निरस्त किया</string>
-  <string name="access_revoked_info">आपने सफलतापूर्वक अपने खाते में AntennaPod पहुँच टोकन निरस्त कर दिया है. इस प्रक्रिया को पूरा करने के लिए, आपको flattr वेबसाइट पर अपने खाते की सेटिंग्स में अनुमोदित आवेदनों की सूची से इस एप्लिकेशन को हटाना होगा.</string>
+  <string name="access_revoked_info">आपने सफलतापूर्वक अपने खाते में iPoca पहुँच टोकन निरस्त कर दिया है. इस प्रक्रिया को पूरा करने के लिए, आपको flattr वेबसाइट पर अपने खाते की सेटिंग्स में अनुमोदित आवेदनों की सूची से इस एप्लिकेशन को हटाना होगा.</string>
   <!--Flattr-->
   <string name="flattr_click_success">सफलतापूर्वक यह बात Flattr किया</string>
   <string name="flattr_click_success_count">सफलतापूर्वक %d बातोंको Flattr किया</string>
@@ -157,12 +157,12 @@
   <string name="pref_flattr_auth_title">Flattr पंजीकरण करें</string>
   <string name="pref_flattr_auth_sum">App से सीधे अपनी बातें flattr करने के लिए अपने flattr खाते में प्रवेश करें.</string>
   <string name="pref_flattr_this_app_title">इस app को Flattr करें</string>
-  <string name="pref_flattr_this_app_sum">यह flattring द्वारा AntennaPod के विकास का समर्थन करें. धन्यवाद!</string>
+  <string name="pref_flattr_this_app_sum">यह flattring द्वारा iPoca के विकास का समर्थन करें. धन्यवाद!</string>
   <string name="pref_revokeAccess_title">उपयोग रद्द</string>
   <string name="pref_revokeAccess_sum">इस अनुप्रयोग के लिए अपने flattr खाते के लिए उपयोग की अनुमति रद्द करें.</string>
   <string name="user_interface_label">यूजर इंटरफेस</string>
   <string name="pref_set_theme_title">थीम का चयन करें</string>
-  <string name="pref_set_theme_sum">AntennaPod का प्रकटन बदलें.</string>
+  <string name="pref_set_theme_sum">iPoca का प्रकटन बदलें.</string>
   <string name="pref_automatic_download_title">स्वचालित डाउनलोड</string>
   <string name="pref_automatic_download_sum">एपिसोड के स्वत: डाउनलोड विन्यस्त करें.</string>
   <string name="pref_autodl_wifi_filter_title">वाई-फाई फिल्टर सक्षम करें</string>
@@ -228,7 +228,7 @@
   <string name="gpodnetauth_device_errorAlreadyUsed">डिवाइस आईडी पहले से ही उपयोग में</string>
   <string name="gpodnetauth_device_butChoose">चुनें</string>
   <string name="gpodnetauth_finish_title">लॉगिन सफल!</string>
-  <string name="gpodnetauth_finish_descr">बधाई हो! आपकी gpodder.net खाता अब आपके डिवाइस के साथ जुड़ा हुआ है. AntennaPod अब से स्वचालित रूप से आपके gpodder.net खाते के साथ अपने डिवाइस पर सदस्यता सिंक जाएगा.</string>
+  <string name="gpodnetauth_finish_descr">बधाई हो! आपकी gpodder.net खाता अब आपके डिवाइस के साथ जुड़ा हुआ है. iPoca अब से स्वचालित रूप से आपके gpodder.net खाते के साथ अपने डिवाइस पर सदस्यता सिंक जाएगा.</string>
   <string name="gpodnetauth_finish_butsyncnow">अब सिंक प्रारंभ करें</string>
   <string name="gpodnetauth_finish_butgomainscreen">मुख्य स्क्रीन पर जाएं</string>
   <string name="gpodnetsync_auth_error_title">gpodder.net प्रमाणन त्रुटि</string>
@@ -255,7 +255,7 @@
   <!--Content descriptions for image buttons-->
   <!--Feed information screen-->
   <!--Progress information-->
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <!--Episodes apply actions-->
   <!--Sort-->
   <!--Rating dialog-->

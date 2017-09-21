@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">Feed</string>
   <string name="statistics_label">Statistiche</string>
@@ -200,7 +200,7 @@
   <string name="no_media_playing_label">Nessun elemento multimediale in riproduzione</string>
   <string name="player_buffering_msg">Buffer in corso</string>
   <string name="playbackservice_notification_title">Riproduzione del podcast in corso</string>
-  <string name="unknown_media_key">AntennaPod - Chiave dell\'elemento multimediale sconosciuta: %1$d</string>
+  <string name="unknown_media_key">iPoca - Chiave dell\'elemento multimediale sconosciuta: %1$d</string>
   <!--Queue operations-->
   <string name="lock_queue">Blocca la coda</string>
   <string name="unlock_queue">Sblocca la coda</string>
@@ -221,18 +221,18 @@
   <string name="clear_queue_confirmation_msg">Per favore conferma che vuoi rimuovere dalla coda TUTTI gli episodi in essa presenti.</string>
   <!--Flattr-->
   <string name="flattr_auth_label">Accesso a Flattr</string>
-  <string name="flattr_auth_explanation">Premi il tasto seguente per iniziare il processo di autenticazione. Sarai trasferito alla pagina di login di flattr sul tuo browser e ti sarà richiesto di garantire ad AntennaPod il permesso di effettuare microdonazioni. Dopo la tua autorizzazione, sarai riportato alla seguente schermata in modo automatico.</string>
+  <string name="flattr_auth_explanation">Premi il tasto seguente per iniziare il processo di autenticazione. Sarai trasferito alla pagina di login di flattr sul tuo browser e ti sarà richiesto di garantire ad iPoca il permesso di effettuare microdonazioni. Dopo la tua autorizzazione, sarai riportato alla seguente schermata in modo automatico.</string>
   <string name="authenticate_label">Autenticazione</string>
   <string name="return_home_label">Ritorna alla pagina iniziale</string>
   <string name="flattr_auth_success">Autenticazione avvenuta con successo! Adesso puoi microdonare con flattr dall\'interno dell\'app.</string>
   <string name="no_flattr_token_title">Nessun token flattr trovato</string>
-  <string name="no_flattr_token_notification_msg">Il tuo account di Flattr non sembra essere collegato ad AntennaPod. Premi qui per autenticarti.</string>
-  <string name="no_flattr_token_msg">Il tuo account flattr non sembra essere collegato ad AntennaPod. Potresti collegare il tuo account ad AntennaPod per utilizzare flattr dall\'app oppure puoi visitare il sito per utilizzare flattr direttamente da lì.</string>
+  <string name="no_flattr_token_notification_msg">Il tuo account di Flattr non sembra essere collegato ad iPoca. Premi qui per autenticarti.</string>
+  <string name="no_flattr_token_msg">Il tuo account flattr non sembra essere collegato ad iPoca. Potresti collegare il tuo account ad iPoca per utilizzare flattr dall\'app oppure puoi visitare il sito per utilizzare flattr direttamente da lì.</string>
   <string name="authenticate_now_label">Autenticati</string>
   <string name="action_forbidden_title">Azione proibita</string>
-  <string name="action_forbidden_msg">AntennaPod non ha il permesso di effettuare questa azione. La ragione potrebbe essere che il token di accesso di AntennaPod al tuo account è stato revocato. Puoi eseguire la re-autenticazione o altrimenti visitare il sito web.</string>
+  <string name="action_forbidden_msg">iPoca non ha il permesso di effettuare questa azione. La ragione potrebbe essere che il token di accesso di iPoca al tuo account è stato revocato. Puoi eseguire la re-autenticazione o altrimenti visitare il sito web.</string>
   <string name="access_revoked_title">Accesso revocato</string>
-  <string name="access_revoked_info">Hai revocato l\'accesso di AntennaPod al tuo account. Al fine di completare il processo devi rimuovere l\'app dalla lista delle applicazioni autorizzare nelle impostazioni del tuo account sul sito di flattr.</string>
+  <string name="access_revoked_info">Hai revocato l\'accesso di iPoca al tuo account. Al fine di completare il processo devi rimuovere l\'app dalla lista delle applicazioni autorizzare nelle impostazioni del tuo account sul sito di flattr.</string>
   <!--Flattr-->
   <string name="flattr_click_success">Caricata una cosa su Flattr!</string>
   <string name="flattr_click_success_count">Caricate %d cose su Flattr!</string>
@@ -241,9 +241,9 @@
   <string name="flattr_click_failure">Non caricato su Flattr: %s.</string>
   <string name="flattr_click_enqueued">La cosa verrà caricata su Flattr più tardi</string>
   <string name="flattring_thing">Caricamento su Flattr di %s in corso</string>
-  <string name="flattring_label">AntennaPod sta eseguendo Flattr</string>
-  <string name="flattrd_label">AntennaPod ha caricato su Flattr</string>
-  <string name="flattrd_failed_label">Caricamento su Flattr di AntennaPod fallito</string>
+  <string name="flattring_label">iPoca sta eseguendo Flattr</string>
+  <string name="flattrd_label">iPoca ha caricato su Flattr</string>
+  <string name="flattrd_failed_label">Caricamento su Flattr di iPoca fallito</string>
   <string name="flattr_retrieving_status">Ricezione di cose caricate su Flattr in corso</string>
   <!--Variable Speed-->
   <string name="download_plugin_label">Scarica plugin</string>
@@ -286,7 +286,7 @@
   <string name="pref_flattr_auth_title">Flattr sign-in</string>
   <string name="pref_flattr_auth_sum">Collega il tuo account flattr per utilizzare flattr direttamente dall\'app</string>
   <string name="pref_flattr_this_app_title">Supporta con flattr questa app</string>
-  <string name="pref_flattr_this_app_sum">Supporta lo sviluppo di AntennaPod tramite flattr. Grazie!</string>
+  <string name="pref_flattr_this_app_sum">Supporta lo sviluppo di iPoca tramite flattr. Grazie!</string>
   <string name="pref_revokeAccess_title">Revoca l\'accesso</string>
   <string name="pref_revokeAccess_sum">Revoca il permesso, a questa applicazione, di accedere al tuo account flattr.</string>
   <string name="pref_auto_flattr_title">Flattr automatico</string>
@@ -294,7 +294,7 @@
   <string name="user_interface_label">Interfaccia utente</string>
   <string name="pref_set_theme_title">Seleziona il tema</string>
   <string name="pref_nav_drawer_feed_order_title">Imposta l\'ordine delle Iscrizioni</string>
-  <string name="pref_set_theme_sum">Cambia l\'aspetto di AntennaPod</string>
+  <string name="pref_set_theme_sum">Cambia l\'aspetto di iPoca</string>
   <string name="pref_automatic_download_title">Download automatico</string>
   <string name="pref_automatic_download_sum">Configura il download automatico degli episodi</string>
   <string name="pref_autodl_wifi_filter_title">Abilita il filtro Wi-Fi</string>
@@ -404,7 +404,7 @@
   <string name="gpodnetauth_device_errorAlreadyUsed">ID di dispositivo già in uso</string>
   <string name="gpodnetauth_device_butChoose">Scegli</string>
   <string name="gpodnetauth_finish_title">Login effettuato!</string>
-  <string name="gpodnetauth_finish_descr">Congraturazioni! Il tuo account gpodder.net è stato collegato con il tuo dispositivo. Da ora AntennaPod sincronizzerà automaticamente le sottoscrizioni sul tuo dispositivo con il tuo account gpodder.net.</string>
+  <string name="gpodnetauth_finish_descr">Congraturazioni! Il tuo account gpodder.net è stato collegato con il tuo dispositivo. Da ora iPoca sincronizzerà automaticamente le sottoscrizioni sul tuo dispositivo con il tuo account gpodder.net.</string>
   <string name="gpodnetauth_finish_butsyncnow">Avvia la sincronizzazione</string>
   <string name="gpodnetauth_finish_butgomainscreen">Vai alla schermata principale</string>
   <string name="gpodnetsync_auth_error_title">errore di autenticazione su gpodder.net</string>
@@ -449,7 +449,7 @@
   <string name="episode_filters_exclude">Escludi</string>
   <string name="keep_updated">Mantieni Aggiornato</string>
   <!--Progress information-->
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <string name="sp_apps_importing_feeds_msg">Importazione di sottoscrizioni da applicazioni monouso in corso...</string>
   <string name="search_itunes_label">Cerca su iTunes</string>
   <string name="filter">Filtro</string>
@@ -472,7 +472,7 @@
   <string name="sort_duration_short_long">Durata (Short \u2192 Long)</string>
   <string name="sort_duration_long_short">Durata (Long \u2192 Short)</string>
   <!--Rating dialog-->
-  <string name="rating_title">Ti piace AntennaPod?</string>
+  <string name="rating_title">Ti piace iPoca?</string>
   <string name="rating_later_label">Ricordamelo più tardi</string>
   <!--Audio controls-->
   <string name="volume">Volume</string>

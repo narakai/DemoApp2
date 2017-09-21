@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">フィード</string>
   <string name="statistics_label">統計情報</string>
@@ -216,7 +216,7 @@
   <string name="no_media_playing_label">再生するメディアがありません</string>
   <string name="player_buffering_msg">バッファー中</string>
   <string name="playbackservice_notification_title">ポッドキャストを再生中</string>
-  <string name="unknown_media_key">AntennaPod - 不明なメディアキー: %1$d</string>
+  <string name="unknown_media_key">iPoca - 不明なメディアキー: %1$d</string>
   <!--Queue operations-->
   <string name="lock_queue">キューをロック</string>
   <string name="unlock_queue">キューのロックを解除</string>
@@ -237,18 +237,18 @@
   <string name="clear_queue_confirmation_msg">クリアする、キューに含まれるすべてのエピソードを確認してください。</string>
   <!--Flattr-->
   <string name="flattr_auth_label">Flattrにサインイン</string>
-  <string name="flattr_auth_explanation">認証処理を開始するには、下のボタンを押します。お使いのブラウザでflattrのログイン画面に転送され、AntennaPodにflattrする許可を与えるように求められます。あなたが許可を与えた後、自動的にこの画面に戻ります。</string>
+  <string name="flattr_auth_explanation">認証処理を開始するには、下のボタンを押します。お使いのブラウザでflattrのログイン画面に転送され、iPocaにflattrする許可を与えるように求められます。あなたが許可を与えた後、自動的にこの画面に戻ります。</string>
   <string name="authenticate_label">認証</string>
   <string name="return_home_label">ホームに戻る</string>
   <string name="flattr_auth_success">認証が成功しました! アプリからflattrすることができます。</string>
   <string name="no_flattr_token_title">Flattrのトークンが見つかりません</string>
-  <string name="no_flattr_token_notification_msg">あなたのflattrアカウントがAntennaPodに接続していないようです。認証するにはここをタップしてください。</string>
-  <string name="no_flattr_token_msg">あなたのflattrアカウントがAntennaPodに接続していないようです。アプリからflattrするためにAntennaPodのアカウントに接続するか、またはflattrするためにWebサイトを訪問してください。</string>
+  <string name="no_flattr_token_notification_msg">あなたのflattrアカウントがiPocaに接続していないようです。認証するにはここをタップしてください。</string>
+  <string name="no_flattr_token_msg">あなたのflattrアカウントがiPocaに接続していないようです。アプリからflattrするためにiPocaのアカウントに接続するか、またはflattrするためにWebサイトを訪問してください。</string>
   <string name="authenticate_now_label">認証</string>
   <string name="action_forbidden_title">操作は禁止されています</string>
-  <string name="action_forbidden_msg">AntennaPodにこの操作をする権限がありません。あなたのアカウントへのAntennaPodのアクセストークンが取り消されたことが考えられます。あなたは再認証するか、またはその代わりにWebサイトを訪問してください。</string>
+  <string name="action_forbidden_msg">iPocaにこの操作をする権限がありません。あなたのアカウントへのiPocaのアクセストークンが取り消されたことが考えられます。あなたは再認証するか、またはその代わりにWebサイトを訪問してください。</string>
   <string name="access_revoked_title">アクセスが取り消されました</string>
-  <string name="access_revoked_info">あなたのアカウントへのAntennaPodのアクセストークンを取り消しました。処理を完了するには、flattrのWebサイトで、あなたのアカウント設定で承認されたアプリケーションのリストから、このアプリを削除する必要があります。</string>
+  <string name="access_revoked_info">あなたのアカウントへのiPocaのアクセストークンを取り消しました。処理を完了するには、flattrのWebサイトで、あなたのアカウント設定で承認されたアプリケーションのリストから、このアプリを削除する必要があります。</string>
   <!--Flattr-->
   <string name="flattr_click_success">1 件Flattrしました!</string>
   <string name="flattr_click_success_count">%d 件Flattrしました!</string>
@@ -257,14 +257,14 @@
   <string name="flattr_click_failure">Flattrしませんでした: %s.</string>
   <string name="flattr_click_enqueued">後でFlattrされます</string>
   <string name="flattring_thing">Flattr中 %s</string>
-  <string name="flattring_label">AntennaPod がFlattr中</string>
-  <string name="flattrd_label">AntennaPod がFlattrしました</string>
-  <string name="flattrd_failed_label">AntennaPod はFlattrに失敗しました</string>
+  <string name="flattring_label">iPoca がFlattr中</string>
+  <string name="flattrd_label">iPoca がFlattrしました</string>
+  <string name="flattrd_failed_label">iPoca はFlattrに失敗しました</string>
   <string name="flattr_retrieving_status">Flattｒの取得中</string>
   <!--Variable Speed-->
   <string name="download_plugin_label">プラグインをダウンロード</string>
   <string name="no_playback_plugin_title">プラグイン はインストールされていません</string>
-  <string name="no_playback_plugin_or_sonic_msg">再生速度の変更を機能させるには、内蔵の Sonic メディアプレーヤーを有効にすることを推奨します [Android 4.1+]。代わりに、Google Play からサードパーティのプラグイン <i>Prestissimo</i> をダウンロードすることができます。\nPrestissimo での問題は AntennaPod の責任ではなく、プラグインのオーナーに報告すべきです。</string>
+  <string name="no_playback_plugin_or_sonic_msg">再生速度の変更を機能させるには、内蔵の Sonic メディアプレーヤーを有効にすることを推奨します [Android 4.1+]。代わりに、Google Play からサードパーティのプラグイン <i>Prestissimo</i> をダウンロードすることができます。\nPrestissimo での問題は iPoca の責任ではなく、プラグインのオーナーに報告すべきです。</string>
   <string name="set_playback_speed_label">再生速度</string>
   <string name="enable_sonic">Sonic を有効にする</string>
   <!--Empty list labels-->
@@ -319,7 +319,7 @@
   <string name="pref_flattr_auth_title">Flattrにサインイン</string>
   <string name="pref_flattr_auth_sum">アプリから直接Flattrするため、あなたのFlattrアカウントにサインインしてください。</string>
   <string name="pref_flattr_this_app_title">このアプリをFlattr</string>
-  <string name="pref_flattr_this_app_sum">FlattrしてAntennaPodの開発を支援してください。ありがとうございます!</string>
+  <string name="pref_flattr_this_app_sum">FlattrしてiPocaの開発を支援してください。ありがとうございます!</string>
   <string name="pref_revokeAccess_title">アクセスを取り消し</string>
   <string name="pref_revokeAccess_sum">あなたのflattrアカウントへのこのアプリのアクセス許可を取り消します。</string>
   <string name="pref_auto_flattr_title">自動Flattr</string>
@@ -334,7 +334,7 @@
   <string name="pref_nav_drawer_feed_order_sum">購読の注文を変更します</string>
   <string name="pref_nav_drawer_feed_counter_title">購読カウンターをセット</string>
   <string name="pref_nav_drawer_feed_counter_sum">購読カウンターで表示される情報を変更します</string>
-  <string name="pref_set_theme_sum">AntennaPodの外観を変更します。</string>
+  <string name="pref_set_theme_sum">iPocaの外観を変更します。</string>
   <string name="pref_automatic_download_title">自動ダウンロード</string>
   <string name="pref_automatic_download_sum">エピソードの自動ダウンロードを構成します。</string>
   <string name="pref_autodl_wifi_filter_title">Wi-Fiフィルターを有効にする</string>
@@ -405,7 +405,7 @@
   <string name="pref_no_browser_found">Webブラウザーが見つかりません。</string>
   <string name="pref_cast_title">Chromecast サポート</string>
   <string name="pref_cast_message_play_flavor">(Chromecast、オーディオスピーカー、Android TV など) キャストデバイス上でリモートメディア再生のサポートを有効にします</string>
-  <string name="pref_cast_message_free_flavor">Chromecast は AntennaPod のこのバージョンで無効になっているサードパーティ独自のライブラリーが必要です</string>
+  <string name="pref_cast_message_free_flavor">Chromecast は iPoca のこのバージョンで無効になっているサードパーティ独自のライブラリーが必要です</string>
   <string name="pref_enqueue_downloaded_title">ダウンロード済みをキューに入れる</string>
   <string name="pref_enqueue_downloaded_summary">ダウンロードしたエピソードをキューに追加します</string>
   <!--Auto-Flattr dialog-->
@@ -428,7 +428,7 @@
   <string name="opml_import_option">オプション %1$d</string>
   <string name="opml_import_explanation_1">ローカルのファイルシステムから指定するファイルパスを選択してください。</string>
   <string name="opml_import_explanation_2">Dropbox、Google ドライブ、またはお好みのファイルマネージャなどの外部アプリケーションを使用して、OPML ファイルを開いてください。</string>
-  <string name="opml_import_explanation_3">Google メール、Dropbox、Google ドライブ、および多くのファイルマネージャーなどのアプリケーションで、AntennaPod <i>の</i> OPML ファイルを <i>開く</i> ことができます。</string>
+  <string name="opml_import_explanation_3">Google メール、Dropbox、Google ドライブ、および多くのファイルマネージャーなどのアプリケーションで、iPoca <i>の</i> OPML ファイルを <i>開く</i> ことができます。</string>
   <string name="start_import_label">インポート開始</string>
   <string name="opml_import_label">OPMLインポート</string>
   <string name="opml_directory_error">エラー!</string>
@@ -494,7 +494,7 @@
   <string name="gpodnetauth_device_caption_errorEmpty">キャプションは空にできません</string>
   <string name="gpodnetauth_device_butChoose">選択</string>
   <string name="gpodnetauth_finish_title">ログインされました！</string>
-  <string name="gpodnetauth_finish_descr">おめでとうございます! あなたのgpodder.netアカウントが今お使いの端末とリンクされました。 AntennaPodは今から自動的にgpodder.netアカウントを使用して端末の購読を同期します。</string>
+  <string name="gpodnetauth_finish_descr">おめでとうございます! あなたのgpodder.netアカウントが今お使いの端末とリンクされました。 iPocaは今から自動的にgpodder.netアカウントを使用して端末の購読を同期します。</string>
   <string name="gpodnetauth_finish_butsyncnow">今すぐ同期を開始</string>
   <string name="gpodnetauth_finish_butgomainscreen">メイン画面に移動</string>
   <string name="gpodnetsync_auth_error_title">gpodder.net 認証エラー</string>
@@ -507,7 +507,7 @@
   <string name="selected_folder_label">選択したフォルダー:</string>
   <string name="create_folder_label">フォルダーを作成</string>
   <string name="choose_data_directory">データ フォルダーを選択</string>
-  <string name="choose_data_directory_message">基本のデータフォルダーを選択してください。 AntennaPodは、適切なサブディレクトリを作成します。</string>
+  <string name="choose_data_directory_message">基本のデータフォルダーを選択してください。 iPocaは、適切なサブディレクトリを作成します。</string>
   <string name="choose_data_directory_permission_rationale">データフォルダーを変更するために外部ストレージのアクセスが必要です</string>
   <string name="create_folder_msg">名前 \"%1$s\" で新しいフォルダーを作成しますか?</string>
   <string name="create_folder_success">新しいフォルダーを作成しました</string>
@@ -524,7 +524,7 @@
   <string name="pref_pausePlaybackForFocusLoss_title">割り込み時に一時停止</string>
   <string name="pref_resumeAfterCall_sum">着信が完了した後に再生を再開します</string>
   <string name="pref_resumeAfterCall_title">着信後に再開</string>
-  <string name="pref_restart_required">この変更を有効にするには AntennaPod を再起動する必要があります。</string>
+  <string name="pref_restart_required">この変更を有効にするには iPoca を再起動する必要があります。</string>
   <!--Online feed view-->
   <string name="subscribe_label">購読</string>
   <string name="subscribed_label">購読しました</string>
@@ -551,7 +551,7 @@
   <string name="keep_updated">更新済を保持</string>
   <!--Progress information-->
   <string name="progress_upgrading_database">データベースをアップグレードしています</string>
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <string name="sp_apps_importing_feeds_msg">単一目的のアプリから購読をインポート中…</string>
   <string name="search_itunes_label">iTunes を検索</string>
   <string name="filter">フィルター</string>
@@ -583,8 +583,8 @@
   <string name="sort_duration_short_long">期間 (短 \u2192 長)</string>
   <string name="sort_duration_long_short">期間 (長 \u2192 短)</string>
   <!--Rating dialog-->
-  <string name="rating_title">AntennaPod は気に入りましたか?</string>
-  <string name="rating_message">AntennaPodを評価する時間をいただければ幸いです。</string>
+  <string name="rating_title">iPoca は気に入りましたか?</string>
+  <string name="rating_message">iPocaを評価する時間をいただければ幸いです。</string>
   <string name="rating_never_label">構わないで</string>
   <string name="rating_later_label">後で確認する</string>
   <string name="rating_now_label">もちろん、します!</string>

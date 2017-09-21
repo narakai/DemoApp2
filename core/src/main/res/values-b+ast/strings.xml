@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">Feeds</string>
   <string name="statistics_label">Estadístiques</string>
@@ -199,7 +199,7 @@
   <string name="no_media_playing_label">Nun hai medios en reproducción</string>
   <string name="player_buffering_msg">Atroxando nel búfer</string>
   <string name="playbackservice_notification_title">Reproduciendo podcast</string>
-  <string name="unknown_media_key">AntennaPod - Clave desconocida de medios: %1$d</string>
+  <string name="unknown_media_key">iPoca - Clave desconocida de medios: %1$d</string>
   <!--Queue operations-->
   <string name="lock_queue">Bloquiar cola</string>
   <string name="unlock_queue">Desbloquiar cola</string>
@@ -220,18 +220,18 @@
   <string name="clear_queue_confirmation_msg">Confirma que quies llimpiar la tola de TOLO episodios nella, por favor.</string>
   <!--Flattr-->
   <string name="flattr_auth_label">Aniciu de sesión de Flattr</string>
-  <string name="flattr_auth_explanation">Primi\'l botón d\'embaxo pa entamar el procesu d\'autenticación. Amosaráse la pantalla d\'aniciu de sesión de Flattr y pidirásete que-y deas permisu a AntennaPod pa facer flattr a coses. Dempués d\'eso, volverás a esta pantalla automáticamente.</string>
+  <string name="flattr_auth_explanation">Primi\'l botón d\'embaxo pa entamar el procesu d\'autenticación. Amosaráse la pantalla d\'aniciu de sesión de Flattr y pidirásete que-y deas permisu a iPoca pa facer flattr a coses. Dempués d\'eso, volverás a esta pantalla automáticamente.</string>
   <string name="authenticate_label">Autenticar</string>
   <string name="return_home_label">Volver al aniciu</string>
   <string name="flattr_auth_success">¡L\'autenticación tuvo ésitu! Agora pues facer flattr a coses dientro l\'aplicación.</string>
   <string name="no_flattr_token_title">Nun s\'alcontró\'l pase de Flattr</string>
-  <string name="no_flattr_token_notification_msg">La to cuenta Flattr nun paez tar coneutada con AntennaPod. Calca equí p\'autenticar.</string>
-  <string name="no_flattr_token_msg">La to cuenta Flattr nun paez tar coneutada con AntennaPod. Pues o coneutar la cuenta con AntennaPod pa facer Flattr a coses dientro l\'aplicación, o pues visitar el sitiu web de la cosa a facer Flattr.</string>
+  <string name="no_flattr_token_notification_msg">La to cuenta Flattr nun paez tar coneutada con iPoca. Calca equí p\'autenticar.</string>
+  <string name="no_flattr_token_msg">La to cuenta Flattr nun paez tar coneutada con iPoca. Pues o coneutar la cuenta con iPoca pa facer Flattr a coses dientro l\'aplicación, o pues visitar el sitiu web de la cosa a facer Flattr.</string>
   <string name="authenticate_now_label">Autenticar</string>
   <string name="action_forbidden_title">Torgóse la aición</string>
-  <string name="action_forbidden_msg">AntennaPod nun tien permisu pa esta aición. La razón quiciabes seya que se revocare\'l pase d\'accesu d\'AntennaPod a la to cuenta. Pues o reautenticate, o visitar el sitiu web de la cosa.</string>
+  <string name="action_forbidden_msg">iPoca nun tien permisu pa esta aición. La razón quiciabes seya que se revocare\'l pase d\'accesu d\'iPoca a la to cuenta. Pues o reautenticate, o visitar el sitiu web de la cosa.</string>
   <string name="access_revoked_title">Revocóse l\'accesu</string>
-  <string name="access_revoked_info">Revoquesti con ésitu\'l pase d\'accesu AntennaPod a la to cuenta. Pa completar el procesu, tienes de desaniciar esta aplicación del llistáu d\'aplicaciones aprobaes nos axustes de la to cuenta nel sitiu web de Flattr.</string>
+  <string name="access_revoked_info">Revoquesti con ésitu\'l pase d\'accesu iPoca a la to cuenta. Pa completar el procesu, tienes de desaniciar esta aplicación del llistáu d\'aplicaciones aprobaes nos axustes de la to cuenta nel sitiu web de Flattr.</string>
   <!--Flattr-->
   <!--Variable Speed-->
   <string name="download_plugin_label">Baxar complementu</string>
@@ -269,7 +269,7 @@
   <string name="pref_nav_drawer_items_sum">Camuda qué elementos apaecen nel caxón de navegación.</string>
   <string name="pref_nav_drawer_feed_order_sum">Camuda l\'orde de les tos soscripciones</string>
   <string name="pref_nav_drawer_feed_counter_sum">Camuda la información amosada pol contador de soscripciones</string>
-  <string name="pref_set_theme_sum">Camuda l\'aspeutu d\'AntennaPod</string>
+  <string name="pref_set_theme_sum">Camuda l\'aspeutu d\'iPoca</string>
   <string name="pref_automatic_download_sum">Configura la descarga automática d\'episodios.</string>
   <string name="pref_autodl_wifi_filter_sum">Permite la descarga namái dende les redes Wi-Fi esbillaes.</string>
   <string name="pref_automatic_download_on_battery_sum">Permite la descarga automárica cuando la batería nun tea cargando.</string>
@@ -352,14 +352,14 @@
   <!--Feed information screen-->
   <string name="authentication_label">Autenticación</string>
   <!--Progress information-->
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <!--Episodes apply actions-->
   <string name="all_label">Too</string>
   <string name="selected_all_label">Esbilláronse tolos episodios</string>
   <!--Sort-->
   <!--Rating dialog-->
-  <string name="rating_title">¿Préstate AntennaPod?</string>
-  <string name="rating_message">Agradeceriemos que valores a AntennaPod si pues y quies.</string>
+  <string name="rating_title">¿Préstate iPoca?</string>
+  <string name="rating_message">Agradeceriemos que valores a iPoca si pues y quies.</string>
   <string name="rating_never_label">Dexáime solu</string>
   <string name="rating_later_label">Recordáimelo más sero</string>
   <string name="rating_now_label">¡Sí, vamos facelo!</string>

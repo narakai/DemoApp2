@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="all_episodes_short_label">الكل</string>
   <string name="favorite_episodes_label">المفضلات</string>
@@ -112,7 +112,7 @@
   <!--Content descriptions for image buttons-->
   <!--Feed information screen-->
   <!--Progress information-->
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <!--Episodes apply actions-->
   <string name="all_label">الكل</string>
   <string name="unplayed_label">لم يتم تشغيله</string>

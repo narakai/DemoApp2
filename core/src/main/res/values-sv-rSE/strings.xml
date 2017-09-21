@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">Flöden</string>
   <string name="statistics_label">Statistik</string>
@@ -239,18 +239,18 @@
   <string name="clear_queue_confirmation_msg">Bekräfta att du vill rensa kön från ALLA episoder.</string>
   <!--Flattr-->
   <string name="flattr_auth_label">Flattr inloggning</string>
-  <string name="flattr_auth_explanation">Tryck på knappen nedan för att starta autentiseringen. Du kommer att vidarebefordras till Flattrs inloggningsskärm i din webbläsare och uppmanas att ge AntennaPod tillstånd att Flattra saker. Efter att du har gett tillstånd, kommer du automatiskt tillbaka till den här skärmen.</string>
+  <string name="flattr_auth_explanation">Tryck på knappen nedan för att starta autentiseringen. Du kommer att vidarebefordras till Flattrs inloggningsskärm i din webbläsare och uppmanas att ge iPoca tillstånd att Flattra saker. Efter att du har gett tillstånd, kommer du automatiskt tillbaka till den här skärmen.</string>
   <string name="authenticate_label">Autentisera</string>
   <string name="return_home_label">Återgå till Startsidan</string>
   <string name="flattr_auth_success">Autentiseringen lyckades! Du kan nu Flattra saker i appen.</string>
   <string name="no_flattr_token_title">Ingen Flattr token hittades</string>
-  <string name="no_flattr_token_notification_msg">Ditt Flattr-konto verkar inte vara anslutet till AntennaPod. Tryck här för att autentisera.</string>
-  <string name="no_flattr_token_msg">Ditt Flattr konto verkar inte vara ansluten till AntennaPod. Du kan antingen ansluta ditt konto till AntennaPod att Flattr saker i app eller så kan du besöka webbplatsen för att Flattr det där.</string>
+  <string name="no_flattr_token_notification_msg">Ditt Flattr-konto verkar inte vara anslutet till iPoca. Tryck här för att autentisera.</string>
+  <string name="no_flattr_token_msg">Ditt Flattr konto verkar inte vara ansluten till iPoca. Du kan antingen ansluta ditt konto till iPoca att Flattr saker i app eller så kan du besöka webbplatsen för att Flattr det där.</string>
   <string name="authenticate_now_label">Autentisera</string>
   <string name="action_forbidden_title">Åtgärd förbjuden</string>
-  <string name="action_forbidden_msg">AntennaPod saknar behörighet för den här åtgärden. Anledningen till detta kan vara att AntennaPods tillgång till ditt konto har återkallats. Du kan antingen åter autentisera AntennaPod eller besöka hemsidan istället.</string>
+  <string name="action_forbidden_msg">iPoca saknar behörighet för den här åtgärden. Anledningen till detta kan vara att iPocas tillgång till ditt konto har återkallats. Du kan antingen åter autentisera iPoca eller besöka hemsidan istället.</string>
   <string name="access_revoked_title">Tillgång återkallad</string>
-  <string name="access_revoked_info">Du har nu återkallat AntennaPods tillgång till ditt konto. För att slutföra processen, måste du ta bort den här appen från listan godkända appar i dina kontoinställningar på Flattrs hemsida.</string>
+  <string name="access_revoked_info">Du har nu återkallat iPocas tillgång till ditt konto. För att slutföra processen, måste du ta bort den här appen från listan godkända appar i dina kontoinställningar på Flattrs hemsida.</string>
   <!--Flattr-->
   <string name="flattr_click_success">Flattrade en sak!</string>
   <string name="flattr_click_success_count">Flattrade %d saker!</string>
@@ -260,13 +260,13 @@
   <string name="flattr_click_enqueued">Saker som kommer att flattras senare</string>
   <string name="flattring_thing">Flattrar %s</string>
   <string name="flattring_label">AnntennaPod flattrar</string>
-  <string name="flattrd_label">AntennaPod har flattrat</string>
-  <string name="flattrd_failed_label">AntennaPod misslyckades att flattra</string>
+  <string name="flattrd_label">iPoca har flattrat</string>
+  <string name="flattrd_failed_label">iPoca misslyckades att flattra</string>
   <string name="flattr_retrieving_status">Hämtar flattrade saker</string>
   <!--Variable Speed-->
   <string name="download_plugin_label">Ladda ner tillägg</string>
   <string name="no_playback_plugin_title">Tillägg ej installerat</string>
-  <string name="no_playback_plugin_or_sonic_msg">För att variabel uppspelningshastighet ska fungera rekommenderas att aktivera den inbyggda Sonic mediaspelaren [Android 4.1+].\n\nAlternativt kan du ladda ner tredjepartstillägget <i>Prestissimo</i> från Google Play.\nProblem med Prestissimo är inte AntennaPods ansvar och bör rapporteras till tilläggets ägare.</string>
+  <string name="no_playback_plugin_or_sonic_msg">För att variabel uppspelningshastighet ska fungera rekommenderas att aktivera den inbyggda Sonic mediaspelaren [Android 4.1+].\n\nAlternativt kan du ladda ner tredjepartstillägget <i>Prestissimo</i> från Google Play.\nProblem med Prestissimo är inte iPocas ansvar och bör rapporteras till tilläggets ägare.</string>
   <string name="set_playback_speed_label">Uppspelningshastigheter</string>
   <string name="enable_sonic">Aktivera Sonic</string>
   <!--Empty list labels-->
@@ -321,7 +321,7 @@
   <string name="pref_flattr_auth_title">Flattr inloggning</string>
   <string name="pref_flattr_auth_sum">För att Flattra saker direkt från appen, logga in på ditt Flattr-konto.</string>
   <string name="pref_flattr_this_app_title">Flattra denna App</string>
-  <string name="pref_flattr_this_app_sum">Stöd utvecklingen av AntennaPod genom att flattra den. Tack!</string>
+  <string name="pref_flattr_this_app_sum">Stöd utvecklingen av iPoca genom att flattra den. Tack!</string>
   <string name="pref_revokeAccess_title">Återkalla åtkomst</string>
   <string name="pref_revokeAccess_sum">Återkalla behörigheten till ditt Flattr-konto för denna app.</string>
   <string name="pref_auto_flattr_title">Automatisk Flattring</string>
@@ -336,7 +336,7 @@
   <string name="pref_nav_drawer_feed_order_sum">Ändra ordningen på dina prenumerationer</string>
   <string name="pref_nav_drawer_feed_counter_title">Val För Prenumerationsräknaren</string>
   <string name="pref_nav_drawer_feed_counter_sum">Ändra informationen som visas av prenumerationsräknaren</string>
-  <string name="pref_set_theme_sum">Ändra utseendet på AntennaPod.</string>
+  <string name="pref_set_theme_sum">Ändra utseendet på iPoca.</string>
   <string name="pref_automatic_download_title">Automatisk Nedladdning</string>
   <string name="pref_automatic_download_sum">Konfigurera automatisk nedladdning av episoder.</string>
   <string name="pref_autodl_wifi_filter_title">Aktivera WiFi filtrering</string>
@@ -407,7 +407,7 @@
   <string name="pref_no_browser_found">Ingen webbläsare hittades.</string>
   <string name="pref_cast_title">Chromecast-stöd</string>
   <string name="pref_cast_message_play_flavor">Aktivera stöd för fjärruppspelning av media på Cast-enheter (såsom Chromecast, Ljudanläggningar eller Android TV)</string>
-  <string name="pref_cast_message_free_flavor">Chromecast kräver propretiära tredjepartsbibliotek som inte är inkluderade i denna version av AntennaPod</string>
+  <string name="pref_cast_message_free_flavor">Chromecast kräver propretiära tredjepartsbibliotek som inte är inkluderade i denna version av iPoca</string>
   <string name="pref_enqueue_downloaded_title">Lägg nedladdade i kön</string>
   <string name="pref_enqueue_downloaded_summary">Lägg nedladdade episoder i uppspelningskön</string>
   <!--Auto-Flattr dialog-->
@@ -430,7 +430,7 @@
   <string name="opml_import_option">Val %1$d</string>
   <string name="opml_import_explanation_1">Välj en specifik sökväg från det lokala filsystemet.</string>
   <string name="opml_import_explanation_2">Använd en extern applikation som Dropbox, Google Drive eller ditt favoritval av filhanterare för att öppna en OPML fil.</string>
-  <string name="opml_import_explanation_3">Flera applikationer som Google Mail, Dropbox, Google Drive och de flesta filhanterare kan <i>öppna</i> OPML filer <i>med</i> AntennaPod.</string>
+  <string name="opml_import_explanation_3">Flera applikationer som Google Mail, Dropbox, Google Drive och de flesta filhanterare kan <i>öppna</i> OPML filer <i>med</i> iPoca.</string>
   <string name="start_import_label">Påbörja importering</string>
   <string name="opml_import_label">OPML Importering</string>
   <string name="opml_directory_error">FEL! </string>
@@ -499,7 +499,7 @@
   <string name="gpodnetauth_device_caption_errorEmpty">Rubrik måste fyllas i</string>
   <string name="gpodnetauth_device_butChoose">Välj</string>
   <string name="gpodnetauth_finish_title">Inloggning lyckades!</string>
-  <string name="gpodnetauth_finish_descr">Grattis! Ditt gpodder.net konto är nu länkat med din enhet. AntennaPod kommer från och med nu automatiskt synkronisera dina prenumerationer på din enhet med ditt gpodder.net konto.</string>
+  <string name="gpodnetauth_finish_descr">Grattis! Ditt gpodder.net konto är nu länkat med din enhet. iPoca kommer från och med nu automatiskt synkronisera dina prenumerationer på din enhet med ditt gpodder.net konto.</string>
   <string name="gpodnetauth_finish_butsyncnow">Starta synkronisering nu</string>
   <string name="gpodnetauth_finish_butgomainscreen">Gå till huvudskärmen</string>
   <string name="gpodnetsync_auth_error_title">gpodder.net autentiseringsfel</string>
@@ -512,7 +512,7 @@
   <string name="selected_folder_label">Vald mapp:</string>
   <string name="create_folder_label">Skapa mapp</string>
   <string name="choose_data_directory">Välj Datakatalog</string>
-  <string name="choose_data_directory_message">Välj rotkatalogen för din data. AntennaPod skapar de underkataloger som behövs.</string>
+  <string name="choose_data_directory_message">Välj rotkatalogen för din data. iPoca skapar de underkataloger som behövs.</string>
   <string name="choose_data_directory_permission_rationale">Tillgång till extern lagring krävs för att byta datakatalogen</string>
   <string name="create_folder_msg">Skapa ny mapp med namnet \"%1$s\"?</string>
   <string name="create_folder_success">Skapade ny mapp</string>
@@ -529,7 +529,7 @@
   <string name="pref_pausePlaybackForFocusLoss_title">Pausa vid Avbrott</string>
   <string name="pref_resumeAfterCall_sum">Återuppta uppspelning när ett telefonsamtal avslutas</string>
   <string name="pref_resumeAfterCall_title">Fortsätt efter Samtal</string>
-  <string name="pref_restart_required">AntennaPod behöver startas om för att denna inställning ska gälla.</string>
+  <string name="pref_restart_required">iPoca behöver startas om för att denna inställning ska gälla.</string>
   <!--Online feed view-->
   <string name="subscribe_label">Prenumerera</string>
   <string name="subscribed_label">Prenumererar</string>
@@ -556,7 +556,7 @@
   <string name="keep_updated">Håll uppdaterad</string>
   <!--Progress information-->
   <string name="progress_upgrading_database">Uppgraderar databasen</string>
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <string name="sp_apps_importing_feeds_msg">Importerar prenumerationer från appar gjorda för ett enda syfte…</string>
   <string name="search_itunes_label">Leta i iTunes</string>
   <string name="filter">Filtrera</string>
@@ -588,8 +588,8 @@
   <string name="sort_duration_short_long">Längd (Kort \u2192 Lång)</string>
   <string name="sort_duration_long_short">Längd (Lång \u2192 Kort)</string>
   <!--Rating dialog-->
-  <string name="rating_title">Gillar du AntennaPod?</string>
-  <string name="rating_message">Vi skulle uppskatta om du tog dig tid att betygsätta AntennaPod.</string>
+  <string name="rating_title">Gillar du iPoca?</string>
+  <string name="rating_message">Vi skulle uppskatta om du tog dig tid att betygsätta iPoca.</string>
   <string name="rating_never_label">Lämna mig ifred</string>
   <string name="rating_later_label">Påminn mig senare</string>
   <string name="rating_now_label">Okej, gör det nu!</string>

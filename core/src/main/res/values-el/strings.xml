@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">Ροές</string>
   <string name="statistics_label">Στατιστικά</string>
@@ -129,7 +129,7 @@
   <string name="no_media_playing_label">Δεν απαραγωνται πολυμεσα</string>
   <string name="player_buffering_msg">Προσωρινή μνήμη</string>
   <string name="playbackservice_notification_title">Αναπαραγωγή του podcast</string>
-  <string name="unknown_media_key">AntennaPod - Άγνωστα πλήκτρα πολυμέσων: %1$d</string>
+  <string name="unknown_media_key">iPoca - Άγνωστα πλήκτρα πολυμέσων: %1$d</string>
   <!--Queue operations-->
   <string name="lock_queue">Κλείδωμα Ουράς Αναμονής</string>
   <string name="unlock_queue">Ξεκλείδωμα Ουράς Αναμονής</string>
@@ -146,18 +146,18 @@
   <string name="clear_queue_confirmation_msg">Παρακαλούμε επιβεβαιώστε ότι θέλετε να διαγράψετε την ουρά όλων των επεισοδίων σε αυτό</string>
   <!--Flattr-->
   <string name="flattr_auth_label">Flattr σύνδεση </string>
-  <string name="flattr_auth_explanation">Πατήστε το κουμπί παρακάτω για να ξεκινήσει η διαδικασία ελέγχου ταυτότητας. Θα πρέπει να διαβιβάζονται στην οθόνη σύνδεσης Flattr στον browser σας και να σας ζητηθεί να δώσει AntennaPod την άδεια να Flattr πράγματα. Αφού έχετε δώσει την άδεια, θα επιστρέψετε σε αυτήν την οθόνη αυτόματα.</string>
+  <string name="flattr_auth_explanation">Πατήστε το κουμπί παρακάτω για να ξεκινήσει η διαδικασία ελέγχου ταυτότητας. Θα πρέπει να διαβιβάζονται στην οθόνη σύνδεσης Flattr στον browser σας και να σας ζητηθεί να δώσει iPoca την άδεια να Flattr πράγματα. Αφού έχετε δώσει την άδεια, θα επιστρέψετε σε αυτήν την οθόνη αυτόματα.</string>
   <string name="authenticate_label">Έλεγχος</string>
   <string name="return_home_label">Επιστροφή στην αρχική σελίδα</string>
   <string name="flattr_auth_success">Έλεγχος ταυτότητας ήταν επιτυχής! Μπορείτε τώρα να Flattr πράγματα μέσα από την εφαρμογή.</string>
   <string name="no_flattr_token_title">Δεν βρέθηκε Flattr διακριτικό</string>
-  <string name="no_flattr_token_notification_msg">Ο Flattr λογαριασμός σας δεν φαίνεται να συνδέεται με το AntennaPod. Πατήστε εδώ για να επικυρωθει.</string>
-  <string name="no_flattr_token_msg">Ο Flattr λογαριασμός σας δεν φαίνεται να συνδέεται με το AntennaPod. Μπορείτε είτε να συνδέσετε το λογαριασμό σας στο AntennaPod να Flattr πράγματα μέσα από την εφαρμογή ή μπορείτε να επισκεφθείτε την ιστοσελίδα του πράγματος για Flattr εκεί</string>
+  <string name="no_flattr_token_notification_msg">Ο Flattr λογαριασμός σας δεν φαίνεται να συνδέεται με το iPoca. Πατήστε εδώ για να επικυρωθει.</string>
+  <string name="no_flattr_token_msg">Ο Flattr λογαριασμός σας δεν φαίνεται να συνδέεται με το iPoca. Μπορείτε είτε να συνδέσετε το λογαριασμό σας στο iPoca να Flattr πράγματα μέσα από την εφαρμογή ή μπορείτε να επισκεφθείτε την ιστοσελίδα του πράγματος για Flattr εκεί</string>
   <string name="authenticate_now_label">Έλεγχος</string>
   <string name="action_forbidden_title">Δράση απαγορεύεται</string>
-  <string name="action_forbidden_msg">Το AntennaPod δεν έχει άδεια για τη δράση αυτή. Ο λόγος ειναι οτι θα μπορούσε να είναι ότι το διακριτικό πρόσβασης του AntennaPod στο λογαριασμό σας έχει ανακληθεί. Μπορείτε να κανετε εκ νέου τον ελεγχο ταυτοποιησης ή επισκεφθείτε την ιστοσελίδα του πράγματος.</string>
+  <string name="action_forbidden_msg">Το iPoca δεν έχει άδεια για τη δράση αυτή. Ο λόγος ειναι οτι θα μπορούσε να είναι ότι το διακριτικό πρόσβασης του iPoca στο λογαριασμό σας έχει ανακληθεί. Μπορείτε να κανετε εκ νέου τον ελεγχο ταυτοποιησης ή επισκεφθείτε την ιστοσελίδα του πράγματος.</string>
   <string name="access_revoked_title">Πρόσβαση ανακαλείται</string>
-  <string name="access_revoked_info">Έχετε ανακαλέσει επιτυχώς διακριτικό πρόσβασης AntennaPod στον λογαριασμό σας. Για να ολοκληρωθεί η διαδικασία, θα πρέπει να αφαιρέσετε αυτή η εφαρμογή από τον κατάλογο των εγκεκριμένων αιτήσεων στις ρυθμίσεις του λογαριασμού σας στην Flattr ιστοσελίδα.</string>
+  <string name="access_revoked_info">Έχετε ανακαλέσει επιτυχώς διακριτικό πρόσβασης iPoca στον λογαριασμό σας. Για να ολοκληρωθεί η διαδικασία, θα πρέπει να αφαιρέσετε αυτή η εφαρμογή από τον κατάλογο των εγκεκριμένων αιτήσεων στις ρυθμίσεις του λογαριασμού σας στην Flattr ιστοσελίδα.</string>
   <!--Flattr-->
   <string name="flattr_click_success">Flattr\'ed ένα πράγμα!</string>
   <string name="flattr_click_success_count">Flattr\'ed%d πράγματα!</string>
@@ -166,9 +166,9 @@
   <string name="flattr_click_failure">Οχι flattr\'ed: %s.</string>
   <string name="flattr_click_enqueued">Πράγμα θα flattr\'ed αργότερα</string>
   <string name="flattring_thing">Flattring %s</string>
-  <string name="flattring_label">Το AntennaPod είναι flattring</string>
-  <string name="flattrd_label">Το AntennaPod έχει flattr\'ed</string>
-  <string name="flattrd_failed_label">AntennaPod Flattr απέτυχε</string>
+  <string name="flattring_label">Το iPoca είναι flattring</string>
+  <string name="flattrd_label">Το iPoca έχει flattr\'ed</string>
+  <string name="flattrd_failed_label">iPoca Flattr απέτυχε</string>
   <string name="flattr_retrieving_status">Ανάκτηση flattr\'ed πραγμάτων</string>
   <!--Variable Speed-->
   <string name="download_plugin_label">Λήψη Πρόσθετου</string>
@@ -196,13 +196,13 @@
   <string name="flattr_settings_label">Flattr Ρυθμισεις</string>
   <string name="pref_flattr_auth_title">Flattr Συνδεση</string>
   <string name="pref_flattr_auth_sum">Συνδεθείτε στον Flattr λογαριασμό σας για να Flattr πράγματα απευθείας από την εφαρμογή.</string>
-  <string name="pref_flattr_this_app_sum">Υποστήριξη της ανάπτυξης του AntennaPod flattring αυτό. Ευχαριστούμε!</string>
+  <string name="pref_flattr_this_app_sum">Υποστήριξη της ανάπτυξης του iPoca flattring αυτό. Ευχαριστούμε!</string>
   <string name="pref_revokeAccess_title">Ανάκληση πρόσβασης</string>
   <string name="pref_revokeAccess_sum">Ανακληση της άδειας πρόσβασης στον Flattr λογαριασμό για αυτη την εφαρμογή.</string>
   <string name="pref_auto_flattr_title">Αυτόματο Flattr</string>
   <string name="pref_auto_flattr_sum">Διαμόρφωση αυτόματου flattring</string>
   <string name="user_interface_label">Περιβάλλον χρήστη</string>
-  <string name="pref_set_theme_sum">Αλλαγή της εμφάνισης του AntennaPod.</string>
+  <string name="pref_set_theme_sum">Αλλαγή της εμφάνισης του iPoca.</string>
   <string name="pref_automatic_download_sum">Ρύθμιση της αυτόματης λήψης των επεισοδίων.</string>
   <string name="pref_autodl_wifi_filter_title">Ενεργοποίηση Wi-Fi φίλτρου</string>
   <string name="pref_autodl_wifi_filter_sum">Να επιτρέπεται η αυτόματη λήψη μόνο στα επιλεγμένα δίκτυα Wi-Fi.</string>
@@ -245,7 +245,7 @@
   <string name="opml_import_txtv_button_lable">Τα OPML αρχεία σας επιτρέπουν να μετακινήσετε τα podcast από το ένα στο άλλο podcatcher.</string>
   <string name="opml_import_explanation_1">Επιλέξτε μια συγκεκριμένη διαδρομή αρχείου από το τοπικό σύστημα αρχείων.</string>
   <string name="opml_import_explanation_2">Χρησιμοποιήστε μια εξωτερική εφαρμογη όπως το Dropbox, το Google Drive ή τον αγαπημένο σας διαχειριστή αρχείων για να ανοίξετε ένα αρχείο OPML.</string>
-  <string name="opml_import_explanation_3">Πολλές από τις εφαρμογές όπως το Google Mail, Dropbox, το Google Drive και οι περισσότεροι διαχειριστές αρχείων μπορούν να &lt;i&gt; ανοικτό &lt;/ i&gt; Τα αρχεία OPML &lt;i&gt; με &lt;/ i&gt; AntennaPod.</string>
+  <string name="opml_import_explanation_3">Πολλές από τις εφαρμογές όπως το Google Mail, Dropbox, το Google Drive και οι περισσότεροι διαχειριστές αρχείων μπορούν να &lt;i&gt; ανοικτό &lt;/ i&gt; Τα αρχεία OPML &lt;i&gt; με &lt;/ i&gt; iPoca.</string>
   <string name="start_import_label">Εναρξη εισαγωγής</string>
   <string name="opml_import_label">Εισαγωγή OPML</string>
   <string name="opml_directory_error">ΣΦΑΛΜΑ!</string>
@@ -289,7 +289,7 @@
   <string name="gpodnetauth_device_errorAlreadyUsed">Το Αναγνωριστικό συσκευής ειναι ήδη σε χρήση</string>
   <string name="gpodnetauth_device_butChoose">Επιλογή</string>
   <string name="gpodnetauth_finish_title">Είσοδος επιτυχής!</string>
-  <string name="gpodnetauth_finish_descr">Συγχαρητήρια! Ο Λογαριασμός σας στο gpodder.net συνδέεται πλέον με τη συσκευή σας. Το AntennaPod θα συγχρονίζει αυτόματα τις συνδρομές στην συσκευή σας με το λογαριασμό σας στο gpodder.net.</string>
+  <string name="gpodnetauth_finish_descr">Συγχαρητήρια! Ο Λογαριασμός σας στο gpodder.net συνδέεται πλέον με τη συσκευή σας. Το iPoca θα συγχρονίζει αυτόματα τις συνδρομές στην συσκευή σας με το λογαριασμό σας στο gpodder.net.</string>
   <string name="gpodnetauth_finish_butsyncnow">Έναρξη συγχρονισμού τώρα</string>
   <string name="gpodnetauth_finish_butgomainscreen">Μετάβαση στην κύρια οθόνη</string>
   <string name="gpodnetsync_auth_error_title">gpodder.net σφάλμα ελέγχου ταυτότητας</string>
@@ -311,7 +311,7 @@
   <string name="pref_pausePlaybackForFocusLoss_title">Παύση για διακοπές</string>
   <string name="pref_resumeAfterCall_sum">Συνέχιση της αναπαραγωγής, μετά το πέρας τηλεφωνικής κλήσης</string>
   <string name="pref_resumeAfterCall_title">Συνέχιση της αναπαραγωγής, μετά από Κλήση</string>
-  <string name="pref_restart_required">Το AntennaPod χρειάζεται επανεκκίνηση για την εφαρμογή των αλλαγών.</string>
+  <string name="pref_restart_required">Το iPoca χρειάζεται επανεκκίνηση για την εφαρμογή των αλλαγών.</string>
   <!--Online feed view-->
   <string name="subscribe_label">Εγγραφή</string>
   <string name="subscribed_label">Εγγεγραμμένα</string>
@@ -329,7 +329,7 @@
   <string name="authentication_label">Πιστοποίηση</string>
   <string name="authentication_descr">Αλλαγή του όνοματος χρήστη και του κωδικόυ πρόσβασής για αυτό το podcast και τα επεισόδια του.</string>
   <!--Progress information-->
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <string name="sp_apps_importing_feeds_msg">Εισαγωγή εγγραφών από εφαρμογές και μονο...</string>
   <string name="search_itunes_label">iTunes Αναζήτηση</string>
   <!--Episodes apply actions-->

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">הזנות</string>
   <string name="statistics_label">סטטיסטיקות</string>
@@ -342,7 +342,7 @@
   <string name="authentication_label">אימות</string>
   <string name="authentication_descr">שנה את שם המשתמש והסיסמה שלך לפודקאסט ופרקים שלו.</string>
   <!--Progress information-->
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <string name="sp_apps_importing_feeds_msg">מייבא רישום מאפליקציות יעודיות...</string>
   <string name="search_itunes_label">חפש בiTunes</string>
   <!--Episodes apply actions-->

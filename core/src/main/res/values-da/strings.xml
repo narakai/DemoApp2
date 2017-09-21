@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
   <!--Activitiy and fragment titles-->
   <string name="feeds_label">Feeds</string>
   <string name="add_feed_label">Tilføj podcast</string>
@@ -121,7 +121,7 @@
   <string name="no_media_playing_label">Ingen medier afspiller</string>
   <string name="player_buffering_msg">Buffering</string>
   <string name="playbackservice_notification_title">Afspiller podcast</string>
-  <string name="unknown_media_key">AntennaPod - ukendt medie nøgle: %1$d</string>
+  <string name="unknown_media_key">iPoca - ukendt medie nøgle: %1$d</string>
   <!--Queue operations-->
   <string name="clear_queue_label">Fjern kø</string>
   <string name="undo">Fortryd</string>
@@ -135,18 +135,18 @@
   <string name="descending">Faldende</string>
   <!--Flattr-->
   <string name="flattr_auth_label">Flattr log ind</string>
-  <string name="flattr_auth_explanation">Tryk på knappen nedenfor for at starte godkendelsesprocessen. Du vil blive ført til flattr log ind siden i din browser og bedt om at give AntennaPod tilladelse til at flattr emner. Efter at du har givet tilladelsen vil du automatisk vende tilbage til denne side.</string>
+  <string name="flattr_auth_explanation">Tryk på knappen nedenfor for at starte godkendelsesprocessen. Du vil blive ført til flattr log ind siden i din browser og bedt om at give iPoca tilladelse til at flattr emner. Efter at du har givet tilladelsen vil du automatisk vende tilbage til denne side.</string>
   <string name="authenticate_label">Godkender</string>
   <string name="return_home_label">Retuner hjem</string>
   <string name="flattr_auth_success">Godkendelse lykkedes! Du kan nu flattr emner inde i app\'en.</string>
   <string name="no_flattr_token_title">Ingen flattr polet fundet</string>
-  <string name="no_flattr_token_notification_msg">Din flattr konto ser ikke ud til at være forbundet med AntennaPod. Tryk her for at forbinde.</string>
-  <string name="no_flattr_token_msg">Din flattr konto er vidst ikke forbundet til AntennaPod. Du kan forbinde din konto til AntennaPod for at flattr emner inde i app\'en, eller besøge websiden af mediet for at flattr det der.</string>
+  <string name="no_flattr_token_notification_msg">Din flattr konto ser ikke ud til at være forbundet med iPoca. Tryk her for at forbinde.</string>
+  <string name="no_flattr_token_msg">Din flattr konto er vidst ikke forbundet til iPoca. Du kan forbinde din konto til iPoca for at flattr emner inde i app\'en, eller besøge websiden af mediet for at flattr det der.</string>
   <string name="authenticate_now_label">Godkender</string>
   <string name="action_forbidden_title">Forbudt handling</string>
-  <string name="action_forbidden_msg">AntennaPod har ikke tilladelse til denne handling. Årsagen kunne være at adgangspoletten for AntennaPod til din konto er blevet tilbagekaldt. Du kan enten godkende den igen eller besøge websiden for mediet istedet.</string>
+  <string name="action_forbidden_msg">iPoca har ikke tilladelse til denne handling. Årsagen kunne være at adgangspoletten for iPoca til din konto er blevet tilbagekaldt. Du kan enten godkende den igen eller besøge websiden for mediet istedet.</string>
   <string name="access_revoked_title">Adgang tilbagekaldt</string>
-  <string name="access_revoked_info">Du har succesfuldt tilbagekaldt AntennaPods adgangs polet til din konto. For at fuldføre processen skal du fjerne denne app fra listen af godkendte applikationer i din kontos indstillinger på flattr\'s hjemmeside.</string>
+  <string name="access_revoked_info">Du har succesfuldt tilbagekaldt iPocas adgangs polet til din konto. For at fuldføre processen skal du fjerne denne app fra listen af godkendte applikationer i din kontos indstillinger på flattr\'s hjemmeside.</string>
   <!--Flattr-->
   <string name="flattr_click_success">Flattr\'et en ting!</string>
   <string name="flattr_click_success_count">Flattr\'et %d ting!</string>
@@ -155,9 +155,9 @@
   <string name="flattr_click_failure">Ikke flattr\'et: %s.</string>
   <string name="flattr_click_enqueued">Ting vil blive flattr\'et senere</string>
   <string name="flattring_thing">Flattr\'er %s</string>
-  <string name="flattring_label">AntennaPod flatttr\'er</string>
-  <string name="flattrd_label">AntennaPod har flattr\'et</string>
-  <string name="flattrd_failed_label">AntennaPod flattr mislykkedes</string>
+  <string name="flattring_label">iPoca flatttr\'er</string>
+  <string name="flattrd_label">iPoca har flattr\'et</string>
+  <string name="flattrd_failed_label">iPoca flattr mislykkedes</string>
   <string name="flattr_retrieving_status">Hent flatt\'rede ting</string>
   <!--Variable Speed-->
   <string name="download_plugin_label">Hent Plugin</string>
@@ -190,14 +190,14 @@
   <string name="pref_flattr_auth_title">Flattr log ind</string>
   <string name="pref_flattr_auth_sum">Log ind til din flattr konto for at flattr emner  direkte fra app\'en</string>
   <string name="pref_flattr_this_app_title">Flattr denne app</string>
-  <string name="pref_flattr_this_app_sum">Støt udviklingen af AntennaPod ved at flattr den. Tak!</string>
+  <string name="pref_flattr_this_app_sum">Støt udviklingen af iPoca ved at flattr den. Tak!</string>
   <string name="pref_revokeAccess_title">Tilbagekald adgang</string>
   <string name="pref_revokeAccess_sum">Tilbagekald adgangen til din flattr konto fra denne app.</string>
   <string name="pref_auto_flattr_title">Flattr\'er automatisk</string>
   <string name="pref_auto_flattr_sum">Konfigurer automatisk flattering</string>
   <string name="user_interface_label">Brugerflade</string>
   <string name="pref_set_theme_title">Vælg tema</string>
-  <string name="pref_set_theme_sum">Skift AntennaPods udseende.</string>
+  <string name="pref_set_theme_sum">Skift iPocas udseende.</string>
   <string name="pref_automatic_download_title">Download automatisk</string>
   <string name="pref_automatic_download_sum">Konfigurer automatisk download af episoder</string>
   <string name="pref_autodl_wifi_filter_title">Sæt Wi-Fi filter til</string>
@@ -276,7 +276,7 @@
   <string name="gpodnetauth_device_errorAlreadyUsed">Enheds ID er allerede i brug</string>
   <string name="gpodnetauth_device_butChoose">Vælg</string>
   <string name="gpodnetauth_finish_title">Login lykkedes!</string>
-  <string name="gpodnetauth_finish_descr">Tillykke! Din gpodder.net konto er nu forbundet med din enhed. AntennaPod vil fra nu af automatisk synkronisere dine abonnementer på din enhed med din gpodder.net konto.</string>
+  <string name="gpodnetauth_finish_descr">Tillykke! Din gpodder.net konto er nu forbundet med din enhed. iPoca vil fra nu af automatisk synkronisere dine abonnementer på din enhed med din gpodder.net konto.</string>
   <string name="gpodnetauth_finish_butsyncnow">Start synkronisering nu</string>
   <string name="gpodnetauth_finish_butgomainscreen">Gå til hovedskærmen</string>
   <string name="gpodnetsync_auth_error_title">gpodder.net autentificeringfejl</string>
@@ -314,7 +314,7 @@
   <string name="authentication_label">Godkendelse</string>
   <string name="authentication_descr">Skift dit brugernavn og kodeord for denne podcast og dets episoder.</string>
   <!--Progress information-->
-  <!--AntennaPodSP-->
+  <!--iPocaSP-->
   <string name="sp_apps_importing_feeds_msg">Importerer abonnementer fra single-purpose apps…</string>
   <!--Episodes apply actions-->
   <!--Sort-->
