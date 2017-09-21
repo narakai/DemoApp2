@@ -30,11 +30,6 @@ public class CornerButton extends Button {
         initialize(context, null, 0);
     }
 
-    public CornerButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr);
-        initialize(context, attrs, defStyleAttr);
-    }
-
     public CornerButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         initialize(context, attrs, 0);

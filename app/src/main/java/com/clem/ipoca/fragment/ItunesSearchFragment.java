@@ -12,7 +12,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -22,8 +21,11 @@ import com.clem.ipoca.R;
 import com.clem.ipoca.activity.OnlineFeedViewActivity;
 import com.clem.ipoca.adapter.itunes.ItunesAdapter;
 import com.clem.ipoca.core.ClientConfig;
+import com.clem.ipoca.core.preferences.UserPreferences;
 import com.clem.ipoca.core.service.download.AntennapodHttpClient;
+import com.clem.ipoca.core.view.CornerView.CornerButton;
 import com.clem.ipoca.menuhandler.MenuItemUtils;
+import com.clem.ipoca.spa.ColorUtil;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -59,7 +61,7 @@ public class ItunesSearchFragment extends Fragment {
     private GridView gridView;
     private ProgressBar progressBar;
     private TextView txtvError;
-    private Button butRetry;
+    private CornerButton butRetry;
     private TextView txtvEmpty;
 
     /**
@@ -167,7 +169,9 @@ public class ItunesSearchFragment extends Fragment {
         });
         progressBar = (ProgressBar) root.findViewById(R.id.progressBar);
         txtvError = (TextView) root.findViewById(R.id.txtvError);
-        butRetry = (Button) root.findViewById(R.id.butRetry);
+        butRetry = (CornerButton) root.findViewById(R.id.butRetry);
+        butRetry.setBackgroundColor(UserPreferences.getPrefColor());
+        butRetry.setTextColor(ColorUtil.getThemeColor(getActivity().getApplicationContext()));
         txtvEmpty = (TextView) root.findViewById(android.R.id.empty);
 
         loadToplist();

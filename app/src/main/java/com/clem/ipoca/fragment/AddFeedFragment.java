@@ -6,14 +6,16 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 
 import com.clem.ipoca.R;
 import com.clem.ipoca.activity.MainActivity;
 import com.clem.ipoca.activity.OnlineFeedViewActivity;
 import com.clem.ipoca.activity.OpmlImportFromPathActivity;
+import com.clem.ipoca.core.preferences.UserPreferences;
+import com.clem.ipoca.core.view.CornerView.CornerButton;
 import com.clem.ipoca.fragment.gpodnet.GpodnetMainFragment;
+import com.clem.ipoca.spa.ColorUtil;
 
 /**
  * Provides actions for adding new podcast subscriptions
@@ -26,6 +28,11 @@ public class AddFeedFragment extends Fragment {
      * Preset value for url text field.
      */
     public static final String ARG_FEED_URL = "feedurl";
+    private CornerButton butSearchITunes;
+    private CornerButton butBrowserGpoddernet;
+    private CornerButton butSearchFyyd;
+    private CornerButton butOpmlImport;
+    private CornerButton butConfirm;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -39,11 +46,21 @@ public class AddFeedFragment extends Fragment {
             etxtFeedurl.setText(args.getString(ARG_FEED_URL));
         }
 
-        Button butSearchITunes = (Button) root.findViewById(R.id.butSearchItunes);
-        Button butBrowserGpoddernet = (Button) root.findViewById(R.id.butBrowseGpoddernet);
-        Button butSearchFyyd = (Button) root.findViewById(R.id.butSearchFyyd);
-        Button butOpmlImport = (Button) root.findViewById(R.id.butOpmlImport);
-        Button butConfirm = (Button) root.findViewById(R.id.butConfirm);
+        butSearchITunes = (CornerButton) root.findViewById(R.id.butSearchItunes);
+        butSearchITunes.setBackgroundColor(UserPreferences.getPrefColor());
+        butSearchITunes.setTextColor(ColorUtil.getThemeColor(getContext()));
+        butBrowserGpoddernet = (CornerButton) root.findViewById(R.id.butBrowseGpoddernet);
+        butBrowserGpoddernet.setBackgroundColor(UserPreferences.getPrefColor());
+        butBrowserGpoddernet.setTextColor(ColorUtil.getThemeColor(getContext()));
+        butSearchFyyd = (CornerButton) root.findViewById(R.id.butSearchFyyd);
+        butSearchFyyd.setBackgroundColor(UserPreferences.getPrefColor());
+        butSearchFyyd.setTextColor(ColorUtil.getThemeColor(getContext()));
+        butOpmlImport = (CornerButton) root.findViewById(R.id.butOpmlImport);
+        butOpmlImport.setBackgroundColor(UserPreferences.getPrefColor());
+        butOpmlImport.setTextColor(ColorUtil.getThemeColor(getContext()));
+        butConfirm = (CornerButton) root.findViewById(R.id.butConfirm);
+        butConfirm.setBackgroundColor(UserPreferences.getPrefColor());
+        butConfirm.setTextColor(ColorUtil.getThemeColor(getContext()));
 
         final MainActivity activity = (MainActivity) getActivity();
         activity.getSupportActionBar().setTitle(R.string.add_feed_label);
@@ -65,5 +82,20 @@ public class AddFeedFragment extends Fragment {
         });
 
         return root;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        butSearchITunes.setBackgroundColor(UserPreferences.getPrefColor());
+        butSearchITunes.setTextColor(ColorUtil.getThemeColor(getContext()));
+        butBrowserGpoddernet.setBackgroundColor(UserPreferences.getPrefColor());
+        butBrowserGpoddernet.setTextColor(ColorUtil.getThemeColor(getContext()));
+        butSearchFyyd.setBackgroundColor(UserPreferences.getPrefColor());
+        butSearchFyyd.setTextColor(ColorUtil.getThemeColor(getContext()));
+        butOpmlImport.setBackgroundColor(UserPreferences.getPrefColor());
+        butOpmlImport.setTextColor(ColorUtil.getThemeColor(getContext()));
+        butConfirm.setBackgroundColor(UserPreferences.getPrefColor());
+        butConfirm.setTextColor(ColorUtil.getThemeColor(getContext()));
     }
 }

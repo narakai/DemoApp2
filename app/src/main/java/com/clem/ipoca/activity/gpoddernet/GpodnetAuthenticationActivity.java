@@ -15,7 +15,6 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
@@ -31,6 +30,8 @@ import com.clem.ipoca.core.gpoddernet.model.GpodnetDevice;
 import com.clem.ipoca.core.preferences.GpodnetPreferences;
 import com.clem.ipoca.core.preferences.UserPreferences;
 import com.clem.ipoca.core.service.GpodnetSyncService;
+import com.clem.ipoca.core.view.CornerView.CornerButton;
+import com.clem.ipoca.spa.ColorUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -111,12 +112,14 @@ public class GpodnetAuthenticationActivity extends AppCompatActivity {
     private void setupLoginView(View view) {
         final EditText username = (EditText) view.findViewById(R.id.etxtUsername);
         final EditText password = (EditText) view.findViewById(R.id.etxtPassword);
-        final Button login = (Button) view.findViewById(R.id.butLogin);
+        final CornerButton login = (CornerButton) view.findViewById(R.id.butLogin);
+        login.setBackgroundColor(UserPreferences.getPrefColor());
+        login.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
         final TextView txtvError = (TextView) view.findViewById(R.id.txtvError);
         final ProgressBar progressBar = (ProgressBar) view.findViewById(R.id.progBarLogin);
 
         password.setOnEditorActionListener((v, actionID, event) ->
-            actionID == EditorInfo.IME_ACTION_GO && login.performClick());
+                actionID == EditorInfo.IME_ACTION_GO && login.performClick());
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -183,8 +186,12 @@ public class GpodnetAuthenticationActivity extends AppCompatActivity {
     private void setupDeviceView(View view) {
         final EditText deviceID = (EditText) view.findViewById(R.id.etxtDeviceID);
         final EditText caption = (EditText) view.findViewById(R.id.etxtCaption);
-        final Button createNewDevice = (Button) view.findViewById(R.id.butCreateNewDevice);
-        final Button chooseDevice = (Button) view.findViewById(R.id.butChooseExistingDevice);
+        final CornerButton createNewDevice = (CornerButton) view.findViewById(R.id.butCreateNewDevice);
+        createNewDevice.setBackgroundColor(UserPreferences.getPrefColor());
+        createNewDevice.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
+        final CornerButton chooseDevice = (CornerButton) view.findViewById(R.id.butChooseExistingDevice);
+        chooseDevice.setBackgroundColor(UserPreferences.getPrefColor());
+        chooseDevice.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
         final TextView txtvError = (TextView) view.findViewById(R.id.txtvError);
         final ProgressBar progBarCreateDevice = (ProgressBar) view.findViewById(R.id.progbarCreateDevice);
         final Spinner spinnerDevices = (Spinner) view.findViewById(R.id.spinnerChooseDevice);
@@ -352,8 +359,12 @@ public class GpodnetAuthenticationActivity extends AppCompatActivity {
     }
 
     private void setupFinishView(View view) {
-        final Button sync = (Button) view.findViewById(R.id.butSyncNow);
-        final Button back = (Button) view.findViewById(R.id.butGoMainscreen);
+        final CornerButton sync = (CornerButton) view.findViewById(R.id.butSyncNow);
+        sync.setBackgroundColor(UserPreferences.getPrefColor());
+        sync.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
+        final CornerButton back = (CornerButton) view.findViewById(R.id.butGoMainscreen);
+        back.setBackgroundColor(UserPreferences.getPrefColor());
+        back.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
 
         sync.setOnClickListener(v -> {
             GpodnetSyncService.sendSyncIntent(GpodnetAuthenticationActivity.this);

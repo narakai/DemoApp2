@@ -16,7 +16,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -26,6 +25,8 @@ import com.afollestad.materialdialogs.color.CircleView;
 import com.clem.ipoca.BuildConfig;
 import com.clem.ipoca.R;
 import com.clem.ipoca.core.preferences.UserPreferences;
+import com.clem.ipoca.core.view.CornerView.CornerButton;
+import com.clem.ipoca.spa.ColorUtil;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -45,8 +46,8 @@ public class DirectoryChooserActivity extends AppCompatActivity {
     public static final String RESULT_SELECTED_DIR = "selected_dir";
     public static final int RESULT_CODE_DIR_SELECTED = 1;
 
-    private Button butConfirm;
-    private Button butCancel;
+    private CornerButton butConfirm;
+    private CornerButton butCancel;
     private ImageButton butNavUp;
     private TextView txtvSelectedFolder;
     private ListView listDirectories;
@@ -66,8 +67,12 @@ public class DirectoryChooserActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         setContentView(R.layout.directory_chooser);
-        butConfirm = (Button) findViewById(R.id.butConfirm);
-        butCancel = (Button) findViewById(R.id.butCancel);
+        butConfirm = (CornerButton) findViewById(R.id.butConfirm);
+        butConfirm.setBackgroundColor(UserPreferences.getPrefColor());
+        butConfirm.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
+        butCancel = (CornerButton) findViewById(R.id.butCancel);
+        butConfirm.setBackgroundColor(UserPreferences.getPrefColor());
+        butConfirm.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
         butNavUp = (ImageButton) findViewById(R.id.butNavUp);
         txtvSelectedFolder = (TextView) findViewById(R.id.txtvSelectedFolder);
         listDirectories = (ListView) findViewById(R.id.directory_list);

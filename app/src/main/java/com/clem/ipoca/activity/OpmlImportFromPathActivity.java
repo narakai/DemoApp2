@@ -10,7 +10,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.afollestad.materialdialogs.color.CircleView;
@@ -18,6 +17,8 @@ import com.clem.ipoca.R;
 import com.clem.ipoca.core.preferences.UserPreferences;
 import com.clem.ipoca.core.util.IntentUtils;
 import com.clem.ipoca.core.util.StorageUtils;
+import com.clem.ipoca.core.view.CornerView.CornerButton;
+import com.clem.ipoca.spa.ColorUtil;
 
 /**
  * Lets the user start the OPML-import process from a path
@@ -45,10 +46,14 @@ public class OpmlImportFromPathActivity extends OpmlImportBaseActivity {
         final TextView txtvExplanation2 = (TextView) findViewById(R.id.txtvExplanation2);
         final TextView txtvHeaderExplanation3 = (TextView) findViewById(R.id.txtvHeadingExplanation3);
 
-        Button butChooseFilesystem = (Button) findViewById(R.id.butChooseFileFromFilesystem);
+        CornerButton butChooseFilesystem = (CornerButton) findViewById(R.id.butChooseFileFromFilesystem);
+        butChooseFilesystem.setBackgroundColor(UserPreferences.getPrefColor());
+        butChooseFilesystem.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
         butChooseFilesystem.setOnClickListener(v -> chooseFileFromFilesystem());
 
-        Button butChooseExternal = (Button) findViewById(R.id.butChooseFileFromExternal);
+        CornerButton butChooseExternal = (CornerButton) findViewById(R.id.butChooseFileFromExternal);
+        butChooseExternal.setBackgroundColor(UserPreferences.getPrefColor());
+        butChooseExternal.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
         butChooseExternal.setOnClickListener(v -> chooseFileFromExternal());
 
         int nextOption = 1;

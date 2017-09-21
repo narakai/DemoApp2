@@ -17,7 +17,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
-import android.widget.Button;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.color.CircleView;
@@ -25,30 +24,36 @@ import com.clem.ipoca.R;
 import com.clem.ipoca.core.preferences.UserPreferences;
 import com.clem.ipoca.core.util.Converter;
 import com.clem.ipoca.core.util.StorageUtils;
+import com.clem.ipoca.core.view.CornerView.CornerButton;
+import com.clem.ipoca.spa.ColorUtil;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-/** Is show if there is now external storage available. */
+/**
+ * Is show if there is now external storage available.
+ */
 public class StorageErrorActivity extends AppCompatActivity {
 
-	private static final String TAG = "StorageErrorActivity";
+    private static final String TAG = "StorageErrorActivity";
 
     private static final String[] EXTERNAL_STORAGE_PERMISSIONS = {
             Manifest.permission.READ_EXTERNAL_STORAGE,
-            Manifest.permission.WRITE_EXTERNAL_STORAGE };
+            Manifest.permission.WRITE_EXTERNAL_STORAGE};
     private static final int PERMISSION_REQUEST_EXTERNAL_STORAGE = 42;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		setTheme(UserPreferences.getTheme());
-		super.onCreate(savedInstanceState);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        setTheme(UserPreferences.getTheme());
+        super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.storage_error);
+        setContentView(R.layout.storage_error);
 
-		Button btnChooseDataFolder = (Button) findViewById(R.id.btnChooseDataFolder);
-		btnChooseDataFolder.setOnClickListener(v -> {
+        CornerButton btnChooseDataFolder = (CornerButton) findViewById(R.id.btnChooseDataFolder);
+        btnChooseDataFolder.setBackgroundColor(UserPreferences.getPrefColor());
+        btnChooseDataFolder.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
+        btnChooseDataFolder.setOnClickListener(v -> {
             if (Build.VERSION_CODES.KITKAT <= Build.VERSION.SDK_INT &&
                     Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP_MR1) {
                 showChooseDataFolderDialog();
@@ -115,20 +120,20 @@ public class StorageErrorActivity extends AppCompatActivity {
         }
     }
 
-	@Override
-	protected void onPause() {
-		super.onPause();
-		try {
-			unregisterReceiver(mediaUpdate);
-		} catch (IllegalArgumentException e) {
+    @Override
+    protected void onPause() {
+        super.onPause();
+        try {
+            unregisterReceiver(mediaUpdate);
+        } catch (IllegalArgumentException e) {
             Log.e(TAG, Log.getStackTraceString(e));
-		}
-	}
+        }
+    }
 
     // see PreferenceController.showChooseDataFolderDialog()
     private void showChooseDataFolderDialog() {
-        File dataFolder =  UserPreferences.getDataFolder(null);
-        if(dataFolder == null) {
+        File dataFolder = UserPreferences.getDataFolder(null);
+        if (dataFolder == null) {
             new MaterialDialog.Builder(this)
                     .title(R.string.error_label)
                     .content(R.string.external_storage_error_msg)
@@ -141,19 +146,19 @@ public class StorageErrorActivity extends AppCompatActivity {
         File[] mediaDirs = ContextCompat.getExternalFilesDirs(this, null);
         List<String> folders = new ArrayList<>(mediaDirs.length);
         List<CharSequence> choices = new ArrayList<>(mediaDirs.length);
-        for(int i=0; i < mediaDirs.length; i++) {
+        for (int i = 0; i < mediaDirs.length; i++) {
             File dir = mediaDirs[i];
-            if(dir == null || !dir.exists() || !dir.canRead() || !dir.canWrite()) {
+            if (dir == null || !dir.exists() || !dir.canRead() || !dir.canWrite()) {
                 continue;
             }
             String path = mediaDirs[i].getAbsolutePath();
             folders.add(path);
-            if(dataFolderPath.equals(path)) {
+            if (dataFolderPath.equals(path)) {
                 selectedIndex = i;
             }
             int index = path.indexOf("Android");
             String choice;
-            if(index >= 0) {
+            if (index >= 0) {
                 choice = path.substring(0, index);
             } else {
                 choice = path;
@@ -164,7 +169,7 @@ public class StorageErrorActivity extends AppCompatActivity {
             choices.add(Html.fromHtml("<html><small>" + choice + " [" + freeSpace + "]"
                     + "</small></html>"));
         }
-        if(choices.size() == 0) {
+        if (choices.size() == 0) {
             new MaterialDialog.Builder(this)
                     .title(R.string.error_label)
                     .content(R.string.external_storage_error_msg)
@@ -188,9 +193,9 @@ public class StorageErrorActivity extends AppCompatActivity {
         dialog.show();
     }
 
-	public void onActivityResult(int requestCode, int resultCode, Intent data) {
-		if (resultCode == Activity.RESULT_OK &&
-				requestCode == DirectoryChooserActivity.RESULT_CODE_DIR_SELECTED) {
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == Activity.RESULT_OK &&
+                requestCode == DirectoryChooserActivity.RESULT_CODE_DIR_SELECTED) {
             String dir = data.getStringExtra(DirectoryChooserActivity.RESULT_SELECTED_DIR);
 
             File path;
@@ -199,50 +204,50 @@ public class StorageErrorActivity extends AppCompatActivity {
             } else {
                 path = getExternalFilesDir(null);
             }
-            if(path == null) {
+            if (path == null) {
                 return;
             }
             String message = null;
-			if(!path.exists()) {
-				message = String.format(getString(R.string.folder_does_not_exist_error), dir);
-			} else if(!path.canRead()) {
-				message = String.format(getString(R.string.folder_not_readable_error), dir);
-			} else if(!path.canWrite()) {
-				message = String.format(getString(R.string.folder_not_writable_error), dir);
-			}
+            if (!path.exists()) {
+                message = String.format(getString(R.string.folder_does_not_exist_error), dir);
+            } else if (!path.canRead()) {
+                message = String.format(getString(R.string.folder_not_readable_error), dir);
+            } else if (!path.canWrite()) {
+                message = String.format(getString(R.string.folder_not_writable_error), dir);
+            }
 
-			if(message == null) {
-				Log.d(TAG, "Setting data folder: " + dir);
-				UserPreferences.setDataFolder(dir);
-				leaveErrorState();
-			} else {
-				AlertDialog.Builder ab = new AlertDialog.Builder(this);
-				ab.setMessage(message);
-				ab.setPositiveButton(android.R.string.ok, null);
-				ab.show();
-			}
-		}
-	}
+            if (message == null) {
+                Log.d(TAG, "Setting data folder: " + dir);
+                UserPreferences.setDataFolder(dir);
+                leaveErrorState();
+            } else {
+                AlertDialog.Builder ab = new AlertDialog.Builder(this);
+                ab.setMessage(message);
+                ab.setPositiveButton(android.R.string.ok, null);
+                ab.show();
+            }
+        }
+    }
 
-	private void leaveErrorState() {
-		finish();
-		startActivity(new Intent(this, MainActivity.class));
-	}
+    private void leaveErrorState() {
+        finish();
+        startActivity(new Intent(this, MainActivity.class));
+    }
 
-	private BroadcastReceiver mediaUpdate = new BroadcastReceiver() {
+    private BroadcastReceiver mediaUpdate = new BroadcastReceiver() {
 
-		@Override
-		public void onReceive(Context context, Intent intent) {
-			if (TextUtils.equals(intent.getAction(), Intent.ACTION_MEDIA_MOUNTED)) {
-				if (intent.getBooleanExtra("read-only", true)) {
-					Log.d(TAG, "Media was mounted; Finishing activity");
-					leaveErrorState();
-				} else {
-					Log.d(TAG, "Media seemed to have been mounted read only");
-				}
-			}
-		}
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (TextUtils.equals(intent.getAction(), Intent.ACTION_MEDIA_MOUNTED)) {
+                if (intent.getBooleanExtra("read-only", true)) {
+                    Log.d(TAG, "Media was mounted; Finishing activity");
+                    leaveErrorState();
+                } else {
+                    Log.d(TAG, "Media seemed to have been mounted read only");
+                }
+            }
+        }
 
-	};
+    };
 
 }

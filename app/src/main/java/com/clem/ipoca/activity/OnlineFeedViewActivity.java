@@ -17,7 +17,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -54,7 +53,9 @@ import com.clem.ipoca.core.util.StorageUtils;
 import com.clem.ipoca.core.util.URLChecker;
 import com.clem.ipoca.core.util.syndication.FeedDiscoverer;
 import com.clem.ipoca.core.util.syndication.HtmlToPlainText;
+import com.clem.ipoca.core.view.CornerView.CornerButton;
 import com.clem.ipoca.dialog.AuthenticationDialog;
+import com.clem.ipoca.spa.ColorUtil;
 
 import org.apache.commons.lang3.StringUtils;
 import org.greenrobot.eventbus.EventBus;
@@ -99,7 +100,7 @@ public class OnlineFeedViewActivity extends AppCompatActivity {
 
     private Dialog dialog;
 
-    private Button subscribeButton;
+    private CornerButton subscribeButton;
 
     private Subscription download;
     private Subscription parser;
@@ -411,7 +412,9 @@ public class OnlineFeedViewActivity extends AppCompatActivity {
         TextView description = (TextView) header.findViewById(R.id.txtvDescription);
         Spinner spAlternateUrls = (Spinner) header.findViewById(R.id.spinnerAlternateUrls);
 
-        subscribeButton = (Button) header.findViewById(R.id.butSubscribe);
+        subscribeButton = (CornerButton) header.findViewById(R.id.butSubscribe);
+        subscribeButton.setBackgroundColor(UserPreferences.getPrefColor());
+        subscribeButton.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
 
         if (feed.getImage() != null && StringUtils.isNotBlank(feed.getImage().getDownload_url())) {
             Glide.with(this)

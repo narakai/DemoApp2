@@ -3,7 +3,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
         android:id="@+id/txtvTitle"
@@ -52,7 +53,10 @@
         android:layout_alignParentRight="true"
         android:layout_margin="8dp"/>
 
-    <Button
+    <com.clem.ipoca.core.view.CornerView.CornerButton
+        app:radius="30dp"
+        app:rd_enable="true"
+        app:border="1dp"
         android:id="@+id/butCreateNewDevice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -95,7 +99,10 @@
         android:textColor="?android:attr/textColorSecondary"
         android:layout_margin="16dp"/>
 
-    <Button
+    <com.clem.ipoca.core.view.CornerView.CornerButton
+        app:radius="30dp"
+        app:rd_enable="true"
+        app:border="1dp"
         android:id="@+id/butChooseExistingDevice"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

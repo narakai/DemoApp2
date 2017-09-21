@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:scrollbars="vertical">
 
     <LinearLayout
@@ -28,20 +29,32 @@
             android:text="@string/podcastdirectories_descr"
             android:textSize="@dimen/text_size_medium"/>
 
-        <Button
+        <com.clem.ipoca.core.view.CornerView.CornerButton
+            app:radius="30dp"
+            app:rd_enable="true"
+            app:border="1dp"
             android:id="@+id/butSearchItunes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="@string/search_itunes_label"/>
 
-        <Button
+        <com.clem.ipoca.core.view.CornerView.CornerButton
+            android:layout_marginTop="5dp"
             android:id="@+id/butSearchFyyd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/search_fyyd_label"/>
+            android:text="@string/search_fyyd_label"
+            app:radius="30dp"
+            app:rd_enable="true"
+            app:border="1dp"
+            />
 
-        <Button
+        <com.clem.ipoca.core.view.CornerView.CornerButton
+            android:layout_marginTop="5dp"
+            app:radius="30dp"
+            app:rd_enable="true"
+            app:border="1dp"
             android:id="@+id/butBrowseGpoddernet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,7 +79,10 @@
             android:hint="@string/etxtFeedurlHint"
             android:inputType="textUri"/>
 
-        <Button
+        <com.clem.ipoca.core.view.CornerView.CornerButton
+            app:radius="30dp"
+            app:rd_enable="true"
+            app:border="1dp"
             android:id="@+id/butConfirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,7 +104,10 @@
             android:text="@string/opml_import_txtv_button_lable"
             android:textSize="@dimen/text_size_medium"/>
 
-        <Button
+        <com.clem.ipoca.core.view.CornerView.CornerButton
+            app:radius="30dp"
+            app:rd_enable="true"
+            app:border="1dp"
             android:id="@+id/butOpmlImport"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -60,10 +60,8 @@ import com.clem.ipoca.dialog.AutoFlattrPreferenceDialog;
 import com.clem.ipoca.dialog.GpodnetSetHostnameDialog;
 import com.clem.ipoca.dialog.ProxyDialog;
 import com.clem.ipoca.dialog.VariableSpeedDialog;
-import com.clem.ipoca.event.ChannelEvent;
 
 import org.apache.commons.lang3.ArrayUtils;
-import org.greenrobot.eventbus.EventBus;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -245,15 +243,12 @@ public class PreferenceController implements SharedPreferences.OnSharedPreferenc
                     return true;
                 });
 
-        ui.findPreference(UserPreferences.PREF_COUNTRY).setOnPreferenceChangeListener((preference, newValue) -> {
-            Log.d(TAG, "PREF_COUNTRY: ");
-            EventBus.getDefault().post(new ChannelEvent());
-            return true;
-        });
-        ui.findPreference(UserPreferences.PREF_GENRE).setOnPreferenceChangeListener((preference, newValue) -> {
-            EventBus.getDefault().post(new ChannelEvent());
-            return true;
-        });
+//        ui.findPreference(UserPreferences.PREF_COUNTRY).setOnPreferenceChangeListener((preference, newValue) -> {
+//            return true;
+//        });
+//        ui.findPreference(UserPreferences.PREF_GENRE).setOnPreferenceChangeListener((preference, newValue) -> {
+//            return true;
+//        });
 
         ui.findPreference(UserPreferences.PREF_COMPACT_NOTIFICATION_BUTTONS)
                 .setOnPreferenceClickListener(preference -> {

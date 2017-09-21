@@ -25,10 +25,8 @@ import com.clem.ipoca.core.glide.ApGlideSettings;
 import com.clem.ipoca.core.preferences.UserPreferences;
 import com.clem.ipoca.core.service.download.AntennapodHttpClient;
 import com.clem.ipoca.event.AddEvent;
-import com.clem.ipoca.event.ChannelEvent;
 
 import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -151,9 +149,14 @@ public class ChannelFragment extends Fragment {
         mHomeAdapter = new HomeAdapter();
         mRecyclerView.setAdapter(mHomeAdapter);
         progressBar = (ProgressBar) rootView.findViewById(R.id.progressBar);
+        return rootView;
+    }
+
+    @Override
+    public void onResume() {
         setData();
         renderView();
-        return rootView;
+        super.onResume();
     }
 
     private void setData() {
@@ -234,7 +237,6 @@ public class ChannelFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        if (!EventBus.getDefault().isRegistered(this)) EventBus.getDefault().register(this);
     }
 
 
@@ -245,13 +247,7 @@ public class ChannelFragment extends Fragment {
 
     @Override
     public void onDestroy() {
-        EventBus.getDefault().unregister(this);
         super.onDestroy();
-    }
-
-    @Subscribe
-    public void onChannelEvent(ChannelEvent event) {
-        setData();
     }
 
     class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> {

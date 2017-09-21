@@ -10,13 +10,14 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 
 import com.afollestad.materialdialogs.color.CircleView;
 import com.clem.ipoca.R;
 import com.clem.ipoca.core.export.opml.OpmlElement;
 import com.clem.ipoca.core.preferences.UserPreferences;
+import com.clem.ipoca.core.view.CornerView.CornerButton;
+import com.clem.ipoca.spa.ColorUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,8 +29,8 @@ import java.util.List;
 public class OpmlFeedChooserActivity extends AppCompatActivity {
     public static final String EXTRA_SELECTED_ITEMS = "com.clem.ipoca.selectedItems";
     private static final String TAG = "OpmlFeedChooserActivity";
-    private Button butConfirm;
-    private Button butCancel;
+    private CornerButton butConfirm;
+    private CornerButton butCancel;
     private ListView feedlist;
     private ArrayAdapter<String> listAdapter;
 
@@ -42,8 +43,12 @@ public class OpmlFeedChooserActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.opml_selection);
-        butConfirm = (Button) findViewById(R.id.butConfirm);
-        butCancel = (Button) findViewById(R.id.butCancel);
+        butConfirm = (CornerButton) findViewById(R.id.butConfirm);
+        butConfirm.setBackgroundColor(UserPreferences.getPrefColor());
+        butConfirm.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
+        butCancel = (CornerButton) findViewById(R.id.butCancel);
+        butCancel.setBackgroundColor(UserPreferences.getPrefColor());
+        butCancel.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
         feedlist = (ListView) findViewById(R.id.feedlist);
 
         feedlist.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);

@@ -14,7 +14,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -26,7 +25,10 @@ import com.clem.ipoca.adapter.gpodnet.PodcastListAdapter;
 import com.clem.ipoca.core.gpoddernet.GpodnetService;
 import com.clem.ipoca.core.gpoddernet.GpodnetServiceException;
 import com.clem.ipoca.core.gpoddernet.model.GpodnetPodcast;
+import com.clem.ipoca.core.preferences.UserPreferences;
+import com.clem.ipoca.core.view.CornerView.CornerButton;
 import com.clem.ipoca.menuhandler.MenuItemUtils;
+import com.clem.ipoca.spa.ColorUtil;
 
 import java.util.List;
 
@@ -40,7 +42,7 @@ public abstract class PodcastListFragment extends Fragment {
     private GridView gridView;
     private ProgressBar progressBar;
     private TextView txtvError;
-    private Button butRetry;
+    private CornerButton butRetry;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -81,7 +83,9 @@ public abstract class PodcastListFragment extends Fragment {
         gridView = (GridView) root.findViewById(R.id.gridView);
         progressBar = (ProgressBar) root.findViewById(R.id.progressBar);
         txtvError = (TextView) root.findViewById(R.id.txtvError);
-        butRetry = (Button) root.findViewById(R.id.butRetry);
+        butRetry = (CornerButton) root.findViewById(R.id.butRetry);
+        butRetry.setBackgroundColor(UserPreferences.getPrefColor());
+        butRetry.setTextColor(ColorUtil.getThemeColor(this.getActivity().getApplicationContext()));
 
         gridView.setOnItemClickListener((parent, view, position, id) ->
                 onPodcastSelected((GpodnetPodcast) gridView.getAdapter().getItem(position)));

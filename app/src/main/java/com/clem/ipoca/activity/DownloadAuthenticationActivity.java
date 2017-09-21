@@ -7,7 +7,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -17,6 +16,8 @@ import com.clem.ipoca.R;
 import com.clem.ipoca.core.preferences.UserPreferences;
 import com.clem.ipoca.core.service.download.DownloadRequest;
 import com.clem.ipoca.core.storage.DownloadRequester;
+import com.clem.ipoca.core.view.CornerView.CornerButton;
+import com.clem.ipoca.spa.ColorUtil;
 
 import org.apache.commons.lang3.Validate;
 
@@ -43,8 +44,8 @@ public class DownloadAuthenticationActivity extends ActionBarActivity {
 
     private EditText etxtUsername;
     private EditText etxtPassword;
-    private Button butConfirm;
-    private Button butCancel;
+    private CornerButton butConfirm;
+    private CornerButton butCancel;
     private TextView txtvDescription;
 
     private DownloadRequest request;
@@ -59,8 +60,12 @@ public class DownloadAuthenticationActivity extends ActionBarActivity {
 
         etxtUsername = (EditText) findViewById(R.id.etxtUsername);
         etxtPassword = (EditText) findViewById(R.id.etxtPassword);
-        butConfirm = (Button) findViewById(R.id.butConfirm);
-        butCancel = (Button) findViewById(R.id.butCancel);
+        butConfirm = (CornerButton) findViewById(R.id.butConfirm);
+        butConfirm.setBackgroundColor(UserPreferences.getPrefColor());
+        butConfirm.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
+        butCancel = (CornerButton) findViewById(R.id.butCancel);
+        butCancel.setBackgroundColor(UserPreferences.getPrefColor());
+        butCancel.setTextColor(ColorUtil.getThemeColor(this.getApplicationContext()));
         txtvDescription = (TextView) findViewById(R.id.txtvDescription);
 
         Validate.isTrue(getIntent().hasExtra(ARG_DOWNLOAD_REQUEST), "Download request missing");

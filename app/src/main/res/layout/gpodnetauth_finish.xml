@@ -2,7 +2,8 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
         android:id="@+id/txtvTitle"
@@ -23,7 +24,10 @@
         android:textColor="?android:attr/textColorSecondary"
         android:layout_margin="16dp"/>
 
-    <Button
+    <com.clem.ipoca.core.view.CornerView.CornerButton
+        app:radius="30dp"
+        app:rd_enable="true"
+        app:border="1dp"
         android:id="@+id/butSyncNow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,7 +35,10 @@
         android:layout_margin="16dp"
         android:text="@string/gpodnetauth_finish_butsyncnow"/>
 
-    <Button
+    <com.clem.ipoca.core.view.CornerView.CornerButton
+        app:radius="30dp"
+        app:rd_enable="true"
+        app:border="1dp"
         android:id="@+id/butGoMainscreen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

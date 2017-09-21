@@ -5,11 +5,13 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
 import com.clem.ipoca.R;
+import com.clem.ipoca.core.preferences.UserPreferences;
+import com.clem.ipoca.core.view.CornerView.CornerButton;
+import com.clem.ipoca.spa.ColorUtil;
 
 /**
  * Displays a dialog with a username and password text field and an optional checkbox to save username and preferences.
@@ -38,8 +40,12 @@ public abstract class AuthenticationDialog extends Dialog {
         final EditText etxtUsername = (EditText) findViewById(R.id.etxtUsername);
         final EditText etxtPassword = (EditText) findViewById(R.id.etxtPassword);
         final CheckBox saveUsernamePassword = (CheckBox) findViewById(R.id.chkSaveUsernamePassword);
-        final Button butConfirm = (Button) findViewById(R.id.butConfirm);
-        final Button butCancel = (Button) findViewById(R.id.butCancel);
+        final CornerButton butConfirm = (CornerButton) findViewById(R.id.butConfirm);
+        butConfirm.setBackgroundColor(UserPreferences.getPrefColor());
+        butConfirm.setTextColor(ColorUtil.getThemeColor(getContext()));
+        final CornerButton butCancel = (CornerButton) findViewById(R.id.butCancel);
+        butCancel.setBackgroundColor(UserPreferences.getPrefColor());
+        butCancel.setTextColor(ColorUtil.getThemeColor(getContext()));
 
         if (titleRes != 0) {
             setTitle(titleRes);

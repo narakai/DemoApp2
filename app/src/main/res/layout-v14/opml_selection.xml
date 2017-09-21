@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/footer"
         android:layout_width="fill_parent"
         android:layout_height="48dp"
-        android:layout_alignParentBottom="true" >
+        android:layout_alignParentBottom="true">
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dip"
             android:layout_alignParentTop="true"
-            android:background="?android:attr/dividerVertical" />
+            android:background="?android:attr/dividerVertical"/>
 
         <View
             android:id="@+id/horizontal_divider"
@@ -24,9 +25,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="4dp"
             android:layout_marginTop="4dp"
-            android:background="?android:attr/dividerVertical" />
+            android:background="?android:attr/dividerVertical"/>
 
-        <Button
+        <com.clem.ipoca.core.view.CornerView.CornerButton
             android:id="@+id/butCancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,9 +36,12 @@
             android:layout_alignParentTop="true"
             android:layout_toLeftOf="@id/horizontal_divider"
             android:background="?android:attr/selectableItemBackground"
-            android:text="@string/cancel_label" />
+            android:text="@string/cancel_label"
+            app:border="1dp"
+            app:radius="30dp"
+            app:rd_enable="true"/>
 
-        <Button
+        <com.clem.ipoca.core.view.CornerView.CornerButton
             android:id="@+id/butConfirm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +50,10 @@
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@id/horizontal_divider"
             android:background="?android:attr/selectableItemBackground"
-            android:text="@string/confirm_label" />
+            android:text="@string/confirm_label"
+            app:border="1dp"
+            app:radius="30dp"
+            app:rd_enable="true"/>
     </RelativeLayout>
 
     <ListView
@@ -55,7 +62,7 @@
         android:layout_height="0dp"
         android:layout_above="@id/footer"
         android:layout_alignParentTop="true"
-        tools:listitem="@android:layout/simple_list_item_multiple_choice" >
+        tools:listitem="@android:layout/simple_list_item_multiple_choice">
     </ListView>
 
 </RelativeLayout>
