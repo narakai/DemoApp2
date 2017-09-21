@@ -61,4 +61,22 @@ public class PodcastApp extends Application {
         SPAUtil.sendSPAppsQueryFeedsIntent(this);
     }
 
+	private static long mLastRequestTime = 0;
+
+	public static boolean isDoubleRequest() {
+		long gapTime = 1000;
+		long currentTimeTime = System.currentTimeMillis();
+
+		if (mLastRequestTime == 0) {
+			mLastRequestTime = System.currentTimeMillis();
+			return false;
+		} else if (currentTimeTime - mLastRequestTime < gapTime) {
+			mLastRequestTime = currentTimeTime;
+			return true;
+		} else {
+			mLastRequestTime = currentTimeTime;
+			return false;
+		}
+	}
+
 }

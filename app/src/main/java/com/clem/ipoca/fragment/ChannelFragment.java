@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 
 import com.bumptech.glide.Glide;
+import com.clem.ipoca.PodcastApp;
 import com.clem.ipoca.R;
 import com.clem.ipoca.activity.MainActivity;
 import com.clem.ipoca.adapter.itunes.ItunesAdapter;
@@ -249,7 +250,7 @@ public class ChannelFragment extends Fragment {
     }
 
     @Subscribe
-    public void onChannelEvent(ChannelEvent event){
+    public void onChannelEvent(ChannelEvent event) {
         setData();
     }
 
@@ -276,7 +277,9 @@ public class ChannelFragment extends Fragment {
             holder.mImageView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    EventBus.getDefault().post(new AddEvent(topList.get(position)));
+                    if (!PodcastApp.isDoubleRequest()) {
+                        EventBus.getDefault().post(new AddEvent(topList.get(position)));
+                    }
                 }
             });
         }
