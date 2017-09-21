@@ -2,6 +2,7 @@ package com.clem.ipoca.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -141,7 +142,11 @@ public class ChannelFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.channel_fragment, container, false);
         mRecyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
-        mRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 2));
+        GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), 2);
+        layoutManager.setAutoMeasureEnabled(true);
+        mRecyclerView.setLayoutManager(layoutManager);
+        ViewCompat.setNestedScrollingEnabled(mRecyclerView, false);
+        mRecyclerView.setHasFixedSize(true);
         mHomeAdapter = new HomeAdapter();
         mRecyclerView.setAdapter(mHomeAdapter);
         progressBar = (ProgressBar) rootView.findViewById(R.id.progressBar);

@@ -65,6 +65,7 @@ dependencies {
     compile "io.reactivex:rxandroid:$rxAndroidVersion"
 
     compile "com.github.AntennaPod:AntennaPod-AudioPlayer:$audioPlayerVersion"
+    compile 'com.github.rey5137:material:1.2.4'
 
     // Add casting features
     // free build hack: skip some dependencies

@@ -57,4 +57,15 @@
     <attr name="overlay_background" format="color"/>
 
     <attr name="nav_drawer_background" format="color"/>
+
+    <declare-styleable name="CornerView">
+        <attr name="radius" format="dimension"/>
+        <attr name="top_left_radius" format="dimension"/>
+        <attr name="top_right_radius" format="dimension"/>
+        <attr name="bottom_right_radius" format="dimension"/>
+        <attr name="bottom_left_radius" format="dimension"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="borderColor" format="color"/>
+        <attr name="border" format="dimension"/>
+    </declare-styleable>
 </resources>

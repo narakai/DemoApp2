@@ -22,10 +22,10 @@
             tools:layout_height="64dp"/>
 
         <android.support.design.widget.CoordinatorLayout
-            android:layout_above="@+id/playerFragment"
             android:id="@+id/coordinator_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_above="@+id/playerFragment">
 
             <android.support.design.widget.AppBarLayout
                 android:id="@+id/appbar_layout"
@@ -46,13 +46,23 @@
 
             </android.support.design.widget.AppBarLayout>
 
-            <FrameLayout
+            <android.support.v4.widget.NestedScrollView
                 android:id="@+id/main_view"
                 android:layout_width="match_parent"
+                android:fillViewport="true"
                 android:layout_height="match_parent"
-                android:foreground="?android:windowContentOverlay"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                tools:background="@android:color/holo_red_dark"/>
+                tools:background="@android:color/holo_red_dark">
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <!--<FrameLayout-->
+            <!--android:id="@+id/main_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:foreground="?android:windowContentOverlay"-->
+            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+            <!--tools:background="@android:color/holo_red_dark"/>-->
 
 
         </android.support.design.widget.CoordinatorLayout>

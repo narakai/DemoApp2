@@ -20,7 +20,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.util.TypedValue;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -28,6 +27,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
@@ -124,6 +124,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
 
     private Toolbar toolbar;
     private ExternalPlayerFragment externalPlayerFragment;
+    private FrameLayout playerFragment;
     private DrawerLayout drawerLayout;
 
     private View navDrawer;
@@ -162,7 +163,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navList = (ListView) findViewById(R.id.nav_list);
         navDrawer = findViewById(R.id.nav_layout);
-
+        playerFragment = (FrameLayout) findViewById(R.id.playerFragment);
         drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.drawer_open, R.string.drawer_close);
         if (savedInstanceState != null) {
             int backstackCount = savedInstanceState.getInt(SAVE_BACKSTACK_COUNT, 0);
@@ -233,10 +234,13 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
                     loadFragment(QueueFragment.TAG, null);
                 }
             }
-            if (lastFragment.equals(QueueFragment.TAG) || lastFragment.equals(EpisodesFragment.TAG)){
-                externalPlayerFragment = new ExternalPlayerFragment();
-                transaction.replace(R.id.playerFragment, externalPlayerFragment, ExternalPlayerFragment.TAG);
-                transaction.commit();
+            externalPlayerFragment = new ExternalPlayerFragment();
+            transaction.replace(R.id.playerFragment, externalPlayerFragment, ExternalPlayerFragment.TAG);
+            transaction.commit();
+            if (lastFragment.equals(QueueFragment.TAG) || lastFragment.equals(EpisodesFragment.TAG)) {
+                playerFragment.setVisibility(View.VISIBLE);
+            } else {
+                playerFragment.setVisibility(View.GONE);
             }
         }
 
@@ -342,30 +346,38 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         Fragment fragment = null;
         switch (tag) {
             case ChannelFragment.TAG:
+                playerFragment.setVisibility(View.GONE);
                 fragment = new ChannelFragment();
                 break;
             case QueueFragment.TAG:
+                playerFragment.setVisibility(View.VISIBLE);
                 fragment = new QueueFragment();
                 break;
             case EpisodesFragment.TAG:
+                playerFragment.setVisibility(View.VISIBLE);
                 fragment = new EpisodesFragment();
                 break;
+            case SubscriptionFragment.TAG:
+                playerFragment.setVisibility(View.GONE);
+                SubscriptionFragment subscriptionFragment = new SubscriptionFragment();
+                fragment = subscriptionFragment;
+                break;
             case DownloadsFragment.TAG:
+                playerFragment.setVisibility(View.GONE);
                 fragment = new DownloadsFragment();
                 break;
             case PlaybackHistoryFragment.TAG:
+                playerFragment.setVisibility(View.GONE);
                 fragment = new PlaybackHistoryFragment();
                 break;
             case AddFeedFragment.TAG:
+                playerFragment.setVisibility(View.GONE);
                 fragment = new AddFeedFragment();
-                break;
-            case SubscriptionFragment.TAG:
-                SubscriptionFragment subscriptionFragment = new SubscriptionFragment();
-                fragment = subscriptionFragment;
                 break;
             default:
                 // default to the queue
                 tag = ChannelFragment.TAG;
+                playerFragment.setVisibility(View.GONE);
                 fragment = new ChannelFragment();
                 args = null;
                 break;
