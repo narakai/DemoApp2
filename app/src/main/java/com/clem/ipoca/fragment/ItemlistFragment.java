@@ -11,6 +11,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.ContextMenu;
@@ -364,7 +365,12 @@ public class ItemlistFragment extends ListFragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        registerForContextMenu(getListView());
+        final ListView lv = getListView();
+        lv.setClipToPadding(false);
+        final int vertPadding = getResources().getDimensionPixelSize(R.dimen.list_vertical_padding);
+        lv.setPadding(0, vertPadding, 0, vertPadding);
+        ViewCompat.setNestedScrollingEnabled(lv, true);
+        registerForContextMenu(lv);
 
         viewsCreated = true;
         if (itemsLoaded) {

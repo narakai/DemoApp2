@@ -6,11 +6,13 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.clem.ipoca.R;
@@ -64,7 +66,13 @@ public class TagListFragment extends ListFragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        getListView().setOnItemClickListener((parent, view1, position, id) -> {
+        final ListView lv = getListView();
+        lv.setClipToPadding(false);
+        final int vertPadding = getResources().getDimensionPixelSize(R.dimen.list_vertical_padding);
+        lv.setPadding(0, vertPadding, 0, vertPadding);
+        ViewCompat.setNestedScrollingEnabled(lv, true);
+
+        lv.setOnItemClickListener((parent, view1, position, id) -> {
             GpodnetTag tag = (GpodnetTag) getListAdapter().getItem(position);
             MainActivity activity = (MainActivity) getActivity();
             activity.loadChildFragment(TagFragment.newInstance(tag));

@@ -14,7 +14,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -29,6 +28,7 @@ import com.clem.ipoca.core.preferences.UserPreferences;
 import com.clem.ipoca.core.view.CornerView.CornerButton;
 import com.clem.ipoca.menuhandler.MenuItemUtils;
 import com.clem.ipoca.spa.ColorUtil;
+import com.clem.ipoca.view.MyGridView;
 
 import java.util.List;
 
@@ -39,7 +39,7 @@ public abstract class PodcastListFragment extends Fragment {
 
     private static final String TAG = "PodcastListFragment";
 
-    private GridView gridView;
+    private MyGridView gridView;
     private ProgressBar progressBar;
     private TextView txtvError;
     private CornerButton butRetry;
@@ -80,7 +80,7 @@ public abstract class PodcastListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.gpodnet_podcast_list, container, false);
 
-        gridView = (GridView) root.findViewById(R.id.gridView);
+        gridView = (MyGridView) root.findViewById(R.id.gridView);
         progressBar = (ProgressBar) root.findViewById(R.id.progressBar);
         txtvError = (TextView) root.findViewById(R.id.txtvError);
         butRetry = (CornerButton) root.findViewById(R.id.butRetry);

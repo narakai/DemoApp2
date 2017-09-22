@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
@@ -116,6 +117,7 @@ public class SearchFragment extends ListFragment {
         lv.setClipToPadding(false);
         final int vertPadding = getResources().getDimensionPixelSize(R.dimen.list_vertical_padding);
         lv.setPadding(0, vertPadding, 0, vertPadding);
+        ViewCompat.setNestedScrollingEnabled(lv, true);
 
         ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(R.string.search_label);
         viewCreated = true;
