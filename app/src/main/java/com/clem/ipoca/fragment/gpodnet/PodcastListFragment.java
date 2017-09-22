@@ -6,6 +6,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -28,7 +30,6 @@ import com.clem.ipoca.core.preferences.UserPreferences;
 import com.clem.ipoca.core.view.CornerView.CornerButton;
 import com.clem.ipoca.menuhandler.MenuItemUtils;
 import com.clem.ipoca.spa.ColorUtil;
-import com.clem.ipoca.view.MyGridView;
 
 import java.util.List;
 
@@ -39,7 +40,7 @@ public abstract class PodcastListFragment extends Fragment {
 
     private static final String TAG = "PodcastListFragment";
 
-    private MyGridView gridView;
+    private GridView gridView;
     private ProgressBar progressBar;
     private TextView txtvError;
     private CornerButton butRetry;
@@ -80,13 +81,14 @@ public abstract class PodcastListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.gpodnet_podcast_list, container, false);
 
-        gridView = (MyGridView) root.findViewById(R.id.gridView);
+        gridView = (GridView) root.findViewById(R.id.gridView);
         progressBar = (ProgressBar) root.findViewById(R.id.progressBar);
         txtvError = (TextView) root.findViewById(R.id.txtvError);
         butRetry = (CornerButton) root.findViewById(R.id.butRetry);
         butRetry.setBackgroundColor(UserPreferences.getPrefColor());
         butRetry.setTextColor(ColorUtil.getThemeColor(this.getActivity().getApplicationContext()));
 
+        ViewCompat.setNestedScrollingEnabled(gridView, true);
         gridView.setOnItemClickListener((parent, view, position, id) ->
                 onPodcastSelected((GpodnetPodcast) gridView.getAdapter().getItem(position)));
         butRetry.setOnClickListener(v -> loadData());

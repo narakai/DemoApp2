@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewCompat;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.GridView;
 
 import com.clem.ipoca.R;
 import com.clem.ipoca.activity.MainActivity;
@@ -26,7 +28,6 @@ import com.clem.ipoca.core.storage.DBReader;
 import com.clem.ipoca.core.storage.DBWriter;
 import com.clem.ipoca.core.util.FeedItemUtil;
 import com.clem.ipoca.dialog.RenameFeedDialog;
-import com.clem.ipoca.view.MyGridView;
 
 import rx.Observable;
 import rx.Subscription;
@@ -43,7 +44,7 @@ public class SubscriptionFragment extends Fragment {
     private static final int EVENTS = EventDistributor.FEED_LIST_UPDATE
             | EventDistributor.UNREAD_ITEMS_UPDATE;
 
-    private MyGridView subscriptionGridLayout;
+    private GridView subscriptionGridLayout;
     private DBReader.NavDrawerData navDrawerData;
     private SubscriptionsAdapter subscriptionAdapter;
 
@@ -69,7 +70,8 @@ public class SubscriptionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_subscriptions, container, false);
-        subscriptionGridLayout = (MyGridView) root.findViewById(R.id.subscriptions_grid);
+        subscriptionGridLayout = (GridView) root.findViewById(R.id.subscriptions_grid);
+        ViewCompat.setNestedScrollingEnabled(subscriptionGridLayout, true);
         registerForContextMenu(subscriptionGridLayout);
         return root;
     }

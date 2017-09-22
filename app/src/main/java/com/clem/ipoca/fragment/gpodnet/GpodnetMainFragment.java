@@ -81,10 +81,10 @@ public class GpodnetMainFragment extends Fragment {
         @Override
         public Fragment getItem(int i) {
             switch (i) {
-                case POS_TAGS:
-                    return new TagListFragment();
                 case POS_TOPLIST:
                     return new PodcastTopListFragment();
+                case POS_TAGS:
+                    return new TagListFragment();
                 case POS_SUGGESTIONS:
                     return new SuggestionListFragment();
                 default:

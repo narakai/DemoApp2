@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -25,7 +27,6 @@ import com.clem.ipoca.core.service.download.AntennapodHttpClient;
 import com.clem.ipoca.core.view.CornerView.CornerButton;
 import com.clem.ipoca.menuhandler.MenuItemUtils;
 import com.clem.ipoca.spa.ColorUtil;
-import com.clem.ipoca.view.MyGridView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -58,7 +59,7 @@ public class ItunesSearchFragment extends Fragment {
      * Adapter responsible with the search results
      */
     private ItunesAdapter adapter;
-    private MyGridView gridView;
+    private GridView gridView;
     private ProgressBar progressBar;
     private TextView txtvError;
     private CornerButton butRetry;
@@ -109,7 +110,8 @@ public class ItunesSearchFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_itunes_search, container, false);
-        gridView = (MyGridView) root.findViewById(R.id.gridView);
+        gridView = (GridView) root.findViewById(R.id.gridView);
+        ViewCompat.setNestedScrollingEnabled(gridView, true);
         adapter = new ItunesAdapter(getActivity(), new ArrayList<>());
         gridView.setAdapter(adapter);
 
