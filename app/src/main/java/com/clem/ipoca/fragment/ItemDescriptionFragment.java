@@ -39,6 +39,7 @@ import com.clem.ipoca.core.util.ShownotesProvider;
 import com.clem.ipoca.core.util.playback.Playable;
 import com.clem.ipoca.core.util.playback.PlaybackController;
 import com.clem.ipoca.core.util.playback.Timeline;
+import com.clem.ipoca.spa.ColorUtil;
 
 import rx.Observable;
 import rx.Subscription;
@@ -118,7 +119,7 @@ public class ItemDescriptionFragment extends Fragment implements MediaplayerInfo
         TypedArray ta = getActivity().getTheme().obtainStyledAttributes(new int[]
                 {android.R.attr.colorBackground});
         int backgroundColor = ta.getColor(0, UserPreferences.getTheme() ==
-                R.style.Theme_AntennaPod_Dark ? Color.BLACK : Color.WHITE);
+                R.style.Theme_AntennaPod_Dark ? ColorUtil.getColor(getActivity().getApplicationContext(), R.color.black) : Color.WHITE);
         ta.recycle();
         webvDescription.setBackgroundColor(backgroundColor);
         webvDescription.getSettings().setUseWideViewPort(true);

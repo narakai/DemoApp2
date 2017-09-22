@@ -298,7 +298,7 @@
   <string name="pref_auto_flattr_title">自動Flattr</string>
   <string name="pref_auto_flattr_sum">設置自動 flattring</string>
   <string name="user_interface_label">界面</string>
-  <string name="pref_set_theme_title">主題選擇</string>
+  <string name="pref_set_theme_title">夜間模式</string>
   <string name="pref_nav_drawer_title">側邊欄設置</string>
   <string name="pref_nav_drawer_sum">側邊欄外觀設置</string>
   <string name="pref_nav_drawer_items_title">設置側邊欄的選項</string>
@@ -307,7 +307,7 @@
   <string name="pref_nav_drawer_feed_order_sum">改變妳的訂閱的排序方式</string>
   <string name="pref_nav_drawer_feed_counter_title">設定訂閱數</string>
   <string name="pref_nav_drawer_feed_counter_sum">改變訂閱數所代表的信息</string>
-  <string name="pref_set_theme_sum">改變 iPoca 外觀</string>
+  <string name="pref_set_theme_sum">夜間模式切換</string>
   <string name="pref_automatic_download_title">自動下載</string>
   <string name="pref_automatic_download_sum">配置自動下載的曲目</string>
   <string name="pref_autodl_wifi_filter_title">打開 Wi-Fi 過濾器</string>

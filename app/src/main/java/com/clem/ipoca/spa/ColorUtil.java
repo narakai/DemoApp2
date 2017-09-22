@@ -1,6 +1,7 @@
 package com.clem.ipoca.spa;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
 
 import com.clem.ipoca.R;
@@ -21,6 +22,22 @@ public class ColorUtil {
             otherTheme =  ContextCompat.getColor(context, R.color.white);
         }
         return otherTheme;
+    }
+
+    public static int getColor(Context context, int resId) {
+        return ContextCompat.getColor(context, resId);
+    }
+
+    public static Drawable getDrawable(Context context, int resId) {
+        return ContextCompat.getDrawable(context, resId);
+    }
+
+    public static String getString(Context context, int resId) {
+        return context.getString(resId);
+    }
+
+    public static float getDimension(Context context, int resId) {
+        return context.getResources().getDimension(resId);
     }
 
 

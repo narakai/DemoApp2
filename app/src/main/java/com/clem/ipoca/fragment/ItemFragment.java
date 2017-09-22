@@ -3,12 +3,13 @@ package com.clem.ipoca.fragment;
 import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GestureDetectorCompat;
 import android.text.Layout;
 import android.text.TextUtils;
@@ -57,6 +58,7 @@ import com.clem.ipoca.core.util.LongList;
 import com.clem.ipoca.core.util.ShareUtils;
 import com.clem.ipoca.core.util.playback.Timeline;
 import com.clem.ipoca.menuhandler.FeedItemMenuHandler;
+import com.clem.ipoca.spa.ColorUtil;
 import com.clem.ipoca.view.OnSwipeGesture;
 import com.clem.ipoca.view.SwipeGestureDetector;
 import com.joanzapata.iconify.Iconify;
@@ -184,13 +186,15 @@ public class ItemFragment extends Fragment implements OnSwipeGesture {
             txtvTitle.setEllipsize(TextUtils.TruncateAt.END);
         }
         webvDescription = (WebView) layout.findViewById(R.id.webvDescription);
-        if (UserPreferences.getTheme() == R.style.Theme_AntennaPod_Dark) {
-            if (Build.VERSION.SDK_INT >= 11
-                && Build.VERSION.SDK_INT <= Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1) {
-                webvDescription.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-            }
-            webvDescription.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.black));
+        if (Build.VERSION.SDK_INT >= 11) {
+            webvDescription.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         }
+        TypedArray ta = getActivity().getTheme().obtainStyledAttributes(new int[]
+                {android.R.attr.colorBackground});
+        int backgroundColor = ta.getColor(0, UserPreferences.getTheme() ==
+                R.style.Theme_AntennaPod_Dark ? ColorUtil.getColor(getActivity().getApplicationContext(), R.color.black) : Color.WHITE);
+        ta.recycle();
+        webvDescription.setBackgroundColor(backgroundColor);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
             webvDescription.getSettings().setTextZoom(250);
         }
