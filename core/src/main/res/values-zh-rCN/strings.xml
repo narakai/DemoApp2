@@ -598,76 +598,76 @@
   <string name="pref_smart_mark_as_played_title">已播智能标记</string>
   <string name="pref_skip_keeps_episodes_sum">跳过时保持曲目</string>
   <string name="pref_skip_keeps_episodes_title">保留跳过的曲目</string>
-  <string name="pref_autoUpdateIntervallOrTime_sum">Specify an interval or a specific time of day to refresh the feeds automatically</string>
-  <string name="pref_gpodnet_sync_changes_title">Sync changes now</string>
-  <string name="pref_gpodnet_sync_changes_sum">Sync subscription and episode state changes with gpodder.net.</string>
-  <string name="pref_gpodnet_full_sync_title">Full sync now</string>
-  <string name="pref_gpodnet_full_sync_sum">Sync all subscriptions and episode states with gpodder.net.</string>
-  <string name="pref_gpodnet_sync_sum_last_sync_line">Last sync attempt: %1$s (%2$s)</string>
-  <string name="pref_gpodnet_full_sync_started">Full sync started</string>
-  <string name="pref_gpodnet_login_status"><![CDATA[Logged in as <i>%1$s</i> with device <i>%2$s</i>]]></string>
-  <string name="pref_gpodnet_notifications_title">Show sync error notifications</string>
-  <string name="pref_gpodnet_notifications_sum">This setting does not apply to authentication errors.</string>
-  <string name="pref_fast_forward">Fast Forward Skip Time</string>
-  <string name="pref_fast_forward_sum">Customize the number of seconds to jump forward when the fast forward button is clicked</string>
-  <string name="pref_rewind">Rewind Skip Time</string>
-  <string name="pref_rewind_sum">Customize the number of seconds to jump backwards when the rewind button is clicked</string>
-  <string name="pref_compact_notification_buttons_sum">Change the playback buttons on the lockscreen. The play/pause button is always included.</string>
-  <string name="pref_lockscreen_background_sum">Set the lockscreen background to the current episode\'s image. As a side effect, this will also show the image in third party apps.</string>
-  <string name="experimental_pref">Experimental</string>
-  <string name="pref_sonic_title">Sonic Media Player</string>
-  <string name="pref_sonic_message">Use built-in sonic media player as a replacement for Android\'s native mediaplayer and Prestissimo</string>
-  <string name="pref_cast_message_play_flavor">Enable support for remote media playback on Cast devices (such as Chromecast, Audio Speakers or Android TV)</string>
-  <string name="pref_cast_message_free_flavor">Chromecast requires third party proprietary libraries that are disabled in this version of AntennaPod</string>
-  <string name="pref_enqueue_downloaded_title">Enqueue Dowloaded</string>
-  <string name="pref_enqueue_downloaded_summary">Add downloaded episodes to the queue</string>
+  <string name="pref_autoUpdateIntervallOrTime_sum">指定制动刷新时间</string>
+  <string name="pref_gpodnet_sync_changes_title">部分同步</string>
+  <string name="pref_gpodnet_sync_changes_sum">与gpodder.net同步变化的订阅和曲目状态</string>
+  <string name="pref_gpodnet_full_sync_title">完整同步</string>
+  <string name="pref_gpodnet_full_sync_sum">与gpodder.net同步所有的订阅和曲目状态</string>
+  <string name="pref_gpodnet_sync_sum_last_sync_line">上一次同步: %1$s (%2$s)</string>
+  <string name="pref_gpodnet_full_sync_started">开始完整同步</string>
+  <string name="pref_gpodnet_login_status"><![CDATA[用户 <i>%1$s</i> 登录，设备是： <i>%2$s</i>]]></string>
+  <string name="pref_gpodnet_notifications_title">显示同步错误提醒</string>
+  <string name="pref_gpodnet_notifications_sum">此设置不适用于认证错误。</string>
+  <string name="pref_fast_forward">快进跳过时间</string>
+  <string name="pref_fast_forward_sum">自定义单击快进按钮时的跳转秒数</string>
+  <string name="pref_rewind">回放跳过时间</string>
+  <string name="pref_rewind_sum">自定义单击回放按钮时的跳转秒数</string>
+  <string name="pref_compact_notification_buttons_sum">更改锁定屏幕上的播放按钮(始终包含播放/暂停按钮)。</string>
+  <string name="pref_lockscreen_background_sum">将锁定屏幕背景设置为当前剧集的图像。</string>
+  <string name="experimental_pref">试验性</string>
+  <string name="pref_sonic_title">内置播放器</string>
+  <string name="pref_sonic_message">使用内置的声音媒体播放器代替Android的本机媒体播放器和Prestissimo</string>
+  <string name="pref_cast_message_play_flavor">支持在Cast设备（如Chromecast，音频扬声器或Android TV）上进行远程媒体播放。</string>
+  <string name="pref_cast_message_free_flavor">此版本不支持Chromecast需要的第三方库</string>
+  <string name="pref_enqueue_downloaded_title">加入队列</string>
+  <string name="pref_enqueue_downloaded_summary">将下载的曲目添加到队列中</string>
 
 
   <!-- Search -->
-  <string name="search_hint">Search for episodes</string>
-  <string name="found_in_shownotes_label">Found in show notes</string>
-  <string name="found_in_authors_label">Found in authors</string>
-  <string name="found_in_feeds_label">Found in feeds</string>
-  <string name="no_results_for_query">No results were found for \"%1$s\"</string>
+  <string name="search_hint">搜索曲目</string>
+  <string name="found_in_shownotes_label">在show notes中找到</string>
+  <string name="found_in_authors_label">在作者中找到</string>
+  <string name="found_in_feeds_label">在剧集中找到</string>
+  <string name="no_results_for_query">找不到： \"%1$s\"</string>
 
-  <string name="html_export_label">HTML export</string>
+  <string name="html_export_label">HTML 导出</string>
 
 
-  <string name="auto_enable_label">Auto-enable</string>
-  <string name="sleep_timer_enabled_label">Sleep timer enabled</string>
-  <string name="sleep_timer_disabled_label">Sleep timer disabled</string>
+  <string name="auto_enable_label">自动启用</string>
+  <string name="sleep_timer_enabled_label">启用睡眠定时器</string>
+  <string name="sleep_timer_disabled_label">禁用睡眠定时器</string>
 
   <!-- gpodder.net -->
-  <string name="gpodnetsync_pref_report_successful">Successful</string>
-  <string name="gpodnetsync_pref_report_failed">Failed</string>
+  <string name="gpodnetsync_pref_report_successful">成功</string>
+  <string name="gpodnetsync_pref_report_failed">失败</string>
 
   <!-- Directory chooser -->
-  <string name="choose_data_directory_message">Please choose the base of your data folder. AntennaPod will create the appropriate sub-directories.</string>
+  <string name="choose_data_directory_message">请选择您的数据文件夹，iPoca将创建相应的子目录。</string>
 
 
   <!-- Feed information screen -->
-  <string name="episode_filters_description">List of terms used to decide if an episode should be included or excluded when auto downloading</string>
-  <string name="episode_filters_hint">Single words \n\"Multiple Words\"</string>
+  <string name="episode_filters_description">用于决定在自动下载时是否应该包括或去除曲目的术语列表</string>
+  <string name="episode_filters_hint">单个词 \n\"多个词\"</string>
 
-  <string name="search_fyyd_label">Search fyyd</string>
+  <string name="search_fyyd_label">搜索 fyyd</string>
 
-  <string name="has_media">Has media</string>
-  <string name="selected_has_media_label">Selected episodes with media</string>
+  <string name="has_media">有媒体文件</string>
+  <string name="selected_has_media_label">选择有媒体文件的曲目</string>
 
-  <string name="stereo_to_mono">Downmix: Stereo to mono</string>
+  <string name="stereo_to_mono">立体声切换为单声道</string>
 
   <!-- Casting -->
-  <string name="cast_media_route_menu_title">Play on&#8230;</string>
-  <string name="cast_disconnect_label">Disconnect the cast session</string>
-  <string name="cast_not_castable">Media selected is not compatible with cast device</string>
-  <string name="cast_failed_to_play">Failed to start the playback of media</string>
-  <string name="cast_failed_to_stop">Failed to stop the playback of media</string>
-  <string name="cast_failed_to_pause">Failed to pause the playback of media</string>
+  <string name="cast_media_route_menu_title">播放&#8230;</string>
+  <string name="cast_disconnect_label">断开会话</string>
+  <string name="cast_not_castable">所选媒体与投放设备不兼容</string>
+  <string name="cast_failed_to_play">无法开始播放媒体</string>
+  <string name="cast_failed_to_stop">无法停止播放媒体</string>
+  <string name="cast_failed_to_pause">无法暂停播放媒体</string>
   <!--<string name="cast_failed_to_connect">Could not connect to the device</string>-->
-  <string name="cast_failed_no_connection">No connection to the cast device is present</string>
-  <string name="cast_failed_no_connection_trans">Connection to the cast device has been lost. Application is trying to re-establish the connection, if possible. Please wait for a few seconds and try again.</string>
-  <string name="cast_failed_perform_action">Failed to perform the action</string>
-  <string name="cast_failed_status_request">Failed to sync up with the cast device</string>
-  <string name="cast_failed_seek">Failed to seek to the new position on the cast device</string>
-  <string name="cast_failed_receiver_player_error">Receiver player has encountered a severe error</string>
+  <string name="cast_failed_no_connection">没有与设备的连接</string>
+  <string name="cast_failed_no_connection_trans">与投射设备的连接已丢失。请等待几秒钟，然后重试。</string>
+  <string name="cast_failed_perform_action">无法执行操作</string>
+  <string name="cast_failed_status_request">无法与投放设备同步</string>
+  <string name="cast_failed_seek">无法在投放设备上定位</string>
+  <string name="cast_failed_receiver_player_error">接收器播放器遇到严重错误</string>
 </resources>
