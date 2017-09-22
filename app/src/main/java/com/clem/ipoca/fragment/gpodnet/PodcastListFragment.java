@@ -5,14 +5,9 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewCompat;
-import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
@@ -20,7 +15,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.clem.ipoca.R;
-import com.clem.ipoca.activity.MainActivity;
 import com.clem.ipoca.activity.OnlineFeedViewActivity;
 import com.clem.ipoca.adapter.gpodnet.PodcastListAdapter;
 import com.clem.ipoca.core.gpoddernet.GpodnetService;
@@ -28,7 +22,6 @@ import com.clem.ipoca.core.gpoddernet.GpodnetServiceException;
 import com.clem.ipoca.core.gpoddernet.model.GpodnetPodcast;
 import com.clem.ipoca.core.preferences.UserPreferences;
 import com.clem.ipoca.core.view.CornerView.CornerButton;
-import com.clem.ipoca.menuhandler.MenuItemUtils;
 import com.clem.ipoca.spa.ColorUtil;
 
 import java.util.List;
@@ -48,33 +41,6 @@ public abstract class PodcastListFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setHasOptionsMenu(true);
-    }
-
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu, inflater);
-        inflater.inflate(R.menu.gpodder_podcasts, menu);
-        MenuItem searchItem = menu.findItem(R.id.action_search);
-        final SearchView sv = (SearchView) MenuItemCompat.getActionView(searchItem);
-        MenuItemUtils.adjustTextColor(getActivity(), sv);
-        sv.setQueryHint(getString(R.string.gpodnet_search_hint));
-        sv.setOnQueryTextListener(new android.support.v7.widget.SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String s) {
-                sv.clearFocus();
-                MainActivity activity = (MainActivity)getActivity();
-                if (activity != null) {
-                    activity.loadChildFragment(SearchListFragment.newInstance(s));
-                }
-                return true;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String s) {
-                return false;
-            }
-        });
     }
 
     @Override

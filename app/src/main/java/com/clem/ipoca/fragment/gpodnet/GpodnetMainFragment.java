@@ -1,5 +1,6 @@
 package com.clem.ipoca.fragment.gpodnet;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
@@ -8,12 +9,19 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.SearchView;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.clem.ipoca.R;
+import com.clem.ipoca.activity.MainActivity;
+import com.clem.ipoca.menuhandler.MenuItemUtils;
 
 /**
  * Main navigation hub for gpodder.net podcast directory
@@ -38,10 +46,35 @@ public class GpodnetMainFragment extends Fragment {
         // Give the TabLayout the ViewPager
         tabLayout = (TabLayout) root.findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
-
+        setHasOptionsMenu(true);
         return root;
     }
 
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.gpodder_podcasts, menu);
+        MenuItem searchItem = menu.findItem(R.id.action_search);
+        final SearchView sv = (SearchView) MenuItemCompat.getActionView(searchItem);
+        MenuItemUtils.adjustTextColor(getActivity(), sv);
+        sv.setQueryHint(getString(R.string.gpodnet_search_hint));
+        sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                Activity activity = getActivity();
+                if (activity != null) {
+                    sv.clearFocus();
+                    ((MainActivity) activity).loadChildFragment(SearchListFragment.newInstance(s));
+                }
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                return false;
+            }
+        });
+    }
 
     @Override
     public void onPause() {

@@ -1,16 +1,10 @@
 package com.clem.ipoca.fragment.gpodnet;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewCompat;
-import android.support.v7.widget.SearchView;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -21,7 +15,6 @@ import com.clem.ipoca.adapter.gpodnet.TagListAdapter;
 import com.clem.ipoca.core.gpoddernet.GpodnetService;
 import com.clem.ipoca.core.gpoddernet.GpodnetServiceException;
 import com.clem.ipoca.core.gpoddernet.model.GpodnetTag;
-import com.clem.ipoca.menuhandler.MenuItemUtils;
 
 import java.util.List;
 
@@ -33,33 +26,6 @@ public class TagListFragment extends ListFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setHasOptionsMenu(true);
-    }
-
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu, inflater);
-        inflater.inflate(R.menu.gpodder_podcasts, menu);
-        MenuItem searchItem = menu.findItem(R.id.action_search);
-        final SearchView sv = (SearchView) MenuItemCompat.getActionView(searchItem);
-        MenuItemUtils.adjustTextColor(getActivity(), sv);
-        sv.setQueryHint(getString(R.string.gpodnet_search_hint));
-        sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String s) {
-                Activity activity = getActivity();
-                if (activity != null) {
-                    sv.clearFocus();
-                    ((MainActivity) activity).loadChildFragment(SearchListFragment.newInstance(s));
-                }
-                return true;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String s) {
-                return false;
-            }
-        });
     }
 
     @Override
