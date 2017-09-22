@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
@@ -391,6 +392,8 @@ public class QueueFragment extends Fragment {
             ((SimpleItemAnimator) animator).setSupportsChangeAnimations(false);
         }
         layoutManager = new LinearLayoutManager(getActivity());
+        layoutManager.setAutoMeasureEnabled(true);
+        ViewCompat.setNestedScrollingEnabled(recyclerView, false);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(getActivity()).build());
         recyclerView.setHasFixedSize(true);

@@ -237,11 +237,11 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             externalPlayerFragment = new ExternalPlayerFragment();
             transaction.replace(R.id.playerFragment, externalPlayerFragment, ExternalPlayerFragment.TAG);
             transaction.commit();
-            if (lastFragment.equals(QueueFragment.TAG) || lastFragment.equals(EpisodesFragment.TAG)) {
-                playerFragment.setVisibility(View.VISIBLE);
-            } else {
-                playerFragment.setVisibility(View.GONE);
-            }
+//            if (lastFragment.equals(QueueFragment.TAG) || lastFragment.equals(EpisodesFragment.TAG)) {
+//                playerFragment.setVisibility(View.VISIBLE);
+//            } else {
+//                playerFragment.setVisibility(GONE);
+//            }
         }
 
         checkFirstLaunch();
@@ -346,38 +346,30 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         Fragment fragment = null;
         switch (tag) {
             case ChannelFragment.TAG:
-                playerFragment.setVisibility(View.GONE);
                 fragment = new ChannelFragment();
                 break;
             case QueueFragment.TAG:
-                playerFragment.setVisibility(View.VISIBLE);
                 fragment = new QueueFragment();
                 break;
             case EpisodesFragment.TAG:
-                playerFragment.setVisibility(View.VISIBLE);
                 fragment = new EpisodesFragment();
                 break;
             case SubscriptionFragment.TAG:
-                playerFragment.setVisibility(View.GONE);
                 SubscriptionFragment subscriptionFragment = new SubscriptionFragment();
                 fragment = subscriptionFragment;
                 break;
             case DownloadsFragment.TAG:
-                playerFragment.setVisibility(View.GONE);
                 fragment = new DownloadsFragment();
                 break;
             case PlaybackHistoryFragment.TAG:
-                playerFragment.setVisibility(View.GONE);
                 fragment = new PlaybackHistoryFragment();
                 break;
             case AddFeedFragment.TAG:
-                playerFragment.setVisibility(View.GONE);
                 fragment = new AddFeedFragment();
                 break;
             default:
                 // default to the queue
                 tag = ChannelFragment.TAG;
-                playerFragment.setVisibility(View.GONE);
                 fragment = new ChannelFragment();
                 args = null;
                 break;
@@ -411,6 +403,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
     }
 
     private void loadFragment(Fragment fragment) {
+//        if (fragment.getTag().equals(QueueFragment.TAG) || )
         FragmentManager fragmentManager = getSupportFragmentManager();
         // clear back stack
         for (int i = 0; i < fragmentManager.getBackStackEntryCount(); i++) {
@@ -432,6 +425,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
     }
 
     public void loadChildFragment(Fragment fragment) {
+        Log.d(TAG, "loadChildFragment: " + fragment.getTag());
         Validate.notNull(fragment);
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction()

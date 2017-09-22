@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-  <GridView
+  <com.clem.ipoca.view.MyGridView
       android:id="@+id/subscriptions_grid"
       android:layout_width="match_parent"
       android:numColumns="3"
@@ -12,5 +12,5 @@
       android:verticalSpacing="2dp"
       android:layout_height="match_parent"
       android:layout_gravity="center_horizontal">
-  </GridView>
+  </com.clem.ipoca.view.MyGridView>
 </LinearLayout>

@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v4.view.ViewCompat;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -79,7 +80,7 @@ public class PlaybackHistoryFragment extends ListFragment {
         lv.setClipToPadding(false);
         final int vertPadding = getResources().getDimensionPixelSize(R.dimen.list_vertical_padding);
         lv.setPadding(0, vertPadding, 0, vertPadding);
-
+        ViewCompat.setNestedScrollingEnabled(lv, true);
         viewsCreated = true;
         if (itemsLoaded) {
             onFragmentLoaded();

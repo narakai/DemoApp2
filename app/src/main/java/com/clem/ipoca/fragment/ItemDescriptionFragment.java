@@ -113,9 +113,9 @@ public class ItemDescriptionFragment extends Fragment implements MediaplayerInfo
                              Bundle savedInstanceState) {
         Log.d(TAG, "Creating view");
         webvDescription = new WebView(getActivity().getApplicationContext());
-        if (Build.VERSION.SDK_INT >= 11) {
-            webvDescription.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-        }
+//        if (Build.VERSION.SDK_INT >= 11) {
+//            webvDescription.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+//        }
         TypedArray ta = getActivity().getTheme().obtainStyledAttributes(new int[]
                 {android.R.attr.colorBackground});
         int backgroundColor = ta.getColor(0, UserPreferences.getTheme() ==

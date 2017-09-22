@@ -186,9 +186,9 @@ public class ItemFragment extends Fragment implements OnSwipeGesture {
             txtvTitle.setEllipsize(TextUtils.TruncateAt.END);
         }
         webvDescription = (WebView) layout.findViewById(R.id.webvDescription);
-        if (Build.VERSION.SDK_INT >= 11) {
-            webvDescription.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-        }
+//        if (Build.VERSION.SDK_INT >= 11) {
+//            webvDescription.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+//        }
         TypedArray ta = getActivity().getTheme().obtainStyledAttributes(new int[]
                 {android.R.attr.colorBackground});
         int backgroundColor = ta.getColor(0, UserPreferences.getTheme() ==

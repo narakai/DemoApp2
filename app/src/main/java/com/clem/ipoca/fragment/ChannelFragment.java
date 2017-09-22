@@ -264,10 +264,8 @@ public class ChannelFragment extends Fragment {
         public void onBindViewHolder(MyViewHolder holder, int position) {
             Glide.with(getActivity())
                     .load(topList.get(position).imageUrl)
-                    .placeholder(R.drawable.error)
-                    .error(R.drawable.error)
                     .diskCacheStrategy(ApGlideSettings.AP_DISK_CACHE_STRATEGY)
-                    .fitCenter()
+                    .centerCrop()
                     .dontAnimate()
                     .into(holder.mImageView);
             holder.mImageView.setOnClickListener(new View.OnClickListener() {

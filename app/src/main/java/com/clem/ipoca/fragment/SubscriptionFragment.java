@@ -12,7 +12,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.GridView;
 
 import com.clem.ipoca.R;
 import com.clem.ipoca.activity.MainActivity;
@@ -27,6 +26,7 @@ import com.clem.ipoca.core.storage.DBReader;
 import com.clem.ipoca.core.storage.DBWriter;
 import com.clem.ipoca.core.util.FeedItemUtil;
 import com.clem.ipoca.dialog.RenameFeedDialog;
+import com.clem.ipoca.view.MyGridView;
 
 import rx.Observable;
 import rx.Subscription;
@@ -43,7 +43,7 @@ public class SubscriptionFragment extends Fragment {
     private static final int EVENTS = EventDistributor.FEED_LIST_UPDATE
             | EventDistributor.UNREAD_ITEMS_UPDATE;
 
-    private GridView subscriptionGridLayout;
+    private MyGridView subscriptionGridLayout;
     private DBReader.NavDrawerData navDrawerData;
     private SubscriptionsAdapter subscriptionAdapter;
 
@@ -69,7 +69,7 @@ public class SubscriptionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_subscriptions, container, false);
-        subscriptionGridLayout = (GridView) root.findViewById(R.id.subscriptions_grid);
+        subscriptionGridLayout = (MyGridView) root.findViewById(R.id.subscriptions_grid);
         registerForContextMenu(subscriptionGridLayout);
         return root;
     }
@@ -77,13 +77,8 @@ public class SubscriptionFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        subscriptionAdapter = new SubscriptionsAdapter((MainActivity)getActivity(), itemAccess);
-
-        subscriptionGridLayout.setAdapter(subscriptionAdapter);
 
         loadSubscriptions();
-
-        subscriptionGridLayout.setOnItemClickListener(subscriptionAdapter);
 
         if (getActivity() instanceof MainActivity) {
             ((MainActivity) getActivity()).getSupportActionBar().setTitle(R.string.subscriptions_label);
@@ -109,7 +104,13 @@ public class SubscriptionFragment extends Fragment {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(result -> {
                     navDrawerData = result;
-                    subscriptionAdapter.notifyDataSetChanged();
+                    if (subscriptionAdapter == null){
+                        subscriptionAdapter = new SubscriptionsAdapter((MainActivity)getActivity(), itemAccess);
+                        subscriptionGridLayout.setAdapter(subscriptionAdapter);
+                        subscriptionGridLayout.setOnItemClickListener(subscriptionAdapter);
+                    } else {
+                        subscriptionAdapter.notifyDataSetChanged();
+                    }
                 }, error -> Log.e(TAG, Log.getStackTraceString(error)));
     }
 

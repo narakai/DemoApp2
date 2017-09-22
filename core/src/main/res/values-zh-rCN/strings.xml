@@ -276,8 +276,8 @@
   <string name="pref_autoUpdateIntervallOrTime_Disable">禁用</string>
   <string name="pref_autoUpdateIntervallOrTime_Interval">设置间隔</string>
   <string name="pref_autoUpdateIntervallOrTime_TimeOfDay">设置时间</string>
-  <string name="pref_autoUpdateIntervallOrTime_every">每%1$s秒</string>
-  <string name="pref_autoUpdateIntervallOrTime_at">第%1$s秒</string>
+  <string name="pref_autoUpdateIntervallOrTime_every">每%1$s</string>
+  <string name="pref_autoUpdateIntervallOrTime_at">第%1$s</string>
   <string name="pref_downloadMediaOnWifiOnly_sum">仅在 WIFI 情况下载媒体文件</string>
   <string name="pref_followQueue_title">连续播放</string>
   <string name="pref_downloadMediaOnWifiOnly_title">仅在 WIFI 情况下载</string>
@@ -590,7 +590,7 @@
 
   <!-- Preferences -->
   <string name="queue_discover">频道</string>
-  <string name="pref_episode_cleanup_summary">如果Auto Download需要内存空间，将会清理不在队列中和未收藏的曲目</string>
+  <string name="pref_episode_cleanup_summary">如果自动下载需要内存空间，将会清理不在队列中和未收藏的曲目</string>
   <string name="pref_hardwareForwardButtonSkips_title">快进按钮设置</string>
   <string name="pref_hardwareForwardButtonSkips_sum">跳到下一集不快进</string>
   <string name="pref_hardwarePreviousButtonRestarts_title">上一首按钮设置</string>

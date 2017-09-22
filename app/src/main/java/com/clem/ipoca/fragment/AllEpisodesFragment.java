@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
@@ -149,7 +150,7 @@ public class AllEpisodesFragment extends Fragment {
         SharedPreferences.Editor editor = prefs.edit();
         editor.putInt(PREF_SCROLL_POSITION, firstItem);
         editor.putFloat(PREF_SCROLL_OFFSET, topOffset);
-        editor.commit();
+        editor.apply();
     }
 
     private void restoreScrollPosition() {
@@ -162,7 +163,7 @@ public class AllEpisodesFragment extends Fragment {
             SharedPreferences.Editor editor = prefs.edit();
             editor.putInt(PREF_SCROLL_POSITION, 0);
             editor.putFloat(PREF_SCROLL_OFFSET, 0.0f);
-            editor.commit();
+            editor.apply();
         }
     }
 
@@ -314,6 +315,8 @@ public class AllEpisodesFragment extends Fragment {
             ((SimpleItemAnimator) animator).setSupportsChangeAnimations(false);
         }
         layoutManager = new LinearLayoutManager(getActivity());
+        layoutManager.setAutoMeasureEnabled(true);
+        ViewCompat.setNestedScrollingEnabled(recyclerView, true);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
         recyclerView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(getActivity()).build());
