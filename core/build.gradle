@@ -67,8 +67,6 @@ dependencies {
     compile "com.github.AntennaPod:AntennaPod-AudioPlayer:$audioPlayerVersion"
     compile 'com.github.rey5137:material:1.2.4'
 
-    freeCompile 'com.umeng.analytics:analytics:latest.integration'
-
     // Add casting features
     // free build hack: skip some dependencies
 //    if (!doFreeBuild()) {

@@ -103,10 +103,8 @@ android {
 
     productFlavors {
         play {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "play"]
         }
         free {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "free"]
         }
     }
 
