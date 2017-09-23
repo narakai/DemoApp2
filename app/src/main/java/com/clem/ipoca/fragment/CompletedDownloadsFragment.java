@@ -106,8 +106,6 @@ public class CompletedDownloadsFragment extends ListFragment {
         // add padding
         final ListView lv = getListView();
         lv.setClipToPadding(false);
-        final int vertPadding = getResources().getDimensionPixelSize(R.dimen.list_vertical_padding);
-        lv.setPadding(0, vertPadding, 0, vertPadding);
         ViewCompat.setNestedScrollingEnabled(lv, true);
         viewCreated = true;
         if (items != null && getActivity() != null) {

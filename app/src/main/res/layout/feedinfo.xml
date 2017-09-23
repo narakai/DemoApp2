@@ -193,6 +193,7 @@
                 android:checked="true" />
 
             <TextView
+                android:visibility="gone"
                 android:id="@+id/txtvAuthentication"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -202,6 +203,7 @@
                 android:textColor="?android:attr/textColorPrimary"/>
 
             <TextView
+                android:visibility="gone"
                 android:id="@+id/txtvAuthenticationDescr"
                 android:text="@string/authentication_descr"
                 android:textSize="@dimen/text_size_small"
@@ -211,6 +213,7 @@
                 android:layout_marginTop="8dp"/>
 
             <android.support.v7.widget.GridLayout
+                android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"

@@ -34,8 +34,6 @@ public class TagListFragment extends ListFragment {
 
         final ListView lv = getListView();
         lv.setClipToPadding(false);
-        final int vertPadding = getResources().getDimensionPixelSize(R.dimen.list_vertical_padding);
-        lv.setPadding(0, vertPadding, 0, vertPadding);
         ViewCompat.setNestedScrollingEnabled(lv, true);
 
         lv.setOnItemClickListener((parent, view1, position, id) -> {

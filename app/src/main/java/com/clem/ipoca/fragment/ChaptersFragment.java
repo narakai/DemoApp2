@@ -35,8 +35,6 @@ public class ChaptersFragment extends ListFragment implements MediaplayerInfoCon
         // add padding
         final ListView lv = getListView();
         lv.setClipToPadding(false);
-        final int vertPadding = getResources().getDimensionPixelSize(R.dimen.list_vertical_padding);
-        lv.setPadding(0, vertPadding, 0, vertPadding);
 
         adapter = new ChaptersListAdapter(getActivity(), 0, pos -> {
             if(controller == null) {
