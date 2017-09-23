@@ -76,22 +76,22 @@
     </string-array>
 
     <string-array name="genre_options">
-        <item>Arts</item>
-        <item>Comedy</item>
-        <item>Education</item>
-        <item>Kids &amp; Family</item>
-        <item>Health</item>
-        <item>TV &amp; Film</item>
-        <item>Music</item>
-        <item>News &amp; Politics</item>
-        <item>Religion &amp; Spirituality</item>
-        <item>Science &amp; Medicine</item>
-        <item>Sports &amp; Recreation</item>
-        <item>Technology</item>
-        <item>Business</item>
-        <item>Games &amp; Hobbies</item>
-        <item>Society &amp; Culture</item>
-        <item>Government &amp; Organizations</item>
+        <item>@string/arts</item>
+        <item>@string/comedy</item>
+        <item>@string/education</item>
+        <item>@string/kids</item>
+        <item>@string/health</item>
+        <item>@string/tv</item>
+        <item>@string/music</item>
+        <item>@string/news</item>
+        <item>@string/region</item>
+        <item>@string/science</item>
+        <item>@string/sports</item>
+        <item>@string/tech</item>
+        <item>@string/business</item>
+        <item>@string/game</item>
+        <item>@string/culture</item>
+        <item>@string/gov</item>
     </string-array>
 
     <string-array name="genre_values">

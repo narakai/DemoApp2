@@ -670,4 +670,21 @@
   <string name="cast_failed_status_request">無法與投放設備同步</string>
   <string name="cast_failed_seek">無法在投放設備上定位</string>
   <string name="cast_failed_receiver_player_error">接收器播放器遇到嚴重錯誤</string>
+
+  <string name="arts">藝術</string>
+  <string name="comedy">喜劇片</string>
+  <string name="education">教育</string>
+  <string name="kids">兒童與家庭</string>
+  <string name="health">健康</string>
+  <string name="tv">電視與電影</string>
+  <string name="music">音樂</string>
+  <string name="news">新聞與政治</string>
+  <string name="region">心靈修煉</string>
+  <string name="science">科學與醫學</string>
+  <string name="sports">運動與休閑</string>
+  <string name="tech">科技</string>
+  <string name="business">商業</string>
+  <string name="game">遊戲與愛好</string>
+  <string name="culture">社會與文化</string>
+  <string name="gov">政府與組織</string>
 </resources>
