@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -165,14 +166,13 @@ public class ChannelFragment extends Fragment {
     }
 
     private void loadToplist(String genre) {
-        String locale = UserPreferences.getPrefCountry();
+        String locale = TextUtils.isEmpty(UserPreferences.getPrefCountry()) ? Locale.getDefault().getCountry() : UserPreferences.getPrefCountry();
         if (subscription != null) {
             subscription.unsubscribe();
         }
         mRecyclerView.setVisibility(View.GONE);
         progressBar.setVisibility(View.VISIBLE);
         subscription = Observable.create((Observable.OnSubscribe<List<ItunesAdapter.Podcast>>) subscriber -> {
-            String lang = Locale.getDefault().getLanguage();
             //test
             String url = "https://itunes.apple.com/" + locale + "/rss/toppodcasts/limit=50/explicit=true/genre=" + genre + "/json";
             OkHttpClient client = AntennapodHttpClient.getHttpClient();

@@ -10,7 +10,6 @@
             android:title="@string/pref_set_locale"
             android:key="prefCountry"
             android:summary="@string/pref_set_locale_desc"
-            android:defaultValue="@string/us"
             app:useStockLayout="true"/>
 
         <ListPreference

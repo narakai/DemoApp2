@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.SearchView;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -232,15 +233,14 @@ public class ItunesSearchFragment extends Fragment {
         if (subscription != null) {
             subscription.unsubscribe();
         }
+        String locale = TextUtils.isEmpty(UserPreferences.getPrefCountry()) ? Locale.getDefault().getCountry() : UserPreferences.getPrefCountry();
         gridView.setVisibility(View.GONE);
         txtvError.setVisibility(View.GONE);
         butRetry.setVisibility(View.GONE);
         txtvEmpty.setVisibility(View.GONE);
         progressBar.setVisibility(View.VISIBLE);
         subscription = Observable.create((Observable.OnSubscribe<List<ItunesAdapter.Podcast>>) subscriber -> {
-                    String lang = Locale.getDefault().getLanguage();
-            //test
-                    String url = "https://itunes.apple.com/" + "jp" + "/rss/toppodcasts/limit=25/explicit=true/json";
+                    String url = "https://itunes.apple.com/" + locale+ "/rss/toppodcasts/limit=25/explicit=true/json";
                     OkHttpClient client = AntennapodHttpClient.getHttpClient();
                     Request.Builder httpReq = new Request.Builder()
                             .url(url)

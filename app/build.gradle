@@ -102,9 +102,11 @@ android {
     }
 
     productFlavors {
-        free {
-        }
         play {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "play"]
+        }
+        free {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "free"]
         }
     }
 
@@ -123,13 +125,16 @@ configurations {
 dependencies {
     freeDebugCompile project(path: ":core", configuration: "freeDebug")
     freeReleaseCompile project(path: ":core", configuration: "freeRelease")
+
+    playDebugCompile project(path: ":core", configuration: "playDebug")
+    playReleaseCompile project(path: ":core", configuration: "playRelease")
     // free build hack: skip some dependencies
-    if (!doFreeBuild()) {
-        playDebugCompile project(path: ":core", configuration: "playDebug")
-        playReleaseCompile project(path: ":core", configuration: "playRelease")
-    } else {
-        System.out.println("app: free build hack, skipping some dependencies")
-    }
+//    if (!doFreeBuild()) {
+//        playDebugCompile project(path: ":core", configuration: "playDebug")
+//        playReleaseCompile project(path: ":core", configuration: "playRelease")
+//    } else {
+//        System.out.println("app: free build hack, skipping some dependencies")
+//    }
     compile "com.android.support:support-v4:$supportVersion"
     compile "com.android.support:appcompat-v7:$supportVersion"
     compile "com.android.support:design:$supportVersion"

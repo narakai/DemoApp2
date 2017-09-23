@@ -22,4 +22,5 @@
   <string name="cancel">取消</string>
   <string name="custom">自定義</string>
   <string name="presets">預設</string>
+    <string name="cn">cn</string>
 </resources>

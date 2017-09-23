@@ -176,7 +176,7 @@ public class UserPreferences {
     }
 
     public static String getPrefCountry(){
-        return prefs.getString(PREF_COUNTRY, "us");
+        return prefs.getString(PREF_COUNTRY, "");
     }
 
     public static String getPrefGenre(){
