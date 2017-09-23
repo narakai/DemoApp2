@@ -92,13 +92,13 @@ public class SubscriptionFragment extends Fragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        if(subscription != null) {
+        if (subscription != null) {
             subscription.unsubscribe();
         }
     }
 
     private void loadSubscriptions() {
-        if(subscription != null) {
+        if (subscription != null) {
             subscription.unsubscribe();
         }
         subscription = Observable.fromCallable(DBReader::getNavDrawerData)
@@ -106,13 +106,9 @@ public class SubscriptionFragment extends Fragment {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(result -> {
                     navDrawerData = result;
-                    if (subscriptionAdapter == null){
-                        subscriptionAdapter = new SubscriptionsAdapter((MainActivity)getActivity(), itemAccess);
-                        subscriptionGridLayout.setAdapter(subscriptionAdapter);
-                        subscriptionGridLayout.setOnItemClickListener(subscriptionAdapter);
-                    } else {
-                        subscriptionAdapter.notifyDataSetChanged();
-                    }
+                    subscriptionAdapter = new SubscriptionsAdapter((MainActivity) getActivity(), itemAccess);
+                    subscriptionGridLayout.setAdapter(subscriptionAdapter);
+                    subscriptionGridLayout.setOnItemClickListener(subscriptionAdapter);
                 }, error -> Log.e(TAG, Log.getStackTraceString(error)));
     }
 
@@ -128,7 +124,7 @@ public class SubscriptionFragment extends Fragment {
             return;
         }
 
-        Feed feed = (Feed)selectedObject;
+        Feed feed = (Feed) selectedObject;
 
         MenuInflater inflater = getActivity().getMenuInflater();
         inflater.inflate(R.menu.nav_feed_context, menu);
@@ -143,7 +139,7 @@ public class SubscriptionFragment extends Fragment {
 
         final int position = mPosition;
         mPosition = -1; // reset
-        if(position < 0) {
+        if (position < 0) {
             return false;
         }
 
@@ -153,8 +149,8 @@ public class SubscriptionFragment extends Fragment {
             return false;
         }
 
-        Feed feed = (Feed)selectedObject;
-        switch(item.getItemId()) {
+        Feed feed = (Feed) selectedObject;
+        switch (item.getItemId()) {
             case R.id.mark_all_seen_item:
                 Observable.fromCallable(() -> DBWriter.markFeedSeen(feed.getId()))
                         .subscribeOn(Schedulers.newThread())
@@ -193,7 +189,7 @@ public class SubscriptionFragment extends Fragment {
                             Log.d(TAG, "Currently playing episode is about to be deleted, skipping");
                             remover.skipOnCompletion = true;
                             int playerStatus = PlaybackPreferences.getCurrentPlayerStatus();
-                            if(playerStatus == PlaybackPreferences.PLAYER_STATUS_PLAYING) {
+                            if (playerStatus == PlaybackPreferences.PLAYER_STATUS_PLAYING) {
                                 getActivity().sendBroadcast(new Intent(
                                         PlaybackService.ACTION_PAUSE_PLAY_CURRENT_EPISODE));
                             }
