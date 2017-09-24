@@ -66,6 +66,7 @@ dependencies {
 
     compile "com.github.AntennaPod:AntennaPod-AudioPlayer:$audioPlayerVersion"
     compile 'com.github.rey5137:material:1.2.4'
+    compile 'com.google.android.gms:play-services-ads:11.2.0'
 
     // Add casting features
     // free build hack: skip some dependencies

@@ -69,6 +69,9 @@ import com.clem.ipoca.fragment.QueueFragment;
 import com.clem.ipoca.fragment.SubscriptionFragment;
 import com.clem.ipoca.menuhandler.NavDrawerActivity;
 import com.clem.ipoca.preferences.PreferenceController;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.Validate;
@@ -140,6 +143,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
 
     private Subscription subscription;
     private int primaryPreselect;
+    private AdView mAdView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -163,6 +167,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navList = (ListView) findViewById(R.id.nav_list);
         navDrawer = findViewById(R.id.nav_layout);
+        mAdView = (AdView) findViewById(R.id.adView);
         playerFragment = (FrameLayout) findViewById(R.id.playerFragment);
         drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.drawer_open, R.string.drawer_close);
         if (savedInstanceState != null) {
@@ -260,6 +265,9 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             getWindow().setStatusBarColor(CircleView.shiftColorDown(primaryPreselect));
             getWindow().setNavigationBarColor(primaryPreselect);
         }
+        MobileAds.initialize(this, "ca-app-pub-8223458858460367~2279165016");
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 
 
