@@ -13,6 +13,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
@@ -268,12 +269,9 @@ public class ChannelFragment extends Fragment {
                     .centerCrop()
                     .dontAnimate()
                     .into(holder.mImageView);
-            holder.mImageView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (!PodcastApp.isDoubleRequest()) {
-                        EventBus.getDefault().post(new AddEvent(topList.get(position)));
-                    }
+            holder.mFrameLayout.setOnClickListener(v -> {
+                if (!PodcastApp.isDoubleRequest()) {
+                    EventBus.getDefault().post(new AddEvent(topList.get(position)));
                 }
             });
         }
@@ -286,10 +284,12 @@ public class ChannelFragment extends Fragment {
         class MyViewHolder extends RecyclerView.ViewHolder {
 
             ImageView mImageView;
+            FrameLayout mFrameLayout;
 
             public MyViewHolder(View view) {
                 super(view);
                 mImageView = (ImageView) view.findViewById(R.id.image_iv);
+                mFrameLayout = (FrameLayout) view.findViewById(R.id.item_fl);
             }
         }
     }

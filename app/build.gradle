@@ -24,6 +24,11 @@ def getMyVersionCode() {
 }
 
 android {
+
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
@@ -170,6 +175,7 @@ dependencies {
 
     compile 'com.github.mfietz:fyydlin:v0.1'
     compile 'io.michaelrocks:libphonenumber-android:8.4.1'
+    compile 'com.google.android.gms:play-services-ads:11.0.4'
 }
 
 //play {
