@@ -147,8 +147,8 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        setTheme(UserPreferences.getNoTitleTheme());
         super.onCreate(savedInstanceState);
+        setTheme(UserPreferences.getNoTitleTheme());
         StorageUtils.checkStorageAvailability(this);
         setContentView(R.layout.main);
 
