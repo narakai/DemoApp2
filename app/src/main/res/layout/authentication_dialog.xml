@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.clem.ipoca1.core.view.CornerView.CornerButton
+        <com.clem.ipocadonation1.core.view.CornerView.CornerButton
             app:radius="30dp"
             app:rd_enable="true"
             app:border="1dp"
@@ -61,7 +61,7 @@
             android:text="@string/confirm_label"
             android:layout_weight="1"/>
 
-        <com.clem.ipoca1.core.view.CornerView.CornerButton
+        <com.clem.ipocadonation1.core.view.CornerView.CornerButton
             app:radius="30dp"
             app:rd_enable="true"
             app:border="1dp"

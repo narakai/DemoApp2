@@ -27,7 +27,7 @@
             android:layout_marginTop="4dp"
             android:background="?android:attr/dividerVertical"/>
 
-        <com.clem.ipoca1.core.view.CornerView.CornerButton
+        <com.clem.ipocadonation1.core.view.CornerView.CornerButton
             android:id="@+id/butCancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             app:radius="30dp"
             app:rd_enable="true"/>
 
-        <com.clem.ipoca1.core.view.CornerView.CornerButton
+        <com.clem.ipocadonation1.core.view.CornerView.CornerButton
             android:id="@+id/butConfirm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

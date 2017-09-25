@@ -24,7 +24,7 @@
         android:textColor="?android:attr/textColorSecondary"
         android:layout_margin="16dp"/>
 
-    <com.clem.ipoca1.core.view.CornerView.CornerButton
+    <com.clem.ipocadonation1.core.view.CornerView.CornerButton
         app:radius="30dp"
         app:rd_enable="true"
         app:border="1dp"
@@ -35,7 +35,7 @@
         android:layout_margin="16dp"
         android:text="@string/gpodnetauth_finish_butsyncnow"/>
 
-    <com.clem.ipoca1.core.view.CornerView.CornerButton
+    <com.clem.ipocadonation1.core.view.CornerView.CornerButton
         app:radius="30dp"
         app:rd_enable="true"
         app:border="1dp"
