@@ -376,7 +376,7 @@
         <meta-data
             android:name="com.clem.ipoca1.core.glide.ApGlideModule"
             android:value="GlideModule" />
-        
+
     </application>
 
 </manifest>
