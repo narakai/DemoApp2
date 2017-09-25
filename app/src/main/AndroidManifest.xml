@@ -377,9 +377,6 @@
             android:name="com.clem.ipocadonation1.core.glide.ApGlideModule"
             android:value="GlideModule" />
 
-        <meta-data
-                    android:name="com.google.android.gms.car.application"
-                    android:resource="@xml/automotive_app_desc"/>
     </application>
 
 </manifest>
