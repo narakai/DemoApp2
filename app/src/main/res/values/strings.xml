@@ -24,4 +24,7 @@
     <string name="presets">Presets</string>
     <string name="cn">cn</string>
     <string name="ad_unit_id">ca-app-pub-8223458858460367/4881277624</string>
+    <string name="donation">Donation</string>
+    <string name="support_fail_because_not_install">Alipay is not installed, thanks for your support.</string>
+    <string name="buyacoffee">If you feel this app is useful for you, and you would like buy me a coffee to support my work. Please click "OK". My Paypal account is: narakai.lai@gmail.com. Thank you. </string>
 </resources>

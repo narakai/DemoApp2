@@ -21,4 +21,7 @@
   <string name="presets">預設</string>
     <string name="cn">cn</string>
     <string name="ad_unit_id">ca-app-pub-8223458858460367/4881277624</string>
+    <string name="donation">支持作者</string>
+  <string name="support_fail_because_not_install">未安裝支付寶，仍然謝謝妳的好意！</string>
+  <string name="buyacoffee">如果這個app對妳有所幫助，妳願意賞作者喝杯咖啡的話，可以通過支付寶或者Paypal給我隨意打賞壹點，我的支付寶和Paypal賬號是: narakai.lai@gmail.com，非常感謝。</string>
 </resources>

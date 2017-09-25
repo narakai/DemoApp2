@@ -31,6 +31,7 @@ import com.clem.ipoca1.fragment.NewEpisodesFragment;
 import com.clem.ipoca1.fragment.PlaybackHistoryFragment;
 import com.clem.ipoca1.fragment.QueueFragment;
 import com.clem.ipoca1.fragment.SubscriptionFragment;
+import com.clem.ipoca1.view.SupportDialog;
 import com.joanzapata.iconify.Iconify;
 import com.joanzapata.iconify.widget.IconTextView;
 
@@ -140,6 +141,9 @@ public class NavListAdapter extends BaseAdapter
                 break;
             case SubscriptionFragment.TAG:
                 icon = R.attr.ic_folder;
+                break;
+            case SupportDialog.TAG:
+                icon = R.attr.ic_donate;
                 break;
             case AddFeedFragment.TAG:
                 icon = R.attr.content_new;

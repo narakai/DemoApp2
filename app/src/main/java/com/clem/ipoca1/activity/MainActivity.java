@@ -69,6 +69,7 @@ import com.clem.ipoca1.fragment.QueueFragment;
 import com.clem.ipoca1.fragment.SubscriptionFragment;
 import com.clem.ipoca1.menuhandler.NavDrawerActivity;
 import com.clem.ipoca1.preferences.PreferenceController;
+import com.clem.ipoca1.view.SupportDialog;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -90,6 +91,8 @@ import rx.Observable;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
+
+import static android.view.View.GONE;
 
 /**
  * The activity that is shown when the user launches the app.
@@ -122,6 +125,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             DownloadsFragment.TAG,
             PlaybackHistoryFragment.TAG,
             AddFeedFragment.TAG,
+            SupportDialog.TAG,
             NavListAdapter.SUBSCRIPTION_LIST_TAG
     };
 
@@ -265,9 +269,13 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             getWindow().setStatusBarColor(CircleView.shiftColorDown(primaryPreselect));
             getWindow().setNavigationBarColor(primaryPreselect);
         }
-        MobileAds.initialize(this, "ca-app-pub-8223458858460367~2279165016");
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+        if (!UserPreferences.getBuyme()) {
+            MobileAds.initialize(this, "ca-app-pub-8223458858460367~2279165016");
+            AdRequest adRequest = new AdRequest.Builder().build();
+            mAdView.loadAd(adRequest);
+        } else {
+            mAdView.setVisibility(GONE);
+        }
     }
 
 
@@ -375,6 +383,9 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             case AddFeedFragment.TAG:
                 fragment = new AddFeedFragment();
                 break;
+            case SupportDialog.TAG:
+                SupportDialog.show(MainActivity.this);
+                break;
             default:
                 // default to the queue
                 tag = ChannelFragment.TAG;
@@ -382,6 +393,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
                 args = null;
                 break;
         }
+        if (tag.equals(SupportDialog.TAG)) return;
         currentTitle = navAdapter.getLabel(tag);
         getSupportActionBar().setTitle(currentTitle);
         saveLastNavFragment(tag);

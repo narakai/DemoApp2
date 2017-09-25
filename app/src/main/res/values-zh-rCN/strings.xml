@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="search_hint">搜索&#8230;</string>
-  <string name="no_result_found">无结果</string>
-  <string name="select_country">选择国家</string>
-  <string name="country_code_and_phone_code">(%1$s) +%2$s</string>
-  <string name="country_full_name_and_phone_code">%1$s +%2$s</string>
-  <string name="error_unregister_carrier_number">EditText for carrier number is not registered. Register it using registerPhoneNumberTextView() before getFullNumber() or setFullNumber().</string>
-  <string name="confirm_exit_app">再按一次退出iPoca</string>
-  <string name="search_options">搜索选项</string>
-  <string name="pref_set_locale">设置默认播客地区</string>
-  <string name="pref_set_locale_desc">设置播客的默认地区</string>
-  <string name="pref_set_genre">设置默认播客类别</string>
-  <string name="pref_set_genre_desc">设置默认关注的播客类别</string>
-  <string name="us">us</string>
-  <string name="genre_label">设置默认播客类别</string>
-  <string name="color_label">自定义主题色</string>
-  <string name="ok">好的</string>
-  <string name="cancel">取消</string>
-  <string name="custom">自定义</string>
-  <string name="presets">预设</string>
+    <string name="search_hint">搜索&#8230;</string>
+    <string name="no_result_found">无结果</string>
+    <string name="select_country">选择国家</string>
+    <string name="country_code_and_phone_code">(%1$s) +%2$s</string>
+    <string name="country_full_name_and_phone_code">%1$s +%2$s</string>
+    <string name="error_unregister_carrier_number">EditText for carrier number is not registered. Register it using registerPhoneNumberTextView() before getFullNumber() or setFullNumber().</string>
+    <string name="confirm_exit_app">再按一次退出iPoca</string>
+    <string name="search_options">搜索选项</string>
+    <string name="pref_set_locale">设置默认播客地区</string>
+    <string name="pref_set_locale_desc">设置播客的默认地区</string>
+    <string name="pref_set_genre">设置默认播客类别</string>
+    <string name="pref_set_genre_desc">设置默认关注的播客类别</string>
+    <string name="us">us</string>
+    <string name="genre_label">设置默认播客类别</string>
+    <string name="color_label">自定义主题色</string>
+    <string name="ok">好的</string>
+    <string name="cancel">取消</string>
+    <string name="custom">自定义</string>
+    <string name="presets">预设</string>
     <string name="cn">cn</string>
     <string name="ad_unit_id">ca-app-pub-8223458858460367/4881277624</string>
+    <string name="donation">支持作者</string>
+    <string name="support_fail_because_not_install">未安装支付宝，仍然谢谢你的好意！</string>
+    <string name="buyacoffee">如果这个app对你有所帮助，你愿意赏作者喝杯咖啡的话，可以通过支付宝或者Paypal给我随意打赏一点，我的支付宝和Paypal账号是: narakai.lai@gmail.com，非常感谢。</string>
 </resources>

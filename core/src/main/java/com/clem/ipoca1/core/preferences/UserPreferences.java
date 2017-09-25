@@ -47,6 +47,8 @@ public class UserPreferences {
 
     public static final String PREF_COLOR = "prefColor";
 
+    public static final String PREF_BUYME = "prefBuyme";
+
     // Search
     public static final String PREF_COUNTRY = "prefCountry";
     public static final String PREF_GENRE = "prefGenre";
@@ -175,15 +177,25 @@ public class UserPreferences {
         }
     }
 
-    public static String getPrefCountry(){
+    public static String getPrefCountry() {
         return prefs.getString(PREF_COUNTRY, "");
     }
 
-    public static String getPrefGenre(){
+    public static Boolean getBuyme() {
+        return prefs.getBoolean(PREF_BUYME, false);
+    }
+
+    public static void setBuyme() {
+        prefs.edit()
+                .putBoolean(PREF_BUYME, true)
+                .apply();
+    }
+
+    public static String getPrefGenre() {
         return prefs.getString(PREF_GENRE, "1301");
     }
 
-    public static int getPrefColor(){
+    public static int getPrefColor() {
         return prefs.getInt(PREF_COLOR, 0xFF009688);
     }
 
@@ -198,7 +210,7 @@ public class UserPreferences {
                         String.valueOf(NOTIFICATION_BUTTON_SKIP)),
                 ",");
         List<Integer> notificationButtons = new ArrayList<>();
-        for (int i=0; i<buttons.length; i++) {
+        for (int i = 0; i < buttons.length; i++) {
             notificationButtons.add(Integer.parseInt(buttons[i]));
         }
         return notificationButtons;
@@ -311,7 +323,9 @@ public class UserPreferences {
         return prefs.getBoolean(PREF_FOLLOW_QUEUE, true);
     }
 
-    public static boolean shouldSkipKeepEpisode() { return prefs.getBoolean(PREF_SKIP_KEEPS_EPISODE, true); }
+    public static boolean shouldSkipKeepEpisode() {
+        return prefs.getBoolean(PREF_SKIP_KEEPS_EPISODE, true);
+    }
 
     public static boolean isAutoDelete() {
         return prefs.getBoolean(PREF_AUTO_DELETE, false);
@@ -362,7 +376,7 @@ public class UserPreferences {
      */
     public static long getUpdateInterval() {
         String updateInterval = prefs.getString(PREF_UPDATE_INTERVAL, "0");
-        if(!updateInterval.contains(":")) {
+        if (!updateInterval.contains(":")) {
             return readUpdateInterval(updateInterval);
         } else {
             return 0;
@@ -371,11 +385,11 @@ public class UserPreferences {
 
     public static int[] getUpdateTimeOfDay() {
         String datetime = prefs.getString(PREF_UPDATE_INTERVAL, "");
-        if(datetime.length() >= 3 && datetime.contains(":")) {
+        if (datetime.length() >= 3 && datetime.contains(":")) {
             String[] parts = datetime.split(":");
             int hourOfDay = Integer.parseInt(parts[0]);
             int minute = Integer.parseInt(parts[1]);
-            return new int[] { hourOfDay, minute };
+            return new int[]{hourOfDay, minute};
         } else {
             return new int[0];
         }
@@ -452,22 +466,22 @@ public class UserPreferences {
     public static void setProxyConfig(ProxyConfig config) {
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString(PREF_PROXY_TYPE, config.type.name());
-        if(TextUtils.isEmpty(config.host)) {
+        if (TextUtils.isEmpty(config.host)) {
             editor.remove(PREF_PROXY_HOST);
         } else {
             editor.putString(PREF_PROXY_HOST, config.host);
         }
-        if(config.port <= 0 || config.port > 65535) {
+        if (config.port <= 0 || config.port > 65535) {
             editor.remove(PREF_PROXY_PORT);
         } else {
             editor.putInt(PREF_PROXY_PORT, config.port);
         }
-        if(TextUtils.isEmpty(config.username)) {
+        if (TextUtils.isEmpty(config.username)) {
             editor.remove(PREF_PROXY_USER);
         } else {
             editor.putString(PREF_PROXY_USER, config.username);
         }
-        if(TextUtils.isEmpty(config.password)) {
+        if (TextUtils.isEmpty(config.password)) {
             editor.remove(PREF_PROXY_PASSWORD);
         } else {
             editor.putString(PREF_PROXY_PASSWORD, config.password);
@@ -492,30 +506,30 @@ public class UserPreferences {
         return prefs.getBoolean(PREF_QUEUE_LOCKED, false);
     }
 
-    public static void setDefaultCountry(String country){
+    public static void setDefaultCountry(String country) {
         prefs.edit().putString(PREF_COUNTRY, country).apply();
     }
 
-    public static void setDefaultGenre(String genre){
+    public static void setDefaultGenre(String genre) {
         prefs.edit().putString(PREF_GENRE, genre).apply();
     }
 
     public static void setFastForwardSecs(int secs) {
         prefs.edit()
-             .putInt(PREF_FAST_FORWARD_SECS, secs)
-             .apply();
+                .putInt(PREF_FAST_FORWARD_SECS, secs)
+                .apply();
     }
 
     public static void setRewindSecs(int secs) {
         prefs.edit()
-             .putInt(PREF_REWIND_SECS, secs)
-             .apply();
+                .putInt(PREF_REWIND_SECS, secs)
+                .apply();
     }
 
     public static void setPlaybackSpeed(String speed) {
         prefs.edit()
-             .putString(PREF_PLAYBACK_SPEED, speed)
-             .apply();
+                .putString(PREF_PLAYBACK_SPEED, speed)
+                .apply();
     }
 
     public static void setPrefColor(int color) {
@@ -530,23 +544,23 @@ public class UserPreferences {
             jsonArray.put(speed);
         }
         prefs.edit()
-             .putString(PREF_PLAYBACK_SPEED_ARRAY, jsonArray.toString())
-             .apply();
+                .putString(PREF_PLAYBACK_SPEED_ARRAY, jsonArray.toString())
+                .apply();
     }
 
     public static void setVolume(int leftVolume, int rightVolume) {
-        assert(0 <= leftVolume && leftVolume <= 100);
-        assert(0 <= rightVolume && rightVolume <= 100);
+        assert (0 <= leftVolume && leftVolume <= 100);
+        assert (0 <= rightVolume && rightVolume <= 100);
         prefs.edit()
-             .putInt(PREF_LEFT_VOLUME, leftVolume)
-             .putInt(PREF_RIGHT_VOLUME, rightVolume)
-             .apply();
+                .putInt(PREF_LEFT_VOLUME, leftVolume)
+                .putInt(PREF_RIGHT_VOLUME, rightVolume)
+                .apply();
     }
 
     public static void setAutodownloadSelectedNetworks(String[] value) {
         prefs.edit()
-             .putString(PREF_AUTODL_SELECTED_NETWORKS, TextUtils.join(",", value))
-             .apply();
+                .putString(PREF_AUTODL_SELECTED_NETWORKS, TextUtils.join(",", value))
+                .apply();
     }
 
     /**
@@ -554,8 +568,8 @@ public class UserPreferences {
      */
     public static void setUpdateInterval(long hours) {
         prefs.edit()
-             .putString(PREF_UPDATE_INTERVAL, String.valueOf(hours))
-             .apply();
+                .putString(PREF_UPDATE_INTERVAL, String.valueOf(hours))
+                .apply();
         // when updating with an interval, we assume the user wants
         // to update *now* and then every 'hours' interval thereafter.
         restartUpdateAlarm(true);
@@ -566,26 +580,26 @@ public class UserPreferences {
      */
     public static void setUpdateTimeOfDay(int hourOfDay, int minute) {
         prefs.edit()
-             .putString(PREF_UPDATE_INTERVAL, hourOfDay + ":" + minute)
-             .apply();
+                .putString(PREF_UPDATE_INTERVAL, hourOfDay + ":" + minute)
+                .apply();
         restartUpdateAlarm(false);
     }
 
     /**
      * Change the auto-flattr settings
      *
-     * @param enabled Whether automatic flattring should be enabled at all
+     * @param enabled             Whether automatic flattring should be enabled at all
      * @param autoFlattrThreshold The percentage of playback time after which an episode should be
      *                            flattrd. Must be a value between 0 and 1 (inclusive)
-     * */
-    public static void setAutoFlattrSettings( boolean enabled, float autoFlattrThreshold) {
-        if(autoFlattrThreshold < 0.0 || autoFlattrThreshold > 1.0) {
+     */
+    public static void setAutoFlattrSettings(boolean enabled, float autoFlattrThreshold) {
+        if (autoFlattrThreshold < 0.0 || autoFlattrThreshold > 1.0) {
             throw new IllegalArgumentException("Flattr threshold must be in range [0.0, 1.0]");
         }
         prefs.edit()
-             .putBoolean(PREF_AUTO_FLATTR, enabled)
-             .putFloat(PREF_AUTO_FLATTR_PLAYED_DURATION_THRESHOLD, autoFlattrThreshold)
-             .apply();
+                .putBoolean(PREF_AUTO_FLATTR, enabled)
+                .putFloat(PREF_AUTO_FLATTR_PLAYED_DURATION_THRESHOLD, autoFlattrThreshold)
+                .apply();
     }
 
     public static boolean gpodnetNotificationsEnabled() {
@@ -601,21 +615,21 @@ public class UserPreferences {
     public static void setHiddenDrawerItems(List<String> items) {
         String str = TextUtils.join(",", items);
         prefs.edit()
-             .putString(PREF_HIDDEN_DRAWER_ITEMS, str)
-             .apply();
+                .putString(PREF_HIDDEN_DRAWER_ITEMS, str)
+                .apply();
     }
 
     public static void setCompactNotificationButtons(List<Integer> items) {
         String str = TextUtils.join(",", items);
         prefs.edit()
-             .putString(PREF_COMPACT_NOTIFICATION_BUTTONS, str)
-             .apply();
+                .putString(PREF_COMPACT_NOTIFICATION_BUTTONS, str)
+                .apply();
     }
 
     public static void setQueueLocked(boolean locked) {
         prefs.edit()
-             .putBoolean(PREF_QUEUE_LOCKED, locked)
-             .apply();
+                .putBoolean(PREF_QUEUE_LOCKED, locked)
+                .apply();
     }
 
     private static int readThemeValue(String valueFromPrefs) {
@@ -646,7 +660,7 @@ public class UserPreferences {
         String[] selectedSpeeds = null;
         // If this preference hasn't been set yet, return the default options
         if (valueFromPrefs == null) {
-            selectedSpeeds = new String[] { "1.00", "1.25", "1.50", "1.75", "2.00" };
+            selectedSpeeds = new String[]{"1.00", "1.25", "1.50", "1.75", "2.00"};
         } else {
             try {
                 JSONArray jsonArray = new JSONArray(valueFromPrefs);
@@ -668,8 +682,8 @@ public class UserPreferences {
 
     public static void enableSonic(boolean enable) {
         prefs.edit()
-            .putBoolean(PREF_SONIC, enable)
-            .apply();
+                .putBoolean(PREF_SONIC, enable)
+                .apply();
     }
 
     public static boolean stereoToMono() {
@@ -750,8 +764,8 @@ public class UserPreferences {
     public static void setDataFolder(String dir) {
         Log.d(TAG, "setDataFolder(dir: " + dir + ")");
         prefs.edit()
-             .putString(PREF_DATA_FOLDER, dir)
-             .apply();
+                .putString(PREF_DATA_FOLDER, dir)
+                .apply();
         createImportDirectory();
     }
 
@@ -834,7 +848,7 @@ public class UserPreferences {
         alarmManager.cancel(updateIntent);
 
         Calendar now = Calendar.getInstance();
-        Calendar alarm = (Calendar)now.clone();
+        Calendar alarm = (Calendar) now.clone();
         alarm.set(Calendar.HOUR_OF_DAY, hoursOfDay);
         alarm.set(Calendar.MINUTE, minute);
         if (alarm.before(now) || alarm.equals(now)) {
