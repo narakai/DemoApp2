@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.clem.ipoca"
-    android:versionCode="1000001"
-    android:versionName="1.1">
+    package="com.clem.ipoca1"
+    android:versionCode="10"
+    android:versionName="1.0">
     <!--
       Version code schema:
       "1.2.3-SNAPSHOT" -> 1020300
@@ -31,10 +31,10 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
     <application
-        android:name=".PodcastApp"
+        android:name="com.clem.ipoca1.PodcastApp"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:backupAgent=".core.backup.OpmlBackupAgent"
+        android:backupAgent="com.clem.ipoca1.core.backup.OpmlBackupAgent"
         android:restoreAnyVersion="true"
         android:logo="@drawable/ic_launcher">
         <meta-data android:name="com.google.android.gms.car.notification.SmallIcon"
@@ -44,7 +44,7 @@
             android:value="AEdPqrEAAAAIaIddh3koINfoZv7gV8PFABAfyHWgC9X1Amv-EQ"/>
 
         <activity
-            android:name=".activity.SplashActivity"
+            android:name="com.clem.ipoca1.activity.SplashActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTask"
             android:label="@string/app_name"
@@ -62,17 +62,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.clem.ipoca1.activity.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTask"
             android:label="@string/app_name">
         </activity>
         <activity
-            android:name=".activity.AudioplayerActivity"
+            android:name="com.clem.ipoca1.activity.AudioplayerActivity"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity"/>
+                android:value="com.clem.ipoca1.activity.MainActivity"/>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
 
@@ -84,50 +84,50 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.CastplayerActivity"
+            android:name="com.clem.ipoca1.activity.CastplayerActivity"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity"/>
+                android:value="com.clem.ipoca1.activity.MainActivity"/>
         </activity>
 
         <activity
-            android:name=".activity.DownloadAuthenticationActivity"
+            android:name="com.clem.ipoca1.activity.DownloadAuthenticationActivity"
             android:launchMode="singleInstance"/>
 
         <activity
-            android:name=".activity.PreferenceActivityGingerbread"
+            android:name="com.clem.ipoca1.activity.PreferenceActivityGingerbread"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/settings_label">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity"/>
+                android:value="com.clem.ipoca1.activity.MainActivity"/>
         </activity>
 
         <activity
-            android:name=".activity.PreferenceActivity"
+            android:name="com.clem.ipoca1.activity.PreferenceActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/settings_label">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity"/>
+                android:value="com.clem.ipoca1.activity.MainActivity"/>
         </activity>
 
-        <activity android:name=".activity.FeedInfoActivity">
+        <activity android:name="com.clem.ipoca1.activity.FeedInfoActivity">
         </activity>
 
         <service
-            android:name=".service.PlayerWidgetService"
+            android:name="com.clem.ipoca1.service.PlayerWidgetService"
             android:enabled="true"
             android:exported="false">
         </service>
 
-        <receiver android:name=".receiver.PlayerWidget">
+        <receiver android:name="com.clem.ipoca1.receiver.PlayerWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="com.clem.ipoca.FORCE_WIDGET_UPDATE"/>
+                <action android:name="com.clem.ipoca1.FORCE_WIDGET_UPDATE"/>
             </intent-filter>
 
             <meta-data
@@ -135,14 +135,14 @@
                 android:resource="@xml/player_widget_info"/>
 
             <intent-filter>
-                <action android:name="com.clem.ipoca.STOP_WIDGET_UPDATE"/>
+                <action android:name="com.clem.ipoca1.STOP_WIDGET_UPDATE"/>
             </intent-filter>
         </receiver>
 
-        <activity android:name=".activity.StorageErrorActivity">
+        <activity android:name="com.clem.ipoca1.activity.StorageErrorActivity">
         </activity>
         <activity
-            android:name=".activity.FlattrAuthActivity"
+            android:name="com.clem.ipoca1.activity.FlattrAuthActivity"
             android:label="@string/flattr_auth_label">
             <intent-filter>
                 <action android:name=".activities.FlattrAuthActivity"/>
@@ -156,32 +156,32 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
 
                 <data
-                    android:host="com.clem.ipoca"
+                    android:host="com.clem.ipoca1"
                     android:scheme="flattr4j"/>
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.AboutActivity"
+            android:name="com.clem.ipoca1.activity.AboutActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/about_pref">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.PreferenceActivity"/>
+                android:value="com.clem.ipoca1.activity.PreferenceActivity"/>
         </activity>
         <activity
-            android:name=".activity.StatisticsActivity"
+            android:name="com.clem.ipoca1.activity.StatisticsActivity"
             android:label="@string/statistics_label">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.PreferenceActivity"/>
+                android:value="com.clem.ipoca1.activity.PreferenceActivity"/>
         </activity>
         <activity
-            android:name=".activity.OpmlImportFromPathActivity"
+            android:name="com.clem.ipoca1.activity.OpmlImportFromPathActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/opml_import_label">
         </activity>
         <activity
-            android:name=".activity.OpmlImportFromIntentActivity"
+            android:name="com.clem.ipoca1.activity.OpmlImportFromIntentActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/opml_import_label">
             <intent-filter>
@@ -217,17 +217,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.OpmlFeedChooserActivity"
+            android:name="com.clem.ipoca1.activity.OpmlFeedChooserActivity"
             android:label="@string/opml_import_label">
         </activity>
 
         <activity
-            android:name=".activity.VideoplayerActivity"
+            android:name="com.clem.ipoca1.activity.VideoplayerActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="sensorLandscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity"/>
+                android:value="com.clem.ipoca1.activity.MainActivity"/>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
 
@@ -239,20 +239,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.DirectoryChooserActivity"
+            android:name="com.clem.ipoca1.activity.DirectoryChooserActivity"
             android:label="@string/choose_data_directory">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.PreferenceActivity"/>
+                android:value="com.clem.ipoca1.activity.PreferenceActivity"/>
         </activity>
 
         <activity
-            android:name=".activity.OnlineFeedViewActivity"
+            android:name="com.clem.ipoca1.activity.OnlineFeedViewActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/add_feed_label">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity"/>
+                android:value="com.clem.ipoca1.activity.MainActivity"/>
 
             <!-- URLs ending with '.xml' or '.rss' -->
 
@@ -327,7 +327,7 @@
         </activity>
 
         <activity
-            android:name=".activity.gpoddernet.GpodnetAuthenticationActivity"
+            android:name="com.clem.ipoca1.activity.gpoddernet.GpodnetAuthenticationActivity"
             android:configChanges="orientation"
             android:label="@string/gpodnet_auth_label"
             android:screenOrientation="portrait">
@@ -337,28 +337,28 @@
             </intent-filter>
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.PreferenceActivity"/>
+                android:value="com.clem.ipoca1.activity.PreferenceActivity"/>
         </activity>
 
-        <receiver android:name=".receiver.ConnectivityActionReceiver">
+        <receiver android:name="com.clem.ipoca1.receiver.ConnectivityActionReceiver">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".receiver.PowerConnectionReceiver">
+        <receiver android:name="com.clem.ipoca1.receiver.PowerConnectionReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".receiver.SPAReceiver">
+        <receiver android:name="com.clem.ipoca1.receiver.SPAReceiver">
             <intent-filter>
-                <action android:name="com.clem.ipoca.intent.SP_APPS_QUERY_FEEDS_RESPONSE"/>
+                <action android:name="com.clem.ipoca1.intent.SP_APPS_QUERY_FEEDS_RESPONSE"/>
             </intent-filter>
         </receiver>
-        <receiver android:name=".core.receiver.AlarmUpdateReceiver">
+        <receiver android:name="com.clem.ipoca1.core.receiver.AlarmUpdateReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
@@ -366,13 +366,13 @@
                 <action android:name="android.intent.action.PACKAGE_REPLACED"/>
 
                 <data
-                    android:path="com.clem.ipoca"
+                    android:path="com.clem.ipoca1"
                     android:scheme="package"/>
             </intent-filter>
         </receiver>
 
         <meta-data
-            android:name="com.clem.ipoca.core.glide.ApGlideModule"
+            android:name="com.clem.ipoca1.core.glide.ApGlideModule"
             android:value="GlideModule" />
 
         <meta-data

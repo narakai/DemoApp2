@@ -1,0 +1,17 @@
+package com.clem.ipoca1.core.util.id3reader.model;
+
+public class FrameHeader extends Header {
+
+	protected char flags;
+
+	public FrameHeader(String id, int size, char flags) {
+		super(id, size);
+		this.flags = flags;
+	}
+
+	@Override
+	public String toString() {
+        return String.format("FrameHeader [flags=%s, id=%s, size=%s]", Integer.toBinaryString(flags), id, Integer.toBinaryString(size));
+    }
+
+}

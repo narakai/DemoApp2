@@ -62,7 +62,7 @@
             android:layout_marginTop="4dp"
             android:background="?android:attr/dividerVertical" />
 
-        <com.clem.ipoca.core.view.CornerView.CornerButton
+        <com.clem.ipoca1.core.view.CornerView.CornerButton
             app:radius="30dp"
             app:rd_enable="true"
             app:border="1dp"
@@ -76,7 +76,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:text="@string/cancel_label" />
 
-        <com.clem.ipoca.core.view.CornerView.CornerButton
+        <com.clem.ipoca1.core.view.CornerView.CornerButton
             app:radius="30dp"
             app:rd_enable="true"
             app:border="1dp"

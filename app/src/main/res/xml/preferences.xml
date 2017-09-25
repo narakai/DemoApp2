@@ -56,13 +56,13 @@
                 android:defaultValue="0"
                 app:useStockLayout="true"/>
         </PreferenceScreen>
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="false"
             android:enabled="true"
             android:key="prefExpandNotify"
             android:summary="@string/pref_expandNotify_sum"
             android:title="@string/pref_expandNotify_title"/>
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="true"
             android:enabled="true"
             android:key="prefPersistNotify"
@@ -72,13 +72,13 @@
             android:key="prefCompactNotificationButtons"
             android:summary="@string/pref_compact_notification_buttons_sum"
             android:title="@string/pref_compact_notification_buttons_title"/>
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="true"
             android:enabled="true"
             android:key="prefLockscreenBackground"
             android:summary="@string/pref_lockscreen_background_sum"
             android:title="@string/pref_lockscreen_background_title"/>
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="true"
             android:enabled="true"
             android:key="prefShowDownloadReport"
@@ -87,7 +87,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/queue_label">
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="false"
             android:enabled="true"
             android:key="prefQueueAddToFront"
@@ -96,33 +96,33 @@
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/playback_pref">
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="true"
             android:enabled="false"
             android:key="prefSonic"
             android:summary="@string/pref_sonic_message"
             android:title="@string/pref_sonic_title"/>
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="true"
             android:enabled="true"
             android:key="prefPauseOnHeadsetDisconnect"
             android:summary="@string/pref_pauseOnDisconnect_sum"
             android:title="@string/pref_pauseOnHeadsetDisconnect_title"/>
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="true"
             android:enabled="true"
             android:dependency="prefPauseOnHeadsetDisconnect"
             android:key="prefUnpauseOnHeadsetReconnect"
             android:summary="@string/pref_unpauseOnHeadsetReconnect_sum"
             android:title="@string/pref_unpauseOnHeadsetReconnect_title"/>
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="false"
             android:enabled="true"
             android:dependency="prefPauseOnHeadsetDisconnect"
             android:key="prefUnpauseOnBluetoothReconnect"
             android:summary="@string/pref_unpauseOnBluetoothReconnect_sum"
             android:title="@string/pref_unpauseOnBluetoothReconnect_title"/>
-        <!--<com.clem.ipoca.preferences.SwitchCompatPreference-->
+        <!--<ipoca11.preferences.SwitchCompatPreference-->
             <!--android:defaultValue="false"-->
             <!--android:enabled="true"-->
             <!--android:key="prefHardwareForwardButtonSkips"-->
@@ -136,25 +136,25 @@
             android:key="prefPlaybackRewindDeltaLauncher"
             android:summary="@string/pref_rewind_sum"
             android:title="@string/pref_rewind" />
-        <!--<com.clem.ipoca.preferences.SwitchCompatPreference-->
+        <!--<ipoca11.preferences.SwitchCompatPreference-->
             <!--android:defaultValue="false"-->
             <!--android:enabled="true"-->
             <!--android:key="prefHardwarePreviousButtonRestarts"-->
             <!--android:summary="@string/pref_hardwarePreviousButtonRestarts_sum"-->
             <!--android:title="@string/pref_hardwarePreviousButtonRestarts_title"/>-->
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="true"
             android:enabled="true"
             android:key="prefFollowQueue"
             android:summary="@string/pref_followQueue_sum"
             android:title="@string/pref_followQueue_title"/>
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="true"
             android:enabled="true"
             android:key="prefSkipKeepsEpisode"
             android:summary="@string/pref_skip_keeps_episodes_sum"
             android:title="@string/pref_skip_keeps_episodes_title"/>
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="false"
             android:enabled="true"
             android:key="prefAutoDelete"
@@ -172,13 +172,13 @@
             android:key="prefPlaybackSpeedLauncher"
             android:summary="@string/pref_playback_speed_sum"
             android:title="@string/pref_playback_speed_title" />
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="false"
             android:enabled="true"
             android:key="prefPauseForFocusLoss"
             android:summary="@string/pref_pausePlaybackForFocusLoss_sum"
             android:title="@string/pref_pausePlaybackForFocusLoss_title" />
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="true"
             android:enabled="true"
             android:key="prefResumeAfterCall"
@@ -187,7 +187,7 @@
 
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/network_pref">
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="true"
             android:enabled="true"
             android:key="prefEnqueueDownloaded"
@@ -197,7 +197,7 @@
             android:key="prefAutoUpdateIntervall"
             android:summary="@string/pref_autoUpdateIntervallOrTime_sum"
             android:title="@string/pref_autoUpdateIntervallOrTime_title"/>
-        <com.clem.ipoca.preferences.SwitchCompatPreference
+        <com.clem.ipoca1.preferences.SwitchCompatPreference
             android:defaultValue="true"
             android:enabled="true"
             android:key="prefMobileUpdate"
@@ -221,7 +221,7 @@
             android:summary="@string/pref_automatic_download_sum"
             android:key="prefAutoDownloadSettings"
             android:title="@string/pref_automatic_download_title">
-            <com.clem.ipoca.preferences.SwitchCompatPreference
+            <com.clem.ipoca1.preferences.SwitchCompatPreference
                 android:key="prefEnableAutoDl"
                 android:title="@string/pref_automatic_download_title"
                 android:defaultValue="false"/>
@@ -232,12 +232,12 @@
                 android:title="@string/pref_episode_cache_title"
                 android:entryValues="@array/episode_cache_size_values"
                 app:useStockLayout="true"/>
-            <com.clem.ipoca.preferences.SwitchCompatPreference
+            <com.clem.ipoca1.preferences.SwitchCompatPreference
                 android:key="prefEnableAutoDownloadOnBattery"
                 android:title="@string/pref_automatic_download_on_battery_title"
                 android:summary="@string/pref_automatic_download_on_battery_sum"
                 android:defaultValue="true"/>
-            <com.clem.ipoca.preferences.SwitchCompatPreference
+            <com.clem.ipoca1.preferences.SwitchCompatPreference
                 android:key="prefEnableAutoDownloadWifiFilter"
                 android:title="@string/pref_autodl_wifi_filter_title"
                 android:summary="@string/pref_autodl_wifi_filter_sum"/>
@@ -297,7 +297,7 @@
             <Preference
                 android:key="pref_gpodnet_hostname"
                 android:title="@string/pref_gpodnet_sethostname_title"/>
-            <com.clem.ipoca.preferences.SwitchCompatPreference
+            <com.clem.ipoca1.preferences.SwitchCompatPreference
                 android:key="pref_gpodnet_notifications"
                 android:title="@string/pref_gpodnet_notifications_title"
                 android:summary="@string/pref_gpodnet_notifications_sum"
@@ -344,7 +344,7 @@
     </PreferenceCategory>
 
     <!--<PreferenceCategory android:title="@string/experimental_pref">-->
-        <!--<com.clem.ipoca.preferences.SwitchCompatPreference-->
+        <!--<ipoca11.preferences.SwitchCompatPreference-->
             <!--android:defaultValue="false"-->
             <!--android:enabled="true"-->
             <!--android:key="prefCast"-->

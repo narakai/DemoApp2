@@ -14,8 +14,8 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-//        testApplicationId "com.clem.ipoca.core.tests"
-//        testInstrumentationRunner "com.clem.ipoca.core.tests.AntennaPodTestRunner"
+//        testApplicationId "com.clem.ipoca1.core.tests"
+//        testInstrumentationRunner "com.clem.ipoca1.core.tests.AntennaPodTestRunner"
     }
     buildTypes {
         release {

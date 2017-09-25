@@ -4,7 +4,7 @@
                 xmlns:tools="http://schemas.android.com/tools"
     >
 
-    <!--<com.clem.ipoca.view.citypicker.CountryCodePicker-->
+    <!--<ipoca11.view.citypicker.CountryCodePicker-->
         <!--android:id="@+id/ccp"-->
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content"-->
