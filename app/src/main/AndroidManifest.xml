@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.clem.ipoca1"
-    android:versionCode="10"
-    android:versionName="1.0">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.clem.ipoca1"
+          android:versionCode="10"
+          android:versionName="1.0"
+          tools:ignore="GradleOverrides">
     <!--
       Version code schema:
       "1.2.3-SNAPSHOT" -> 1020300
