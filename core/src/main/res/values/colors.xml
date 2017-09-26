@@ -28,7 +28,7 @@
     <color name="selection_background_color_light">#FEBB20</color>
 
     <!-- Theme colors -->
-    <color name="primary_light">#6AFFFFFF</color>
+    <color name="primary_light">#FFFFFF</color>
 
     <color name="highlight_light">#DDDDDD</color>
     <color name="highlight_dark">#414141</color>
