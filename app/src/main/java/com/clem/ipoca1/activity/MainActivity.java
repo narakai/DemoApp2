@@ -199,8 +199,10 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
 
         fm.addOnBackStackChangedListener(() -> drawerToggle.setDrawerIndicatorEnabled(fm.getBackStackEntryCount() == 0));
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+        if (getSupportActionBar() != null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setHomeButtonEnabled(true);
+        }
 
         navAdapter = new NavListAdapter(itemAccess, this);
         navList.setAdapter(navAdapter);
@@ -215,10 +217,13 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             }
         });
 
-        findViewById(R.id.nav_settings).setOnClickListener(v -> {
-            drawerLayout.closeDrawer(navDrawer);
-            startActivity(new Intent(MainActivity.this, PreferenceController.getPreferenceActivity()));
-        });
+        View view = findViewById(R.id.nav_settings);
+        if (view != null){
+            view.setOnClickListener(v -> {
+                drawerLayout.closeDrawer(navDrawer);
+                startActivity(new Intent(MainActivity.this, PreferenceController.getPreferenceActivity()));
+            });
+        }
 
         FragmentTransaction transaction = fm.beginTransaction();
 
@@ -503,7 +508,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         drawerToggle.syncState();
         if (savedInstanceState != null) {
             currentTitle = savedInstanceState.getString(SAVE_TITLE);
-            if (!drawerLayout.isDrawerOpen(navDrawer)) {
+            if (!drawerLayout.isDrawerOpen(navDrawer) && getSupportActionBar() != null) {
                 getSupportActionBar().setTitle(currentTitle);
             }
             selectedNavListIndex = getSelectedNavListIndex();
