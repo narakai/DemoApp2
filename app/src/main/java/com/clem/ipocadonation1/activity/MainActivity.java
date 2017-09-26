@@ -199,7 +199,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
 
         fm.addOnBackStackChangedListener(() -> drawerToggle.setDrawerIndicatorEnabled(fm.getBackStackEntryCount() == 0));
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        if (getSupportActionBar() != null ) getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
         navAdapter = new NavListAdapter(itemAccess, this);
@@ -215,10 +215,13 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             }
         });
 
-        findViewById(R.id.nav_settings).setOnClickListener(v -> {
-            drawerLayout.closeDrawer(navDrawer);
-            startActivity(new Intent(MainActivity.this, PreferenceController.getPreferenceActivity()));
-        });
+        View view = findViewById(R.id.nav_settings);
+        if (view != null){
+            view.setOnClickListener(v -> {
+                drawerLayout.closeDrawer(navDrawer);
+                startActivity(new Intent(MainActivity.this, PreferenceController.getPreferenceActivity()));
+            });
+        }
 
         FragmentTransaction transaction = fm.beginTransaction();
 
@@ -384,7 +387,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
                 break;
         }
         currentTitle = navAdapter.getLabel(tag);
-        getSupportActionBar().setTitle(currentTitle);
+        if (getSupportActionBar() != null) getSupportActionBar().setTitle(currentTitle);
         saveLastNavFragment(tag);
         if (args != null) {
             fragment.setArguments(args);
@@ -407,7 +410,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         }
         saveLastNavFragment(String.valueOf(feedId));
         currentTitle = "";
-        getSupportActionBar().setTitle(currentTitle);
+        if (getSupportActionBar() != null) getSupportActionBar().setTitle(currentTitle);
         loadFragment(fragment);
     }
 
@@ -505,7 +508,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         if (savedInstanceState != null) {
             currentTitle = savedInstanceState.getString(SAVE_TITLE);
             if (!drawerLayout.isDrawerOpen(navDrawer)) {
-                getSupportActionBar().setTitle(currentTitle);
+                if (getSupportActionBar() != null) getSupportActionBar().setTitle(currentTitle);
             }
             selectedNavListIndex = getSelectedNavListIndex();
         }
@@ -520,7 +523,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putString(SAVE_TITLE, getSupportActionBar().getTitle().toString());
+        if (getSupportActionBar() != null) outState.putString(SAVE_TITLE, getSupportActionBar().getTitle().toString());
         outState.putInt(SAVE_BACKSTACK_COUNT, getSupportFragmentManager().getBackStackEntryCount());
     }
 
