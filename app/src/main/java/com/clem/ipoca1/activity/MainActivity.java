@@ -70,9 +70,7 @@ import com.clem.ipoca1.fragment.SubscriptionFragment;
 import com.clem.ipoca1.menuhandler.NavDrawerActivity;
 import com.clem.ipoca1.preferences.PreferenceController;
 import com.clem.ipoca1.view.SupportDialog;
-import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.Validate;
@@ -269,7 +267,14 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             getWindow().setStatusBarColor(CircleView.shiftColorDown(primaryPreselect));
             getWindow().setNavigationBarColor(primaryPreselect);
         }
-        MobileAds.initialize(this, "ca-app-pub-8223458858460367~1304956702");
+        mAdView.setVisibility(GONE);
+//        MobileAds.initialize(this, "ca-app-pub-8223458858460367~1304956702");
+        //        if (!UserPreferences.getBuyme()) {
+//            AdRequest adRequest = new AdRequest.Builder().build();
+//            mAdView.loadAd(adRequest);
+//        } else {
+//            mAdView.setVisibility(GONE);
+//        }
     }
 
 
@@ -556,12 +561,6 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         }
         loadData();
         RatingDialog.check();
-        if (!UserPreferences.getBuyme()) {
-            AdRequest adRequest = new AdRequest.Builder().build();
-            mAdView.loadAd(adRequest);
-        } else {
-            mAdView.setVisibility(GONE);
-        }
     }
 
     @Override
