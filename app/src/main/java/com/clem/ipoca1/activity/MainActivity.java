@@ -269,13 +269,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             getWindow().setStatusBarColor(CircleView.shiftColorDown(primaryPreselect));
             getWindow().setNavigationBarColor(primaryPreselect);
         }
-        if (!UserPreferences.getBuyme()) {
-            MobileAds.initialize(this, "ca-app-pub-8223458858460367~1304956702");
-            AdRequest adRequest = new AdRequest.Builder().build();
-            mAdView.loadAd(adRequest);
-        } else {
-            mAdView.setVisibility(GONE);
-        }
+        MobileAds.initialize(this, "ca-app-pub-8223458858460367~1304956702");
     }
 
 
@@ -562,6 +556,12 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         }
         loadData();
         RatingDialog.check();
+        if (!UserPreferences.getBuyme()) {
+            AdRequest adRequest = new AdRequest.Builder().build();
+            mAdView.loadAd(adRequest);
+        } else {
+            mAdView.setVisibility(GONE);
+        }
     }
 
     @Override
