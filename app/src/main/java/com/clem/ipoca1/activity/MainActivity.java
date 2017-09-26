@@ -70,7 +70,9 @@ import com.clem.ipoca1.fragment.SubscriptionFragment;
 import com.clem.ipoca1.menuhandler.NavDrawerActivity;
 import com.clem.ipoca1.preferences.PreferenceController;
 import com.clem.ipoca1.view.SupportDialog;
+import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.Validate;
@@ -267,13 +269,13 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             getWindow().setStatusBarColor(CircleView.shiftColorDown(primaryPreselect));
             getWindow().setNavigationBarColor(primaryPreselect);
         }
-//        if (!UserPreferences.getBuyme()) {
-//            MobileAds.initialize(this, "ca-app-pub-8223458858460367~1962173072");
-//            AdRequest adRequest = new AdRequest.Builder().build();
-//            mAdView.loadAd(adRequest);
-//        } else {
-        mAdView.setVisibility(GONE);
-//        }
+        if (!UserPreferences.getBuyme()) {
+            MobileAds.initialize(this, "ca-app-pub-8223458858460367~1304956702");
+            AdRequest adRequest = new AdRequest.Builder().build();
+            mAdView.loadAd(adRequest);
+        } else {
+            mAdView.setVisibility(GONE);
+        }
     }
 
 
