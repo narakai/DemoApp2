@@ -270,7 +270,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             getWindow().setNavigationBarColor(primaryPreselect);
         }
         if (!UserPreferences.getBuyme()) {
-            MobileAds.initialize(this, "ca-app-pub-8223458858460367/1610819283");
+            MobileAds.initialize(this, "ca-app-pub-8223458858460367~1962173072");
             AdRequest adRequest = new AdRequest.Builder().build();
             mAdView.loadAd(adRequest);
         } else {
