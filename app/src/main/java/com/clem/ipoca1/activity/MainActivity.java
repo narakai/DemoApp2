@@ -265,7 +265,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             getWindow().setStatusBarColor(CircleView.shiftColorDown(primaryPreselect));
             getWindow().setNavigationBarColor(primaryPreselect);
         }
-        MobileAds.initialize(this, "ca-app-pub-8223458858460367~1962173072");
+        MobileAds.initialize(this, "ca-app-pub-8223458858460367~1304956702");
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
     }
