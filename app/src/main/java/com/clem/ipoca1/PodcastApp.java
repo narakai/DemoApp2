@@ -1,6 +1,7 @@
 package com.clem.ipoca1;
 
 import android.app.Application;
+import android.content.Context;
 import android.os.Build;
 import android.os.StrictMode;
 
@@ -11,7 +12,9 @@ import com.joanzapata.iconify.Iconify;
 import com.joanzapata.iconify.fonts.FontAwesomeModule;
 import com.joanzapata.iconify.fonts.MaterialModule;
 
-/** Main application class. */
+/**
+ * Main application class.
+ */
 public class PodcastApp extends Application {
 
     // make sure that ClientConfigurator executes its static code
@@ -23,60 +26,68 @@ public class PodcastApp extends Application {
         }
     }
 
-	private static PodcastApp singleton;
+    private static PodcastApp singleton;
 
-	public static PodcastApp getInstance() {
-		return singleton;
-	}
-
-	@Override
-	public void onCreate() {
-		super.onCreate();
-
-		Thread.setDefaultUncaughtExceptionHandler(new CrashReportWriter());
-
-		if(BuildConfig.DEBUG) {
-			StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder()
-				.detectLeakedSqlLiteObjects()
-				.penaltyLog()
-				.penaltyDropBox();
-			if (Build.VERSION.SDK_INT >= 11) {
-				builder.detectActivityLeaks();
-				builder.detectLeakedClosableObjects();
-			}
-			if(Build.VERSION.SDK_INT >= 16) {
-				builder.detectLeakedRegistrationObjects();
-			}
-			StrictMode.setVmPolicy(builder.build());
-		}
-
-		singleton = this;
-
-		ClientConfig.initialize(this);
-
-		EventDistributor.getInstance();
-		Iconify.with(new FontAwesomeModule());
-		Iconify.with(new MaterialModule());
-
-        SPAUtil.sendSPAppsQueryFeedsIntent(this);
+    public static PodcastApp getInstance() {
+        return singleton;
     }
 
-	private static long mLastRequestTime = 0;
+    @Override
+    public void onCreate() {
+        super.onCreate();
 
-	public static boolean isDoubleRequest() {
-		long gapTime = 1000;
-		long currentTimeTime = System.currentTimeMillis();
+        Thread.setDefaultUncaughtExceptionHandler(new CrashReportWriter());
 
-		if (mLastRequestTime == 0) {
-			mLastRequestTime = System.currentTimeMillis();
-			return false;
-		} else if (currentTimeTime - mLastRequestTime < gapTime) {
-			mLastRequestTime = currentTimeTime;
-			return true;
-		} else {
-			mLastRequestTime = currentTimeTime;
-			return false;
-		}
-	}
+        if (BuildConfig.DEBUG) {
+            StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder()
+                    .detectLeakedSqlLiteObjects()
+                    .penaltyLog()
+                    .penaltyDropBox();
+            if (Build.VERSION.SDK_INT >= 11) {
+                builder.detectActivityLeaks();
+                builder.detectLeakedClosableObjects();
+            }
+            if (Build.VERSION.SDK_INT >= 16) {
+                builder.detectLeakedRegistrationObjects();
+            }
+            StrictMode.setVmPolicy(builder.build());
+        }
+
+        singleton = this;
+
+        ClientConfig.initialize(this);
+
+        EventDistributor.getInstance();
+        Iconify.with(new FontAwesomeModule());
+        Iconify.with(new MaterialModule());
+
+        SPAUtil.sendSPAppsQueryFeedsIntent(this);
+
+        sContext = getApplicationContext();
+    }
+
+    private static long mLastRequestTime = 0;
+
+    public static boolean isDoubleRequest() {
+        long gapTime = 1000;
+        long currentTimeTime = System.currentTimeMillis();
+
+        if (mLastRequestTime == 0) {
+            mLastRequestTime = System.currentTimeMillis();
+            return false;
+        } else if (currentTimeTime - mLastRequestTime < gapTime) {
+            mLastRequestTime = currentTimeTime;
+            return true;
+        } else {
+            mLastRequestTime = currentTimeTime;
+            return false;
+        }
+    }
+
+    private static Context sContext;
+
+    public static Context getContext() {
+        return sContext;
+    }
 
 }

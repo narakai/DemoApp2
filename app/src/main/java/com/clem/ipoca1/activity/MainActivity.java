@@ -69,8 +69,11 @@ import com.clem.ipoca1.fragment.QueueFragment;
 import com.clem.ipoca1.fragment.SubscriptionFragment;
 import com.clem.ipoca1.menuhandler.NavDrawerActivity;
 import com.clem.ipoca1.preferences.PreferenceController;
+import com.clem.ipoca1.spa.Language;
 import com.clem.ipoca1.view.SupportDialog;
+import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.Validate;
@@ -201,7 +204,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
 
         fm.addOnBackStackChangedListener(() -> drawerToggle.setDrawerIndicatorEnabled(fm.getBackStackEntryCount() == 0));
 
-        if(getSupportActionBar() != null){
+        if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setHomeButtonEnabled(true);
         }
@@ -220,7 +223,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         });
 
         View view = findViewById(R.id.nav_settings);
-        if (view != null){
+        if (view != null) {
             view.setOnClickListener(v -> {
                 drawerLayout.closeDrawer(navDrawer);
                 startActivity(new Intent(MainActivity.this, PreferenceController.getPreferenceActivity()));
@@ -272,14 +275,14 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             getWindow().setStatusBarColor(CircleView.shiftColorDown(primaryPreselect));
             getWindow().setNavigationBarColor(primaryPreselect);
         }
-        mAdView.setVisibility(GONE);
-//        MobileAds.initialize(this, "ca-app-pub-8223458858460367~1304956702");
-        //        if (!UserPreferences.getBuyme()) {
-//            AdRequest adRequest = new AdRequest.Builder().build();
-//            mAdView.loadAd(adRequest);
-//        } else {
-//            mAdView.setVisibility(GONE);
-//        }
+//        mAdView.setVisibility(GONE);
+        MobileAds.initialize(this, "ca-app-pub-8223458858460367~1304956702");
+        if (!UserPreferences.getBuyme() && !Language.isZH()) {
+            AdRequest adRequest = new AdRequest.Builder().build();
+            mAdView.loadAd(adRequest);
+        } else {
+            mAdView.setVisibility(GONE);
+        }
     }
 
 
@@ -535,7 +538,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        if (getSupportActionBar() != null){
+        if (getSupportActionBar() != null) {
             outState.putString(SAVE_TITLE, getSupportActionBar().getTitle().toString());
         }
         outState.putInt(SAVE_BACKSTACK_COUNT, getSupportFragmentManager().getBackStackEntryCount());
