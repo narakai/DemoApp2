@@ -63,7 +63,7 @@ public class SPAUtil {
             SharedPreferences.Editor editor = PreferenceManager
                     .getDefaultSharedPreferences(c.getApplicationContext()).edit();
             editor.putBoolean(PREF_HAS_QUERIED_SP_APPS, false);
-            editor.commit();
+            editor.apply();
         }
     }
 }

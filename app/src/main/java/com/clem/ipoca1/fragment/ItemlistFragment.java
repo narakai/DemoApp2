@@ -108,7 +108,7 @@ public class ItemlistFragment extends ListFragment {
     private MoreContentListFooterUtil listFooter;
 
     private boolean isUpdatingFeed;
-    
+
     private TextView txtvTitle;
     private IconTextView txtvFailure;
     private ImageView imgvBackground;
@@ -331,6 +331,7 @@ public class ItemlistFragment extends ListFragment {
 
     @Override
     public boolean onContextItemSelected(MenuItem item) {
+        if (item == null) return true;
         AdapterView.AdapterContextMenuInfo menuInfo = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         if(menuInfo == null) {
             menuInfo = lastMenuInfo;

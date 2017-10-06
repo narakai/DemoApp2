@@ -926,7 +926,7 @@ public class PlaybackService extends MediaBrowserServiceCompat {
         editor.putInt(
                 PlaybackPreferences.PREF_CURRENT_PLAYER_STATUS,
                 PlaybackPreferences.PLAYER_STATUS_OTHER);
-        editor.commit();
+        editor.apply();
     }
 
     private int getCurrentPlayerStatusAsInt(PlayerStatus playerStatus) {
@@ -992,7 +992,7 @@ public class PlaybackService extends MediaBrowserServiceCompat {
         editor.putInt(
                 PlaybackPreferences.PREF_CURRENT_PLAYER_STATUS, playerStatus);
 
-        editor.commit();
+        editor.apply();
     }
 
     private void writePlayerStatusPlaybackPreferences() {
@@ -1005,7 +1005,7 @@ public class PlaybackService extends MediaBrowserServiceCompat {
         editor.putInt(
                 PlaybackPreferences.PREF_CURRENT_PLAYER_STATUS, playerStatus);
 
-        editor.commit();
+        editor.apply();
     }
 
     /**

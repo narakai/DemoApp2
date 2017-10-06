@@ -345,7 +345,7 @@ public class ItemDescriptionFragment extends Fragment implements MediaplayerInfo
                 editor.putInt(PREF_SCROLL_Y, -1);
                 editor.putString(PREF_PLAYABLE_ID, "");
             }
-            editor.commit();
+            editor.apply();
         }
     }
 

@@ -111,7 +111,7 @@ public class DBWriter {
                             editor.putBoolean(
                                     PlaybackPreferences.PREF_CURRENT_EPISODE_IS_STREAM,
                                     true);
-                            editor.commit();
+                            editor.apply();
                         }
                         if (PlaybackPreferences
                                 .getCurrentlyPlayingFeedMediaId() == media
@@ -161,7 +161,7 @@ public class DBWriter {
                     editor.putLong(
                             PlaybackPreferences.PREF_CURRENTLY_PLAYING_FEED_ID,
                             -1);
-                    editor.commit();
+                    editor.apply();
                 }
 
                 // delete image file

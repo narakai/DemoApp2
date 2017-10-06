@@ -95,7 +95,7 @@ public class FlattrUtils {
         } else {
             editor.putString(PREF_ACCESS_TOKEN, null);
         }
-        editor.commit();
+        editor.apply();
         cachedToken = token;
     }
 

@@ -26,7 +26,7 @@ public class ExternalMediaTest extends InstrumentationTestCase {
         SharedPreferences prefs = getDefaultSharedPrefs();
         SharedPreferences.Editor editor = prefs.edit();
         editor.clear();
-        editor.commit();
+        editor.apply();
     }
 
     private SharedPreferences getDefaultSharedPrefs() {

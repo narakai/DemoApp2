@@ -78,7 +78,7 @@ public class PreferenceActivity extends AppCompatActivity implements ColorChoose
         preferenceController = new PreferenceController(preferenceUI);
 
         prefFragment = new MainFragment();
-        getFragmentManager().beginTransaction().replace(R.id.content, prefFragment).commit();
+        getFragmentManager().beginTransaction().replace(R.id.content, prefFragment).commitAllowingStateLoss();
         primaryPreselect = UserPreferences.getPrefColor();
         ColorDrawable drawable = new ColorDrawable(primaryPreselect);
         if (getSupportActionBar() != null) {

@@ -251,7 +251,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             }
             externalPlayerFragment = new ExternalPlayerFragment();
             transaction.replace(R.id.playerFragment, externalPlayerFragment, ExternalPlayerFragment.TAG);
-            transaction.commit();
+            transaction.commitAllowingStateLoss();
 //            if (lastFragment.equals(QueueFragment.TAG) || lastFragment.equals(EpisodesFragment.TAG)) {
 //                playerFragment.setVisibility(View.VISIBLE);
 //            } else {
@@ -458,7 +458,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         fm.beginTransaction()
                 .replace(R.id.main_view, fragment, "main")
                 .addToBackStack(null)
-                .commit();
+                .commitAllowingStateLoss();
     }
 
     public void dismissChildFragment() {
