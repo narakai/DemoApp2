@@ -103,7 +103,7 @@ public class ItunesSearchFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setHasOptionsMenu(true);
+        if (isAdded()) setHasOptionsMenu(true);
     }
 
     @Override

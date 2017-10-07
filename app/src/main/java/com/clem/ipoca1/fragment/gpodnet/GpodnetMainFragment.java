@@ -46,7 +46,7 @@ public class GpodnetMainFragment extends Fragment {
         // Give the TabLayout the ViewPager
         tabLayout = (TabLayout) root.findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
-        setHasOptionsMenu(true);
+        if (isAdded()) setHasOptionsMenu(true);
         return root;
     }
 

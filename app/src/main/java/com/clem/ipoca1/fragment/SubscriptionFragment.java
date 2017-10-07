@@ -63,7 +63,7 @@ public class SubscriptionFragment extends Fragment {
         // So, we certainly *don't* have an options menu,
         // but unless we say we do, old options menus sometimes
         // persist.  mfietz thinks this causes the ActionBar to be invalidated
-        setHasOptionsMenu(true);
+        if (isAdded()) setHasOptionsMenu(true);
     }
 
     @Override

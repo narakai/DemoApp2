@@ -74,7 +74,7 @@ public class SearchFragment extends ListFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
-        setHasOptionsMenu(true);
+        if (isAdded()) setHasOptionsMenu(true);
         search();
     }
 

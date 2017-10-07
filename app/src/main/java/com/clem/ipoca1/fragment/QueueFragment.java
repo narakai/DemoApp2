@@ -97,7 +97,7 @@ public class QueueFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
-        setHasOptionsMenu(true);
+        if (isAdded()) setHasOptionsMenu(true);
     }
 
     @Override

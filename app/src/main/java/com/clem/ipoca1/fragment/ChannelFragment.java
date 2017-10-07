@@ -138,7 +138,7 @@ public class ChannelFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        setHasOptionsMenu(true);
+        if (isAdded()) setHasOptionsMenu(true);
         ((MainActivity) getActivity()).getSupportActionBar().setTitle(R.string.channel_label);
 
         View rootView = inflater.inflate(R.layout.channel_fragment, container, false);

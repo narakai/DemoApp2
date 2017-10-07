@@ -147,7 +147,7 @@ public class ItemFragment extends Fragment implements OnSwipeGesture {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
-        setHasOptionsMenu(true);
+        if (isAdded()) setHasOptionsMenu(true);
 
         feedItems = getArguments().getLongArray(ARG_FEEDITEMS);
         feedItemPos = getArguments().getInt(ARG_FEEDITEM_POS);

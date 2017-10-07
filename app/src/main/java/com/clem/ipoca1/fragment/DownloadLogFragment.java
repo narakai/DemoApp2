@@ -44,7 +44,7 @@ public class DownloadLogFragment extends ListFragment {
     @Override
     public void onStart() {
         super.onStart();
-        setHasOptionsMenu(true);
+        if (isAdded()) setHasOptionsMenu(true);
         EventDistributor.getInstance().register(contentUpdate);
         loadItems();
     }
