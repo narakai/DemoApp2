@@ -76,7 +76,7 @@ public class EpisodesApplyActionFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (isAdded()) setHasOptionsMenu(true);
+        setHasOptionsMenu(true);
     }
 
     @Override

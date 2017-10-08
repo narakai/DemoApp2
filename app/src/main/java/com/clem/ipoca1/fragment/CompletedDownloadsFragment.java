@@ -54,7 +54,7 @@ public class CompletedDownloadsFragment extends ListFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (isAdded()) setHasOptionsMenu(true);
+        setHasOptionsMenu(true);
         loadItems();
     }
 
