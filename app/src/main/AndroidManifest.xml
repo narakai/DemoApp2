@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
           package="com.clem.ipoca1"
-          android:versionCode="17"
-          android:versionName="1.07"
+          android:versionCode="18"
+          android:versionName="1.08"
           tools:ignore="GradleOverrides">
     <!--
       Version code schema:
